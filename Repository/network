@@ -1,0 +1,172 @@
+
+config interface 'loopback'
+	option device 'lo'
+	option proto 'static'
+	option ipaddr '127.0.0.1'
+	option netmask '255.0.0.0'
+	option ipv6 '1'
+
+config globals 'globals'
+	option packet_steering '1'
+	option ula_prefix 'fdf9:bba0:b11c::/48' #for example
+
+config device
+	option name 'br-lan'
+	option type 'bridge'
+	option ports 'eth0.71 eth0.66 eth0.1'
+	option ipv6 '1'
+
+config device
+	option name 'eth0.1'
+	option macaddr '18:83:bf:11:22:33' #for example
+	option ipv6 '1'
+
+config interface 'lan'
+	option device 'br-lan'
+	option proto 'static'
+	option ipaddr '192.168.1.1'
+	option netmask '255.255.255.0'
+	option ip6assign '60'
+	option ipv6 '1'
+	list ifname 'eth0.66 eth0.71 eth0.1'
+
+config device
+	option name 'eth0.2'
+	option macaddr '18:83:bf:11:22:34' #for example
+
+config interface 'wan'
+	option proto 'dhcp'
+	option ipv6 '1'
+	option metric '20'
+	option ifname 'eth0.2'
+	option device 'eth0.2'
+	option auto '1'
+
+config interface 'wan6'
+	option device '@wan'
+	option proto 'dhcpv6'
+
+config switch
+	option name 'switch0'
+	option reset '1'
+	option enable_vlan '1'
+
+config switch_vlan
+	option device 'switch0'
+	option vlan '1'
+	option ports '0 6t'
+
+config switch_vlan
+	option device 'switch0'
+	option vlan '2'
+	option ports '4 6t'
+
+config switch
+	option name 'switch1'
+	option reset '1'
+	option enable_vlan '1'
+
+config switch_vlan
+	option device 'switch1'
+	option vlan '1'
+	option ports '0 1 2 3 6t'
+
+config interface 'hilink'
+	option ipv6 '0'
+	option metric '10'
+	option delegate '0'
+	option device 'eth1'
+	option proto 'static'
+	option ipaddr '192.168.8.100'
+	option netmask '255.255.255.0'
+	option gateway '192.168.8.1'
+	option broadcast '192.168.8.255'
+	option auto '0'
+	option dns '192.168.8.1'
+
+config interface 'wwan'
+	option proto 'dhcp'
+	option ipv6 '0'
+	option auto '1'
+	option metric '10'
+	option device 'usb0'
+
+config interface 'umts'
+	option proto '3g'
+	option device '/dev/ttyUSB0'
+	option service 'umts'
+	option apn 'internet'
+	option dialnumber '*99***1#'
+	option ipv6 '0'
+	option auto '0'
+	option metric '10'
+
+config interface 'PPTP'
+	option proto 'pptp'
+	option keepalive '0'
+	option ipv6 '0'
+	option auto '0'
+	option server 'pl02.vpnonline.eu'
+	option username 'twoj login'
+	option password 'twoje haslo'
+	option metric '10'
+
+config interface 'TUN'
+	option proto 'none'
+	option delegate '0'
+	option auto '1'
+	option metric '10'
+	option device 'tun0'
+
+config interface 'NCM'
+	option proto 'ncm'
+	option delegate '0'
+	option device '/dev/ttyUSB0'
+	option service 'preferlte'
+	option pdptype 'IP'
+	option apn 'internet'
+	option ipv6 '0'
+	option auto '0'
+	option metric '10'
+
+config device 'inic_dev'
+	option name 'eth0.3'
+	option ipv6 '1'
+	option macaddr '00:11:22:33:44:33'
+
+config interface 'inic'
+	option proto 'none'
+	option device 'eth0.3'
+	option ipv6 '1'
+	option macaddr '00:11:22:33:44:33'
+
+config device 'wan_dev'
+	option name 'eth0.2'
+
+config switch_vlan
+	option device 'switch0'
+	option vlan '3'
+	option vid '3'
+	option fid '3'
+	option ports '5 6t'
+
+config device 'wlan_dev'
+	option name 'eth0.66'
+
+config device 'guest_wlan_dev'
+	option name 'eth0.71'
+
+config switch_vlan
+	option device 'switch0'
+	option vlan '4'
+	option vid '66'
+	option fid '4'
+	option ports '5t 6t'
+
+config switch_vlan
+	option device 'switch0'
+	option vlan '5'
+	option vid '71'
+	option fid '5'
+	option ports '5t 6t'
+
