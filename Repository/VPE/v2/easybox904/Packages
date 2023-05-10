@@ -3,10 +3,10 @@ Version: 20220205
 Depends: libc, comgt
 Section: net
 Architecture: all
-Installed-Size: 2154
+Installed-Size: 2156
 Filename: 3ginfo-lite_20220205_all.ipk
 Size: 2887
-SHA256sum: 023e4705ca7bf18a8a680012de064ab84545bc8124182beb13d7ed85ceb81956
+SHA256sum: bc58062c7d1305a3d71ab1a39bc40e744f4327e3f28ab1a40aa0afe4d1de7f3f
 Description:  Information about status of 3G/4G modem (lite version)
 
 Package: 3ginfo-qmisignal
@@ -16,8 +16,8 @@ Section: net
 Architecture: all
 Installed-Size: 2258
 Filename: 3ginfo-qmisignal_20220205_all.ipk
-Size: 3011
-SHA256sum: 8b96f94a5d26554d11fa2a9138db6da34021636fcbcdf831c67c2e77c954151b
+Size: 3012
+SHA256sum: e5a6dc03b1f0893cb8a7687c22eb20a56aa7f49f319180a4360ad9b212628767
 Description:  Information about status of 3G/4G modem (qmi signal)
 
 Package: 3ginfo-text
@@ -25,10 +25,10 @@ Version: 20220205
 Depends: libc, comgt
 Section: net
 Architecture: all
-Installed-Size: 9090
+Installed-Size: 9092
 Filename: 3ginfo-text_20220205_all.ipk
-Size: 9978
-SHA256sum: f16bb42261c9ce3053c422cd10dfaeb958aee5380145541e01be80c5d50abd4f
+Size: 9983
+SHA256sum: 1eef40a7c50bb8925f42f74a76939a37adc3caf2685451542a18c4272fffd377
 Description:  Information about status of 3G/4G modem (text version)
 
 Package: 3ginfo
@@ -36,10 +36,10 @@ Version: 20220205
 Depends: libc, 3ginfo-text, uhttpd
 Section: net
 Architecture: all
-Installed-Size: 11201
+Installed-Size: 11203
 Filename: 3ginfo_20220205_all.ipk
-Size: 11950
-SHA256sum: b674b3d33d43ba6a87d66f97c6307d20a93a76cf15b015b1e8e2fc6cd6ae7239
+Size: 11948
+SHA256sum: 1f24cf47e19dde863662d17486e225c5f594bd595862bc7d5ef5ea159403a334
 Description:  Information about status of 3G/4G modem
 
 Package: adb-enablemodem
@@ -91,6 +91,17 @@ Size: 351095
 SHA256sum: 9d702b69b38dccf24ce0dd82822bf0c7a69d4549ef86e8e3953d408324d306f1
 Description:  This is the library package for alsa, needed by some userspace programs.
  You must have enabled the ALSA support in the kernel.
+
+Package: ar3k-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 776435
+Filename: ar3k-firmware_20211216-1_mips_24kc.ipk
+Size: 776854
+SHA256sum: 1817efa9b2fd681ee4a78a3c37fb53daf45a75729ee51bae102d605aa1c7c812
+Description:  ath3k firmware
 
 Package: arp-scan
 Version: 1.9.7-1
@@ -1240,8 +1251,8 @@ Section: net
 Architecture: mips_24kc
 Installed-Size: 83240
 Filename: asterisk-chan-dongle_2021-10-06-3d046f7d-1_mips_24kc.ipk
-Size: 83629
-SHA256sum: 0312aad5d0511d6fa1f69c04ed1a62839eb8b880e33e64027e1cd81c4d9d8d57
+Size: 83636
+SHA256sum: 62a89abccf0f8201a28cc6f9f854082dda57365918d771caa2d4284294b1297b
 Description:  Asterisk channel driver for Huawei UMTS 3G dongle.
 
 Package: asterisk-chan-iax2
@@ -1335,10 +1346,10 @@ Conflicts: asterisk-chan-skinny
 License: GPL-1.0
 Section: net
 Architecture: mips_24kc
-Installed-Size: 414457
+Installed-Size: 414487
 Filename: asterisk-chan-sccp_2020-12-19-968caa45-1_mips_24kc.ipk
-Size: 413048
-SHA256sum: 45099ab2d913347ad603ddbfa1c10259faac3b0444bf2992d04bb81e130daedf
+Size: 413099
+SHA256sum: 974a816c9839ada622a05c4205a4106ecc4c1763912a216c3a44b1f30a771da5
 Description:  Replacement for the SCCP channel driver (chan_skinny) in Asterisk.
  Extended features include shared lines, presence / BLF, customizable
  feature buttons and custom device state.
@@ -3674,6 +3685,17 @@ Description:  Asterisk is a complete PBX in software. It provides all of the fea
  protocols, and can interoperate with almost all standards-based telephony
  equipment using relatively inexpensive hardware.
 
+Package: ath9k-htc-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 61890
+Filename: ath9k-htc-firmware_20211216-1_mips_24kc.ipk
+Size: 62320
+SHA256sum: bb0d3f68b1f6204f6ffe9ddb829f2767569c8457bf4fc135c35ed434da280d01
+Description:  AR9271/AR7010 firmware
+
 Package: atm-diagnostics
 Version: 2.5.2-7
 Depends: libc, linux-atm
@@ -3843,6 +3865,28 @@ Size: 74591
 SHA256sum: 1a211d479031c292440948a74430f53bd420c6d6b17d4fd1fee12c4e6c60678c
 Description:  Bluetooth library
 
+Package: bnx2-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 705211
+Filename: bnx2-firmware_20211216-1_mips_24kc.ipk
+Size: 705347
+SHA256sum: 6a87052a906be0f60fcda3099a9fa523fbf514988d7e3c6681d6929311c462fc
+Description:  Broadcom BCM5706/5708/5709/5716 firmware
+
+Package: bnx2x-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 9778048
+Filename: bnx2x-firmware_20211216-1_mips_24kc.ipk
+Size: 9744362
+SHA256sum: 90f0b9636be47cec41243bcb8da9c0f57236160b46e81866533c989e8ee6e00d
+Description:  =QLogic 5771x/578xx firmware
+
 Package: br2684ctl
 Version: 2.5.2-7
 Depends: libc, linux-atm
@@ -3855,6 +3899,17 @@ Filename: br2684ctl_2.5.2-7_mips_24kc.ipk
 Size: 5547
 SHA256sum: acd75b0959e646d83d818de1c76301508fb26b6bde5691e5358deab767893d27
 Description:  Support for AAL5 encapsulation (RFC-1483/RFC-2684) over ATM.
+
+Package: brcmfmac-firmware-usb
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 502995
+Filename: brcmfmac-firmware-usb_20211216-1_mips_24kc.ipk
+Size: 503668
+SHA256sum: 75c7e6180a19d021655efdecd6789454d239a8ec2701f52393309ec2c3e39937
+Description:  Broadcom BCM43xx fullmac USB firmware
 
 Package: bridge
 Version: 1.7-2
@@ -3921,6 +3976,17 @@ Filename: ca-certificates_20211016-1_all.ipk
 Size: 123442
 SHA256sum: 31e63c549b15e31b846dafeb51c547eb2f22b64b34ff7e9fc6695de8fdf05a60
 Description:  System CA certificates
+
+Package: carl9170-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 9771
+Filename: carl9170-firmware_20211216-1_mips_24kc.ipk
+Size: 10520
+SHA256sum: 0a4430ff9c1773cc81319ec467e7ef1a415176c03ba49dac97f37351e811b9a2
+Description:  AR9170 firmware
 
 Package: cgi-io
 Version: 2022-08-10-901b0f04-21
@@ -4144,6 +4210,19 @@ Description:  Full versions of standard GNU utilities. If an equivalent Busybox 
  available, you should consider compiling that instead as Busybox applets are
  usually smaller, at the expense of reduced functionality.
 
+Package: curl
+Version: 7.83.1-4.1
+Depends: libc, libcurl4
+License: MIT
+Section: net
+CPE-ID: cpe:/a:haxx:libcurl
+Architecture: mips_24kc
+Installed-Size: 63403
+Filename: curl_7.83.1-4.1_mips_24kc.ipk
+Size: 64160
+SHA256sum: be1b1da96c23ee8c30a4466828aa5715f622ced818accaffc8130cea4e647bb7
+Description:  A client-side URL transfer utility
+
 Package: dahdi-tools-libtonezone
 Version: 3.1.0-2
 Depends: libc, kmod-dahdi
@@ -4169,15 +4248,63 @@ Size: 104112
 SHA256sum: 63ef0433288d4d18e85305bdaca3e489a3c12017ead965c2c391849cec01ad8a
 Description:  Simple interprocess messaging system (daemon)
 
+Package: ddns-scripts-noip
+Version: 2.8.2-12
+Depends: libc, ddns-scripts
+Provides: ddns-scripts_no-ip_com
+License: GPL-2.0
+Section: net
+Architecture: all
+Installed-Size: 1199
+Filename: ddns-scripts-noip_2.8.2-12_all.ipk
+Size: 2034
+SHA256sum: 4e8f9c53c1fda6366dd31dca644b2d0006d00e6883c45457b88fc3c454c58402
+Description:  Dynamic DNS Client scripts extension for "no-ip.com".
+
+Package: ddns-scripts-services
+Version: 2.8.2-12
+Depends: libc
+Provides: ddns-scripts_service
+License: GPL-2.0
+Section: net
+Architecture: all
+Installed-Size: 3992
+Filename: ddns-scripts-services_2.8.2-12_all.ipk
+Size: 4623
+SHA256sum: 86fbd212fb73b63cbda07895934047f233d25390c626bb55b3bac9b3bcc9b79c
+Description:  Dynamic DNS Client definitions for supported services
+
+Package: ddns-scripts
+Version: 2.8.2-12
+Depends: libc, ddns-scripts-services
+License: GPL-2.0
+Section: net
+Architecture: all
+Installed-Size: 23778
+Filename: ddns-scripts_2.8.2-12_all.ipk
+Size: 24807
+SHA256sum: 767a742e0009288a4ea9e110d9401535cb850ace444c1a8e6287211bce938d52
+Description:  Dynamic DNS Client scripts (with IPv6 support)
+ A highly configurable set of scripts for doing dynamic dns updates.
+ - IPv6 support
+ - DNS server support
+ - Glue Record support (require BIND host or KNOT host)
+ - DNS requests via TCP
+ - Proxy server support
+ - log file support
+ - support to run once
+ Version: 2.8.2-12
+ Info   : https://openwrt.org/docs/guide-user/services/ddns/client
+
 Package: disktype
 Version: 9-2
 Depends: libc
 Section: utils
 Architecture: mips_24kc
-Installed-Size: 25302
+Installed-Size: 25305
 Filename: disktype_9-2_mips_24kc.ipk
-Size: 26207
-SHA256sum: facb5e33b91358af7038833ad7b285a7083bcc2117240ee915ddf894a610466b
+Size: 26214
+SHA256sum: ad9c721c7b4eef30d354e68ccd89cb5b67c9c8a3e56901fce65d9034644f0e2c
 Description:  The purpose of disktype is to detect the content format of a disk or disk image.
  It knows about common file systems, partition tables, and boot codes.
  The program is written in C and is designed to compile on any modern Unix flavour.
@@ -4228,6 +4355,17 @@ SHA256sum: 5d3fbac28ba3e1e20e91a7cdfb3f24e0ccec99484ea10ad94b8a9ccf9b32300e
 Description:  ldns includes the drill tool, which is much like dig from BIND. It was
  designed with DNSSEC in mind and should be a useful debugging/query tool
  for DNSSEC.
+
+Package: e100-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 836
+Filename: e100-firmware_20211216-1_mips_24kc.ipk
+Size: 1574
+SHA256sum: ca68713dda8c76921442424ec1d1fbb7f7b6bf90a8c7e3275175e4ae0f10faeb
+Description:  Intel e100
 
 Package: e2fsprogs
 Version: 1.45.6-2
@@ -4285,6 +4423,17 @@ Description:  The ebtables program is a filtering tool for a bridging firewall. 
  filtering is focussed on the Link Layer Ethernet frame fields. Apart
  from filtering, it also gives the ability to alter the Ethernet MAC
  addresses and implement a brouter.
+
+Package: edgeport-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 18905
+Filename: edgeport-firmware_20211216-1_mips_24kc.ipk
+Size: 19594
+SHA256sum: b0ed4d3cc5284df7329adda64ae6cb5f02941d239583758edfd463d7f184c609
+Description:  USB Inside Out Edgeport Serial Driver firmware
 
 Package: etherwake
 Version: 1.09-5
@@ -4389,6 +4538,18 @@ SHA256sum: cc004a89ea17c5897711099b8b158ef7e2e8dfdd6db448445178a72e24f810e5
 Description:  findfs will search the disks in the system looking for a filesystem which has
  a label matching label or a UUID equal to uuid
 
+Package: firewall
+Version: 2021-03-23-61db17ed-1.1
+Depends: libc, libubox20210516, libubus20210630, libuci20130104, libip4tc2, libip6tc2, libxtables12, kmod-ipt-core, kmod-ipt-conntrack, kmod-nf-conntrack6, kmod-ipt-nat
+License: ISC
+Section: net
+Architecture: mips_24kc
+Installed-Size: 41888
+Filename: firewall_2021-03-23-61db17ed-1.1_mips_24kc.ipk
+Size: 42596
+SHA256sum: e9ccf4f8189eb0c74b985375979faeeb795a9b64f40f5096a581dddda789a703
+Description:  This package provides a config-compatible C implementation of the UCI firewall.
+
 Package: gawk
 Version: 5.2.0-1
 Depends: libc, libncursesw6, libreadline8
@@ -4433,10 +4594,10 @@ License: LGPL-2.1-or-later
 Section: libs
 CPE-ID: cpe:/a:gnome:glib
 Architecture: mips_24kc
-Installed-Size: 937160
+Installed-Size: 937166
 Filename: glib2_2.66.4-1_mips_24kc.ipk
-Size: 928610
-SHA256sum: 48fcd1df2c5d01e1f9eb9b52757a14434ea59c167b1b088ab127b06687903421
+Size: 928658
+SHA256sum: 37b39678e21e711db6416065e4dcd8348bfc1e00d199112054c53ad0eba51bca
 Description:  The GLib library of C routines
 
 Package: gnutls-utils
@@ -4448,8 +4609,8 @@ CPE-ID: cpe:/a:gnu:gnutls
 Architecture: mips_24kc
 Installed-Size: 312035
 Filename: gnutls-utils_3.7.1-2_mips_24kc.ipk
-Size: 309555
-SHA256sum: 3d1daafe43d766432e58b4b63e96aa1631cedbbcd22422c21fa04fcf3fb18591
+Size: 309552
+SHA256sum: 1f3d3ebb1302295307818b5e36cc3c3d51145dd5091d0f04ace39d82dce22254
 Description:  GnuTLS is a secure communications library implementing the SSL, TLS
  and DTLS protocols and technologies around them. It provides a simple
  C language application programming interface (API) to access the secure
@@ -4484,6 +4645,51 @@ Size: 46423
 SHA256sum: 13c1d0b4721b98116cdd089e444b37e186cc6693c76d8c4963e129b14bd985f7
 Description:  get/set SATA/IDE device parameters
 
+Package: hostapd-basic-openssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libopenssl1.1
+Conflicts: hostapd, hostapd-basic
+Provides: hostapd
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 248816
+Filename: hostapd-basic-openssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 249618
+SHA256sum: 264dfa66a4a8c399a68cd966a68e9397a31bc9b12755bd928417c204d33ee748
+Description:  This package contains a basic IEEE 802.1x/WPA Authenticator with WPA-PSK, 802.11r and 802.11w support.
+
+Package: hostapd-basic-wolfssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libwolfssl5.5.3.7a924b25
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl
+Provides: hostapd
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 247432
+Filename: hostapd-basic-wolfssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 248221
+SHA256sum: b2fd21ba764e46ad53604479892ebb24fc82841539047273e3499e175d41add5
+Description:  This package contains a basic IEEE 802.1x/WPA Authenticator with WPA-PSK, 802.11r and 802.11w support.
+
+Package: hostapd-basic
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630
+Conflicts: hostapd
+Provides: hostapd
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 236023
+Filename: hostapd-basic_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 236923
+SHA256sum: fe5eba033896cff9a5f396d4ebbf01ce35339993d7280e19c35d7d1702eb9149
+Description:  This package contains a basic IEEE 802.1x/WPA Authenticator with WPA-PSK, 802.11r and 802.11w support.
+
 Package: hostapd-common
 Version: 2020-06-08-5a8b3662-41
 Depends: libc
@@ -4496,6 +4702,37 @@ Filename: hostapd-common_2020-06-08-5a8b3662-41_mips_24kc.ipk
 Size: 12293
 SHA256sum: b0f4ad056cceafccddf954b1b49ad9c658a3aa094c32084d2e87b1a2fcf0edd4
 Description:  hostapd/wpa_supplicant common support files
+
+Package: hostapd-mini
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl
+Provides: hostapd
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 209774
+Filename: hostapd-mini_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 210682
+SHA256sum: b93d66b7f04fa674ae4278988fb5a92db69a686c740d26c0ee6ee9281432ad03
+Description:  This package contains a minimal IEEE 802.1x/WPA Authenticator (WPA-PSK only).
+
+Package: hostapd-openssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libopenssl1.1
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini
+Provides: hostapd
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 354021
+Filename: hostapd-openssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 354416
+SHA256sum: c3f79dd419a388182967fcec850d005d1737ebde5ca97fe810607a0ce05a1a2f
+Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
+ Authenticator.
 
 Package: hostapd-utils
 Version: 2020-06-08-5a8b3662-41
@@ -4510,6 +4747,36 @@ Size: 16113
 SHA256sum: 9798b7727d0f97a3b83aee624de071610da981f8fa95667c640b0c2664e70def
 Description:  This package contains a command line utility to control the
  IEEE 802.1x/WPA/EAP/RADIUS Authenticator.
+
+Package: hostapd-wolfssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libwolfssl5.5.3.7a924b25
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini, hostapd-openssl
+Provides: hostapd
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 350163
+Filename: hostapd-wolfssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 350767
+SHA256sum: ae7b30fd2f2e854d71514ba8b87bb2f8a21c24454cf9222945d400c1b2affd40
+Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
+ Authenticator.
+
+Package: hostapd
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 365939
+Filename: hostapd_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 366732
+SHA256sum: 44fdc31bf3fb30d07a83082c429246c98eb5958ac05a827edb2661448b73b743
+Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
+ Authenticator.
 
 Package: htop
 Version: 3.2.1-1
@@ -4538,6 +4805,34 @@ Size: 14984
 SHA256sum: 51ab4cebdd464b82848fd91460ca70b77216f35265cc59bff4ff880f86e9554a
 Description:  IGMPproxy is a simple dynamic Multicast Routing Daemon using
  only IGMP signalling (Internet Group Management Protocol).
+
+Package: ip-bridge
+Version: 5.11.0-3
+Depends: libc, libnl-tiny1
+License: GPL-2.0
+Section: net
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Architecture: mips_24kc
+Installed-Size: 23090
+Filename: ip-bridge_5.11.0-3_mips_24kc.ipk
+Size: 23840
+SHA256sum: 182cd4b060eefa57d87f01ecb6ba0c18b3ee2a5521aa40bf0dda1d2ed410a91d
+Description:  Bridge configuration utility from iproute2
+
+Package: ip-full
+Version: 5.11.0-3
+Depends: libc, libnl-tiny1, libbpf0
+Provides: ip
+Alternatives: 300:/sbin/ip:/usr/libexec/ip-full
+License: GPL-2.0
+Section: net
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Architecture: mips_24kc
+Installed-Size: 166701
+Filename: ip-full_5.11.0-3_mips_24kc.ipk
+Size: 167257
+SHA256sum: f3027a98e412fea53b732f19979ae955aa97f5ee0bdef5af3bff9d16d3cc7982
+Description:  Routing control utility (full)
 
 Package: iperf3
 Version: 3.10.1-1
@@ -4617,6 +4912,28 @@ Filename: iwinfo_2022-08-19-0dad3e66-1_mips_24kc.ipk
 Size: 7583
 SHA256sum: 4ffef2598e8b240701fec489a185824c4a70158ace5bb35a08201f64cd8a5d79
 Description:  Command line frontend for the wireless information library.
+
+Package: iwl3945-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 63584
+Filename: iwl3945-firmware_20211216-1_mips_24kc.ipk
+Size: 64228
+SHA256sum: 8768c612ebe2e4491a4d4c50452c181cdb7b06c4f93528441b809f887f69b8e5
+Description:  Intel IWL3945 firmware
+
+Package: iwl4965-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 78629
+Filename: iwl4965-firmware_20211216-1_mips_24kc.ipk
+Size: 79220
+SHA256sum: 04402e8f0abf58ccf43cff721dc27bbfde2b982840477e8a953bb41abf81ffb7
+Description:  Intel IWL4965 firmware
 
 Package: jansson4
 Version: 2.13.1-2
@@ -4864,6 +5181,21 @@ SHA256sum: ea562cd154db167248ee2d8c81a4f524863522c76a6c0441caab62567cb95b09
 Description:  This package contains libcom_err, the common error description library
  bundled with e2fsprogs.
 
+Package: libcurl4
+Version: 7.83.1-4.1
+Depends: libc, libopenssl1.1, zlib, libzstd, libpthread, libopenldap, libidn2, libssh2-1, libnghttp2-14, ca-bundle
+Provides: libcurl
+License: MIT
+Section: libs
+ABIVersion: 4
+CPE-ID: cpe:/a:haxx:libcurl
+Architecture: mips_24kc
+Installed-Size: 230069
+Filename: libcurl4_7.83.1-4.1_mips_24kc.ipk
+Size: 229979
+SHA256sum: 3e4c95f92994953222acb93f30fe7d4c60314e072b0dbd67960183879e2072c3
+Description:  A client-side URL transfer library
+
 Package: libdbus
 Version: 1.13.12-1
 Depends: libc, libpthread
@@ -4884,10 +5216,10 @@ License: GPL-2.0 LGPL-2.1
 Section: libs
 CPE-ID: cpe:/a:heinz_mauelshagen:lvm2
 Architecture: mips_24kc
-Installed-Size: 138542
+Installed-Size: 138551
 Filename: libdevmapper_2.03.16-1_mips_24kc.ipk
-Size: 139425
-SHA256sum: 6f89523acbc956f0fc57153b1c3f1406a672124e3cad0f4de3bcb3eb8170347f
+Size: 139453
+SHA256sum: cbe83ed732f9d3f2464722cea04d6dbea40cf7ae1eb626df0c57567024a0ff68
 Description:  The device-mapper is a component of the 2.6 linux kernel that supports logical
  volume management. It is required by LVM2 and EVMS.
 
@@ -4912,11 +5244,44 @@ Section: libs
 ABIVersion: 1
 CPE-ID: cpe:/a:elfutils_project:elfutils
 Architecture: mips_24kc
-Installed-Size: 36636
+Installed-Size: 36633
 Filename: libelf1_0.180-1_mips_24kc.ipk
-Size: 37511
-SHA256sum: ee4c5ad8f7c33f8ae49fdd62f5815e1d1501ef175f9cc43bb81807ba376da7bd
+Size: 37496
+SHA256sum: 87ae0d2ec2e9b53fad9c52b3ea64e3c9e8feda5302a3a838837463a3f6099586
 Description:  ELF manipulation libraries (libelf)
+
+Package: libertas-sdio-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 348574
+Filename: libertas-sdio-firmware_20211216-1_mips_24kc.ipk
+Size: 349495
+SHA256sum: 30a85807367b06259a41b60999468aa63ec18a5f02358317c13c414dd1e5a7fd
+Description:  Marvell 8385/8686/8688 SDIO firmware
+
+Package: libertas-spi-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 92258
+Filename: libertas-spi-firmware_20211216-1_mips_24kc.ipk
+Size: 93100
+SHA256sum: 24b002ff0044fadc846678dbc7e8d502b439eebaef654d568315330d02f06b30
+Description:  Marvell 8686 SPI firmware
+
+Package: libertas-usb-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 216588
+Filename: libertas-usb-firmware_20211216-1_mips_24kc.ipk
+Size: 217352
+SHA256sum: 3895f72df0ac0ef4de04280a0b31f45f3a5b27af3f445d2ef6e1df1617b3143c
+Description:  Marvell 8388/8682 USB firmware
 
 Package: libevdev
 Version: 1.13.0-1
@@ -5156,6 +5521,24 @@ Filename: libflac_1.3.3-1_mips_24kc.ipk
 Size: 73127
 SHA256sum: 684c362ebf73574de561360d6c463c6a4dd7890df1d773330e9a04da8025d013
 Description:  Free Lossless Audio Codec library
+
+Package: libfuse1
+Version: 2.9.9-1
+Depends: libc, kmod-fuse, libpthread
+Provides: libfuse
+License: LGPL-2.1-only
+Section: libs
+ABIVersion: 1
+CPE-ID: cpe:/a:fuse_project:fuse
+Architecture: mips_24kc
+Installed-Size: 57994
+Filename: libfuse1_2.9.9-1_mips_24kc.ipk
+Size: 58785
+SHA256sum: 4ff156db26199ec70e38d903736200d57bd8e2fa2440b236e06a24a30840ef12
+Description:  FUSE (Filesystem in UserSpacE)
+ This package contains the FUSE shared libraries, needed by other programs.
+ - libfuse
+ - libulockmgr
 
 Package: libgcrypt
 Version: 1.8.7-2
@@ -5565,6 +5948,56 @@ Size: 58716
 SHA256sum: 071700536a4f6459be689c6ad806758385a0895fb27fc5fb9506038cf6e5bb4d
 Description:  File type determination library
 
+Package: libmariadb-plugin-auth-gssapi-client
+Version: 3.1.10-2
+Depends: libc, libmariadb3, krb5-libs
+License: LGPL-2.1-or-later
+Section: libs
+CPE-ID: cpe:/a:mariadb:mariadb
+Architecture: mips_24kc
+Installed-Size: 2488
+Filename: libmariadb-plugin-auth-gssapi-client_3.1.10-2_mips_24kc.ipk
+Size: 3369
+SHA256sum: b85bee40b9700db6bc9528f96e5c84236cca15aec2d6778f18a99d81c701c64b
+Description:  MariaDB is a very fast and robust SQL database server.
+ 
+ This package provides the auth_gssapi_client plugin.
+ 
+
+Package: libmariadb-plugin-remote-io
+Version: 3.1.10-2
+Depends: libc, libmariadb3, libcurl4
+License: LGPL-2.1-or-later
+Section: libs
+CPE-ID: cpe:/a:mariadb:mariadb
+Architecture: mips_24kc
+Installed-Size: 2810
+Filename: libmariadb-plugin-remote-io_3.1.10-2_mips_24kc.ipk
+Size: 3639
+SHA256sum: 787d79af27d18e59a36b672f85732aa581e575cf57efa7366686b8fad1cf1b28
+Description:  MariaDB is a very fast and robust SQL database server.
+ 
+ This package provides the remote_io plugin.
+ 
+
+Package: libmariadb3
+Version: 3.1.10-2
+Depends: libc, libopenssl1.1, zlib
+Provides: libmariadbclient, libmysqlclient, libmysqlclient-r, libmariadb, libmariadbclient3, libmysqlclient3, libmysqlclient-r3
+License: LGPL-2.1-or-later
+Section: libs
+ABIVersion: 3
+CPE-ID: cpe:/a:mariadb:mariadb
+Architecture: mips_24kc
+Installed-Size: 155430
+Filename: libmariadb3_3.1.10-2_mips_24kc.ipk
+Size: 155091
+SHA256sum: 24027fef314db38580112100919b2abfea05b65ab2bc112e552eef8505299266
+Description:  MariaDB is a very fast and robust SQL database server.
+ 
+ This package includes the client library.
+ 
+
 Package: libmbedtls12
 Version: 2.16.12-1
 Depends: libc
@@ -5588,10 +6021,10 @@ Depends: libc, glib2
 License: LGPL-2.0-or-later
 Section: libs
 Architecture: mips_24kc
-Installed-Size: 103853
+Installed-Size: 103843
 Filename: libmbim_1.26.4-3_mips_24kc.ipk
-Size: 104336
-SHA256sum: d2cd70454a31c916761d8abaf58f3341d1296b7b08729265b58f3e0e23667b0f
+Size: 104315
+SHA256sum: 01d2454dd9f02116cf85b822e2f98dd16f4ef0750880362b6ad85ecd86b148f2
 Description:  Helper library to talk to MBIM enabled modems.
  Add mbim-utils for extra utilities.
 
@@ -6235,10 +6668,10 @@ Depends: libc, glib2, libmbim, libqrtr-glib
 License: LGPL-2.0-or-later
 Section: libs
 Architecture: mips_24kc
-Installed-Size: 426702
+Installed-Size: 426753
 Filename: libqmi_1.30.8-1_mips_24kc.ipk
-Size: 422755
-SHA256sum: f0a59455f7ea36ce34bd3bb63e4603366dd2382034d8f437326885ecb51b774f
+Size: 422745
+SHA256sum: 5ac1f09b127f2fafcf0ef4f2873ab93e127f2fa0e8eb42b21eeeb511d9c85690
 Description:  Helper library talk to QMI enabled modems.
  Add qmi-utils for extra utilities.
 
@@ -6296,10 +6729,10 @@ License: BSD-4c BSD
 Section: libs
 CPE-ID: cpe:/a:cmu:cyrus-sasl
 Architecture: mips_24kc
-Installed-Size: 76163
+Installed-Size: 76188
 Filename: libsasl2_2.1.27-4_mips_24kc.ipk
-Size: 77057
-SHA256sum: a7da73a434fc13f57126ddbbe13cfdb98abd1c62a635879a3524d448efce706f
+Size: 77075
+SHA256sum: 285e1ed30b4e42a29e09fd6f13bfad33ee5fb6fe7a076d373df19fad43927665
 Description:  A general purpose authentication library
 
 Package: libslang2
@@ -6342,6 +6775,24 @@ Filename: libspandsp_0.0.6-4_mips_24kc.ipk
 Size: 274156
 SHA256sum: 5bc42fa461944247f3a6b1340a2ecb6580e9064bc79df8f5fad7b62d89f76338
 Description:  spandsp library
+
+Package: libsqlite3-0
+Version: 3400000-1
+Depends: libc, libpthread, zlib
+Provides: libsqlite3
+License: PUBLICDOMAIN
+Section: libs
+ABIVersion: -0
+CPE-ID: cpe:/a:sqlite:sqlite
+Architecture: mips_24kc
+Installed-Size: 501654
+Filename: libsqlite3-0_3400000-1_mips_24kc.ipk
+Size: 501628
+SHA256sum: 2d7de65768580c77bb01dc3b360ec26318e3f86e3ff84e3c6998a7850d6ee147
+Description:  SQLite is a small C library that implements a self-contained, embeddable,
+ zero-configuration SQL database engine.
+ This package contains the SQLite (v3.x) shared library, used by other
+ programs.
 
 Package: libsrtp2
 Version: 2.3.0-1
@@ -6531,10 +6982,10 @@ License: BSD-3-Clause
 Section: libs
 CPE-ID: cpe:/a:nlnetlabs:unbound
 Architecture: mips_24kc
-Installed-Size: 399476
+Installed-Size: 399505
 Filename: libunbound_1.17.1-1_mips_24kc.ipk
-Size: 393489
-SHA256sum: 0e0581f3242d814f8df4080cc27196d1b4f320770a7c69c69045e014f8800031
+Size: 393564
+SHA256sum: 30a164c37adfd8bd05d0a10dbed5e0a7ad0246f702ac46dfe4da1b51e2eedfb8
 Description:  This package contains the Unbound library including 'libevent', 'libmnl', and
  'libpthread' to better handle large networks with heavy query loads. Options
  are available to custom trim Unbound for smaller targets.
@@ -6580,6 +7031,35 @@ Size: 6348
 SHA256sum: 9330689dfb49b61a4880d5cb609a9a75b195f7ce3de515d1bba1b65339ab2011
 Description:  libusb is a C library that gives applications easy access to USB devices on
  many different operating systems.
+
+Package: libustream-mbedtls20201210
+Version: 2022-01-16-868fd881-2
+Depends: libc, libubox20210516, libmbedtls12
+Conflicts: libustream-openssl, libustream-wolfssl
+Provides: libustream-mbedtls
+License: ISC
+Section: libs
+ABIVersion: 20201210
+Architecture: mips_24kc
+Installed-Size: 4200
+Filename: libustream-mbedtls20201210_2022-01-16-868fd881-2_mips_24kc.ipk
+Size: 4991
+SHA256sum: d0a12c3b243f2e71b67f3b422c0a858008f1e1691314d1cd5692ed5889349fac
+Description:  ustream SSL Library (mbedtls)
+
+Package: libustream-openssl20201210
+Version: 2022-01-16-868fd881-2
+Depends: libc, libubox20210516, libopenssl1.1
+Provides: libustream-openssl
+License: ISC
+Section: libs
+ABIVersion: 20201210
+Architecture: mips_24kc
+Installed-Size: 4460
+Filename: libustream-openssl20201210_2022-01-16-868fd881-2_mips_24kc.ipk
+Size: 5225
+SHA256sum: a792c09fafd4effd30634677c1399c43f1c95120bc93b996cfa3f15a4ac7e993
+Description:  ustream SSL Library (openssl)
 
 Package: libuuid1
 Version: 2.36.1-2
@@ -6755,10 +7235,10 @@ Depends: libc, libtirpc
 License: Unique
 Section: utils
 Architecture: mips_24kc
-Installed-Size: 61904
+Installed-Size: 61908
 Filename: lsof_4.94.0-1_mips_24kc.ipk
-Size: 62631
-SHA256sum: b77b5f809a851a2f43445264fa1eeafe292c8e4bff6f783f62c3fcc481dbb218
+Size: 62629
+SHA256sum: 9772a4974c4e9594ee1e67964760a69bb7f2692ce18872634fe444118b99761c
 Description:  LiSt Open Files - a diagnostic tool
 
 Package: lua-evdev
@@ -6903,10 +7383,10 @@ Version: 1.0.24-20220910
 Depends: libc, sms-tool
 Section: luci
 Architecture: all
-Installed-Size: 96680
+Installed-Size: 96683
 Filename: luci-app-3ginfo-lite_1.0.24-20220910_all.ipk
-Size: 97548
-SHA256sum: 14f187f85e2c9504083bb94c89459d901e18e75caaf183913a64ca05eced0445
+Size: 97567
+SHA256sum: 197f3e73ccdac77eb4ee879908a0ac29b86dfc09907420085ccf5eb71c8e4a03
 Description:  LuCI panel for 3ginfo-lite
 
 Package: luci-app-3ginfo
@@ -6916,8 +7396,8 @@ Section: luci
 Architecture: all
 Installed-Size: 62527
 Filename: luci-app-3ginfo_1.3.3_all.ipk
-Size: 63424
-SHA256sum: 20607c182deea3f10dcf0e111da7df0a739a1a9d9c2fe076c21e5fa865b34add
+Size: 63428
+SHA256sum: f2e58edcdd6a62b45f71f38ca1b1a8a4b37a4b859c627aa1edc625d4aba49fa8
 Description:  LuCI panel for 3ginfo
 
 Package: luci-app-adblock
@@ -6940,9 +7420,21 @@ Section: luci
 Architecture: all
 Installed-Size: 3779
 Filename: luci-app-atinout-mod_1.3.2-20220315_all.ipk
-Size: 4604
-SHA256sum: 7c92567aa93ad12e16a266db5115b96edea4467360a43b6dc4bfb8dfee639464
+Size: 4610
+SHA256sum: fd18f6b00a8eb76be87e11bb97d5621b634c28714c4173fb2353ae2dcaea6e0c
 Description:  Web UI for atinout
+
+Package: luci-app-commands
+Version: git-21.099.45423-3fff72a
+Depends: libc, luci-compat
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 4378
+Filename: luci-app-commands_git-21.099.45423-3fff72a_all.ipk
+Size: 5213
+SHA256sum: 99df28a40813a14109355e5c0d371b12d059d3b4298acb39c4c462bc8326d970
+Description:  LuCI Shell Command Module
 
 Package: luci-app-cpu-status-mini-master
 Version: 0.1
@@ -6950,11 +7442,23 @@ Depends: libc, luci-mod-admin-full
 License: MIT
 Section: luci
 Architecture: all
-Installed-Size: 1048
+Installed-Size: 1049
 Filename: luci-app-cpu-status-mini-master_0.1_all.ipk
-Size: 1923
-SHA256sum: 4b82b287fd51bfc90c68fa0b6495b66e106785f0eb6212e452e29cee0e853f93
+Size: 1928
+SHA256sum: b27fe8679bd5c5ab2edd9091be6d295df8c6f80db5f107441f83a9c713c97571
 Description:  CPU utilization info for the LuCI status page
+
+Package: luci-app-ddns
+Version: git-22.123.50005-9139ad4
+Depends: libc, luci-lib-ipkg, luci-mod-admin-full, ddns-scripts
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 12409
+Filename: luci-app-ddns_git-22.123.50005-9139ad4_all.ipk
+Size: 13361
+SHA256sum: e65bb27f0082fd163de0eb1da2bb770b5963dcf8d1d4f8f93b6104cad6b90cb8
+Description:  LuCI Support for Dynamic DNS Client (ddns-scripts)
 
 Package: luci-app-diskman
 Version: v0.2.13
@@ -6962,10 +7466,10 @@ Depends: libc, e2fsprogs, parted, smartmontools, blkid, kmod-fs-vfat, dosfstools
 License: AGPL-3.0
 Section: luci
 Architecture: all
-Installed-Size: 15558
+Installed-Size: 15564
 Filename: luci-app-diskman_v0.2.13_all.ipk
-Size: 16499
-SHA256sum: 5f790c41ec6779e46a6b153b45501af18d94eb69105f53b0c0a59e3bb777858b
+Size: 16501
+SHA256sum: 4efcae884c82d204be9ddfa06e537fa6726db83210ff2778c46ac35184c19321
 Description:  Disk Manager interface for LuCI
 
 Package: luci-app-disks-info-master
@@ -6974,21 +7478,33 @@ Depends: libc, fdisk, smartmontools, smartmontools-drivedb
 License: MIT
 Section: luci
 Architecture: all
-Installed-Size: 6553
+Installed-Size: 6556
 Filename: luci-app-disks-info-master_0.3-9_all.ipk
 Size: 7472
-SHA256sum: d514e33963de62b11e97710de1bb56c0fb73f1ce387169aadcf5d1d471f95b57
+SHA256sum: 07987ea6648b003d08efbd6aa7abc0db07225f5f3342f3425c9ec98064c05742
 Description:  Information about connected disk devices (partitions, filesystems, SMART).
+
+Package: luci-app-firewall
+Version: git-22.089.67741-3856d50
+Depends: libc, firewall
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 14205
+Filename: luci-app-firewall_git-22.089.67741-3856d50_all.ipk
+Size: 15061
+SHA256sum: 2c1817d96cb1fb85acca0fe363fcfc1f9c1f0efba31f31d9d6250e130404e1ef
+Description:  Firewall and Portforwarding application
 
 Package: luci-app-flowoffload-master
 Version: 1.0
 Depends: libc, kmod-ipt-offload, pdnsd-alt, kmod-tcp-bbr
 Section: luci
 Architecture: all
-Installed-Size: 4393
+Installed-Size: 4397
 Filename: luci-app-flowoffload-master_1.0_all.ipk
-Size: 5251
-SHA256sum: 885c05f477c047e7424e48d7138d35f3308f25fbfbbd8af41062f573b4b34147
+Size: 5250
+SHA256sum: fd9aa4c39658ee28ae207b40143a98054e23d95c4cdeafee1edf76a973518ced
 Description:  LuCI support for Flow Offload
 
 Package: luci-app-internet-detector
@@ -6997,10 +7513,10 @@ Depends: libc, luci-mod-admin-full
 License: MIT
 Section: luci
 Architecture: all
-Installed-Size: 925
+Installed-Size: 927
 Filename: luci-app-internet-detector_0.2_all.ipk
-Size: 1750
-SHA256sum: e5e47c0f8c7edbe3daf2601a162db2b5b3be1f2af3979aa82dcee7ee72a78ef0
+Size: 1754
+SHA256sum: 682afe2d3466a72b71156096eaf7812f97013ccf232d3ddbf79fcb4269f89c6d
 Description:  Internet detector for the LuCI status page
 
 Package: luci-app-ledtrig-usbport
@@ -7021,9 +7537,43 @@ Section: luci
 Architecture: all
 Installed-Size: 4527
 Filename: luci-app-lite-watchdog_1.0.3-20220812_all.ipk
-Size: 5394
-SHA256sum: 53d289541f7320dba942abdd0a2db41b200799e8fdc613fe1294650306ae4c80
+Size: 5395
+SHA256sum: 731379f2f5f7122a0f267e0486698e706c47fd826de0a531c55ebda352ec0e1e
 Description:  LuCI panel for lite-watchdog.
+
+Package: luci-app-nlbwmon
+Version: git-23.013.73667-bb1e09e
+Depends: libc, luci-compat, nlbwmon
+Section: luci
+Architecture: all
+Installed-Size: 20924
+Filename: luci-app-nlbwmon_git-23.013.73667-bb1e09e_all.ipk
+Size: 21779
+SHA256sum: 8ffba42f285ffdfed3ceac04e8642b074479a7417b807c6779f587ade976eaee
+Description:  Netlink based bandwidth accounting
+
+Package: luci-app-ntpc
+Version: git-20.108.38431-8f34e10
+Depends: libc, luci-compat, ntpclient
+Section: luci
+Architecture: all
+Installed-Size: 1082
+Filename: luci-app-ntpc_git-20.108.38431-8f34e10_all.ipk
+Size: 1941
+SHA256sum: 03d1151d47e79e34cbbbe243bca5b14650f00897d7e98b3f15ce4a3f15fc6670
+Description:  NTP time synchronisation configuration module
+
+Package: luci-app-openvpn
+Version: git-23.013.73129-749268a
+Depends: libc, luci-compat
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 10737
+Filename: luci-app-openvpn_git-23.013.73129-749268a_all.ipk
+Size: 11586
+SHA256sum: 402ab1dc5a3748b82e52aeede68c398377580311269ffc32a8658242fa81859a
+Description:  LuCI Support for OpenVPN
 
 Package: luci-app-opkg
 Version: git-22.273.29015-e01e38c
@@ -7036,27 +7586,97 @@ Size: 9281
 SHA256sum: cfd00d9a150e8d1a0302e2fa7377f9069bb208ee8974df439cb9212dee95d93b
 Description:  OPKG package management application
 
+Package: luci-app-p910nd
+Version: git-20.108.38431-8f34e10
+Depends: libc, luci-compat, p910nd
+Section: luci
+Architecture: all
+Installed-Size: 1267
+Filename: luci-app-p910nd_git-20.108.38431-8f34e10_all.ipk
+Size: 2144
+SHA256sum: 5109498bea1175e92650c0ca28a26934b203f7aaa2c7763265c8f716e5e13c7b
+Description:  p910nd - Printer server module
+
+Package: luci-app-packet-capture
+Version: unknown
+Depends: libc, luci-mod-admin-full, tcpdump, uhttpd-mod-ubus
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 4709
+Filename: luci-app-packet-capture_unknown_all.ipk
+Size: 5582
+SHA256sum: a5dfdddacae9ee42668711729e9f7307283340f533343be83c6727374df4838f
+Description:  Packet capture application
+
+Package: luci-app-qos
+Version: git-20.108.38431-8f34e10
+Depends: libc, luci-compat, qos-scripts
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 1408
+Filename: luci-app-qos_git-20.108.38431-8f34e10_all.ipk
+Size: 2269
+SHA256sum: 093ba71ed22c0e394e76caa5ab6fac0b02a834489877b914decec9677cf618c3
+Description:  Quality of Service configuration module
+
 Package: luci-app-sms-tool
 Version: 1.9.5-20220816
 Depends: libc, sms-tool, kmod-usb-serial, kmod-usb-serial-option, luci-compat
 Section: luci
 Architecture: all
-Installed-Size: 20956
+Installed-Size: 20959
 Filename: luci-app-sms-tool_1.9.5-20220816_all.ipk
-Size: 21865
-SHA256sum: 5fd8c9350f49905719792766b91fe9266023345a3ee0dfe7cde0243f518912f0
+Size: 21878
+SHA256sum: 5a364fa42d5e2aee53df6e7849716757cf358324de2c9afc9bd99ff81a4f52dd
 Description:  LuCI Support for sms_tool
+
+Package: luci-app-throughput-measurements
+Version: unknown
+Depends: libc, luci-mod-admin-full, iperf3
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 5039
+Filename: luci-app-throughput-measurements_unknown_all.ipk
+Size: 5890
+SHA256sum: a6f1ac438b817a9ef9505f5170ca1da4f98f17d27250b3fcf857b84b37631ea5
+Description:  Throughput measurements application
 
 Package: luci-app-timecontrol
 Version: 1.1
 Depends: libc, luci-compat
 Section: luci
 Architecture: all
-Installed-Size: 2750
+Installed-Size: 2749
 Filename: luci-app-timecontrol_1.1_all.ipk
-Size: 3581
-SHA256sum: f2e5800c9212fb490577fcc87b40a76102c3865c3e3681009ecce36445daee89
+Size: 3574
+SHA256sum: 744e47f7ad33423c8d9c10b640f2ae235c9b3a1dd95d9b2d5b4113232aad5a0c
 Description:  LuCI support for Time Control
+
+Package: luci-app-uhttpd
+Version: git-22.029.54375-df07e6b
+Depends: libc, luci-compat, uhttpd
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 2865
+Filename: luci-app-uhttpd_git-22.029.54375-df07e6b_all.ipk
+Size: 3753
+SHA256sum: ab8756ad7f0651fc8486b92be508ac4913080edb0e87af5953c547ca9515bc7d
+Description:  uHTTPd Webserver Configuration
+
+Package: luci-app-unbound
+Version: git-21.066.07883-fa2412b
+Depends: libc, luci-compat, unbound-daemon
+Section: luci
+Architecture: all
+Installed-Size: 7326
+Filename: luci-app-unbound_git-21.066.07883-fa2412b_all.ipk
+Size: 8221
+SHA256sum: 6fa5e151923c568e71579c998bd5fffd4cc635fb325f910a782c2a83c5da1603
+Description:  Unbound Recursive DNS Resolver Configuration
 
 Package: luci-app-watchcat
 Version: git-21.081.28017-7bc377f
@@ -7091,15 +7711,26 @@ Size: 2766
 SHA256sum: af08b852008d52381750737b181cd54726ddce1a1746ff537eaf9e1f2b72eab9
 Description:  LuCI Support for Wake-on-LAN
 
+Package: luci-compat
+Version: git-22.046.85744-f08a0f6
+Depends: libc, luci-base
+Section: luci
+Architecture: all
+Installed-Size: 37846
+Filename: luci-compat_git-22.046.85744-f08a0f6_all.ipk
+Size: 38643
+SHA256sum: 43de2136e244ca8b5123404f3856b62e09523f0f51d3b5844a61b0e1bf4b4470
+Description:  LuCI compatibility libraries
+
 Package: luci-i18n-3ginfo-en
 Version: unknown
 Depends: libc, luci-app-3ginfo
 Section: luci
 Architecture: all
-Installed-Size: 303
+Installed-Size: 306
 Filename: luci-i18n-3ginfo-en_unknown_all.ipk
-Size: 1077
-SHA256sum: f73c25879e4e7d0032451176713bf3595347ee5749759c56e14ab85cbbc37a6d
+Size: 1080
+SHA256sum: 6495c7a9ce56ff77fc48c91bdebd88bda0999460ac2cd343789308899a59ef08
 Description:  Translation for luci-app-3ginfo - English
 
 Package: luci-i18n-3ginfo-lite-pl
@@ -7109,8 +7740,8 @@ Section: luci
 Architecture: all
 Installed-Size: 1522
 Filename: luci-i18n-3ginfo-lite-pl_unknown_all.ipk
-Size: 2326
-SHA256sum: e608eed96f8ee28313de0fedd27c4598e9ce16c4edf4c3010930f38580f288c5
+Size: 2320
+SHA256sum: 08b4b41f27020bb7f9cd524f2722be4484189b4f845253fcae741ecdea6ef316
 Description:  Translation for luci-app-3ginfo-lite - Polski (Polish)
 
 Package: luci-i18n-3ginfo-pl
@@ -7120,8 +7751,8 @@ Section: luci
 Architecture: all
 Installed-Size: 779
 Filename: luci-i18n-3ginfo-pl_unknown_all.ipk
-Size: 1566
-SHA256sum: a192d7670393911fcaaf626d2b9b328f0d5c0704bac39caf4110a5c3aeca0565
+Size: 1571
+SHA256sum: 7beddb2a8b8d3cab31c1b1b3655af88bdb199f79924eb95d7c2fc7d2174502f0
 Description:  Translation for luci-app-3ginfo - Polski (Polish)
 
 Package: luci-i18n-adblock-de
@@ -7190,11 +7821,71 @@ Depends: libc, luci-app-atinout-mod
 License: GPLv3
 Section: luci
 Architecture: all
-Installed-Size: 832
+Installed-Size: 833
 Filename: luci-i18n-atinout-mod-pl_unknown_all.ipk
-Size: 1647
-SHA256sum: 1e9e476eaa32aec406672b21302cfa7c3e1e43a475def7c5848716c4d9c63808
+Size: 1648
+SHA256sum: 5293b3dd3d49982b3bd879e8ab42f94cff86f1876b452ef62cc2d61348408861
 Description:  Translation for luci-app-atinout-mod - Polski (Polish)
+
+Package: luci-i18n-commands-de
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-commands
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 1258
+Filename: luci-i18n-commands-de_git-23.090.62029-650e6d2_all.ipk
+Size: 2096
+SHA256sum: 1a5a3f34d80153415a2371834a21190656ef1e1035b06e341302ce5535c74c82
+Description:  Translation for luci-app-commands - Deutsch (German)
+
+Package: luci-i18n-commands-en
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-commands
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 359
+Filename: luci-i18n-commands-en_git-23.090.62029-650e6d2_all.ipk
+Size: 1179
+SHA256sum: b2e348495230379892b6b7e37d1b95b7ead72af589086ddd8beeae27009bb7bc
+Description:  Translation for luci-app-commands - English
+
+Package: luci-i18n-commands-pl
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-commands
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 1293
+Filename: luci-i18n-commands-pl_git-23.090.62029-650e6d2_all.ipk
+Size: 2129
+SHA256sum: 9b7b449306aa9697d4baecabec68094aeecff2208e187c8963d8663dc8c78f07
+Description:  Translation for luci-app-commands - Polski (Polish)
+
+Package: luci-i18n-commands-ru
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-commands
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 1541
+Filename: luci-i18n-commands-ru_git-23.090.62029-650e6d2_all.ipk
+Size: 2400
+SHA256sum: 2c8b1032d6fd4ac81d5e6055e4f2ebe50ce8f2b2650745d20bbc5b4bcc5a00c7
+Description:  Translation for luci-app-commands - Русский (Russian)
+
+Package: luci-i18n-commands-uk
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-commands
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 1495
+Filename: luci-i18n-commands-uk_git-23.090.62029-650e6d2_all.ipk
+Size: 2373
+SHA256sum: 4b0f3414ecbfdc966fd755f14adf9c3e6f9cb1092b470d04f340187a71e1f2c5
+Description:  Translation for luci-app-commands - Українська (Ukrainian)
 
 Package: luci-i18n-cpu-status-mini-master-ru
 Version: unknown
@@ -7202,11 +7893,71 @@ Depends: libc, luci-app-cpu-status-mini-master
 License: MIT
 Section: luci
 Architecture: all
-Installed-Size: 537
+Installed-Size: 538
 Filename: luci-i18n-cpu-status-mini-master-ru_unknown_all.ipk
-Size: 1359
-SHA256sum: 041960fd346d27ce4951e185a35444fdad9e718d101177de1ce522e3381071f4
+Size: 1371
+SHA256sum: d7a0f6d2f228cb2ae40593b6e2a5beec22ac318d5cb946b4af90cc18f31b262d
 Description:  Translation for luci-app-cpu-status-mini-master - Русский (Russian)
+
+Package: luci-i18n-ddns-de
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-ddns
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 5481
+Filename: luci-i18n-ddns-de_git-23.090.62029-650e6d2_all.ipk
+Size: 6336
+SHA256sum: 5ec73f9a606f743fdd0838b918a3a97bf73ad49eb486f7ce1fbb58e42f779b30
+Description:  Translation for luci-app-ddns - Deutsch (German)
+
+Package: luci-i18n-ddns-en
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-ddns
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 355
+Filename: luci-i18n-ddns-en_git-23.090.62029-650e6d2_all.ipk
+Size: 1210
+SHA256sum: 636333881bed240b03f7ee49d169a73592a9d83d59d87ecba776c5d31f09b22c
+Description:  Translation for luci-app-ddns - English
+
+Package: luci-i18n-ddns-pl
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-ddns
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 5517
+Filename: luci-i18n-ddns-pl_git-23.090.62029-650e6d2_all.ipk
+Size: 6367
+SHA256sum: 597fcfd66dd304e0d369fcf1d956790e77a21a5a8d23bf8560aad8a029b5c217
+Description:  Translation for luci-app-ddns - Polski (Polish)
+
+Package: luci-i18n-ddns-ru
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-ddns
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 6102
+Filename: luci-i18n-ddns-ru_git-23.090.62029-650e6d2_all.ipk
+Size: 6941
+SHA256sum: ef9d5283f95a9462f43da5139f2a2f0aaf7c3e8daf5a7ad3802056e6a3736489
+Description:  Translation for luci-app-ddns - Русский (Russian)
+
+Package: luci-i18n-ddns-uk
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-ddns
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 1968
+Filename: luci-i18n-ddns-uk_git-23.090.62029-650e6d2_all.ipk
+Size: 2874
+SHA256sum: d74ec9d039bea90ac37df4fce8f8460f7aeab783728924855ab55e625769b442
+Description:  Translation for luci-app-ddns - Українська (Ukrainian)
 
 Package: luci-i18n-diskman-pl
 Version: unknown
@@ -7214,10 +7965,10 @@ Depends: libc, luci-app-diskman
 License: AGPL-3.0
 Section: luci
 Architecture: all
-Installed-Size: 1909
+Installed-Size: 1910
 Filename: luci-i18n-diskman-pl_unknown_all.ipk
-Size: 2762
-SHA256sum: fe9d678b55703f71d9725d908583d7361f67cc59b3d8d633a257413ba69814f2
+Size: 2766
+SHA256sum: a61831fd38de97aaef5ba2c5c0d25cb857b1a6236b282f9092465c135b0b4d96
 Description:  Translation for luci-app-diskman - Polski (Polish)
 
 Package: luci-i18n-disks-info-master-ru
@@ -7226,11 +7977,71 @@ Depends: libc, luci-app-disks-info-master
 License: MIT
 Section: luci
 Architecture: all
-Installed-Size: 2239
+Installed-Size: 2238
 Filename: luci-i18n-disks-info-master-ru_unknown_all.ipk
 Size: 3039
-SHA256sum: 25f9bc032c112b17ff92fabaa187e7b8b6d719c99b45980f7410619700e79d82
+SHA256sum: f2ba03e77c8a114436aae4cc9cc2d9511bbf85dbcede5e06f1d944bc7af710b2
 Description:  Translation for luci-app-disks-info-master - Русский (Russian)
+
+Package: luci-i18n-firewall-de
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-firewall
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 6978
+Filename: luci-i18n-firewall-de_git-23.090.62029-650e6d2_all.ipk
+Size: 7827
+SHA256sum: f8921812bf9fa21ec537e18f2a17ea4868c89c449045f854abb5869448cc25cf
+Description:  Translation for luci-app-firewall - Deutsch (German)
+
+Package: luci-i18n-firewall-en
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-firewall
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 359
+Filename: luci-i18n-firewall-en_git-23.090.62029-650e6d2_all.ipk
+Size: 1181
+SHA256sum: 226e40d5e708f92677eb186cf186b60d6998200e6e99441b6af1241bd12c8017
+Description:  Translation for luci-app-firewall - English
+
+Package: luci-i18n-firewall-pl
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-firewall
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 6996
+Filename: luci-i18n-firewall-pl_git-23.090.62029-650e6d2_all.ipk
+Size: 7846
+SHA256sum: de13bfc0c13139b8c06dfb797ef12114287a19c4db7fd36a602e53ef5b148035
+Description:  Translation for luci-app-firewall - Polski (Polish)
+
+Package: luci-i18n-firewall-ru
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-firewall
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 7871
+Filename: luci-i18n-firewall-ru_git-23.090.62029-650e6d2_all.ipk
+Size: 8738
+SHA256sum: 413fc8badaab78c42f913ac48de60683391a5eccf955ff471966356401f5051b
+Description:  Translation for luci-app-firewall - Русский (Russian)
+
+Package: luci-i18n-firewall-uk
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-firewall
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 7699
+Filename: luci-i18n-firewall-uk_git-23.090.62029-650e6d2_all.ipk
+Size: 8586
+SHA256sum: cd85cc6f375ade10fee1b8994a723bf2256a11801558e24e38e3a6f087db5b9c
+Description:  Translation for luci-app-firewall - Українська (Ukrainian)
 
 Package: luci-i18n-internet-detector-ru
 Version: unknown
@@ -7240,8 +8051,8 @@ Section: luci
 Architecture: all
 Installed-Size: 460
 Filename: luci-i18n-internet-detector-ru_unknown_all.ipk
-Size: 1284
-SHA256sum: 2611b2a198cfb7e7b36640d175f2874f97e6797022a8f700baf785085186eb35
+Size: 1285
+SHA256sum: a1afaa2c8a247e07fbb298f65a7e2b7f9e20d8f20adf736bf2191019a1f9fc34
 Description:  Translation for luci-app-internet-detector - Русский (Russian)
 
 Package: luci-i18n-lite-watchdog-main-pl
@@ -7249,11 +8060,181 @@ Version: unknown
 Depends: libc, luci-app-lite-watchdog
 Section: luci
 Architecture: all
-Installed-Size: 1317
+Installed-Size: 1319
 Filename: luci-i18n-lite-watchdog-main-pl_unknown_all.ipk
-Size: 2121
-SHA256sum: 1dd3d739e0ece19d43ead01a4f27426b64fd9e922852f56f730b69ab780dbcbd
+Size: 2133
+SHA256sum: e2f8923a7a3cb89981f7ed1531d0a10ca6253b8f2ac3a0b399a4e806d8851bbe
 Description:  Translation for luci-app-lite-watchdog - Polski (Polish)
+
+Package: luci-i18n-nlbwmon-de
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-nlbwmon
+Section: luci
+Architecture: all
+Installed-Size: 3844
+Filename: luci-i18n-nlbwmon-de_git-23.090.62029-650e6d2_all.ipk
+Size: 4644
+SHA256sum: 5a178bf2981deec09a206ad4cf7b1b68161ef768f4f3a2a26ba4b298204f46d0
+Description:  Translation for luci-app-nlbwmon - Deutsch (German)
+
+Package: luci-i18n-nlbwmon-en
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-nlbwmon
+Section: luci
+Architecture: all
+Installed-Size: 359
+Filename: luci-i18n-nlbwmon-en_git-23.090.62029-650e6d2_all.ipk
+Size: 1166
+SHA256sum: bbfd67709e2c8642b41120e3b7eb0496b6260ff6952880423a7feccf3eea957f
+Description:  Translation for luci-app-nlbwmon - English
+
+Package: luci-i18n-nlbwmon-pl
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-nlbwmon
+Section: luci
+Architecture: all
+Installed-Size: 4021
+Filename: luci-i18n-nlbwmon-pl_git-23.090.62029-650e6d2_all.ipk
+Size: 4825
+SHA256sum: 31ac8731391ba39b0825e9366e45f02868419591cff818f1ea462a8278e69fca
+Description:  Translation for luci-app-nlbwmon - Polski (Polish)
+
+Package: luci-i18n-nlbwmon-ru
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-nlbwmon
+Section: luci
+Architecture: all
+Installed-Size: 4525
+Filename: luci-i18n-nlbwmon-ru_git-23.090.62029-650e6d2_all.ipk
+Size: 5352
+SHA256sum: 4e87370b10fc9d3b78d5f062b8be083fd7bc3772d34b1ef5c5acee1a03139ed2
+Description:  Translation for luci-app-nlbwmon - Русский (Russian)
+
+Package: luci-i18n-nlbwmon-uk
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-nlbwmon
+Section: luci
+Architecture: all
+Installed-Size: 854
+Filename: luci-i18n-nlbwmon-uk_git-23.090.62029-650e6d2_all.ipk
+Size: 1709
+SHA256sum: 22407400cd1c9fb62c7a443f04b657c157f132177ff2c04424821ed3af3f9697
+Description:  Translation for luci-app-nlbwmon - Українська (Ukrainian)
+
+Package: luci-i18n-ntpc-de
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-ntpc
+Section: luci
+Architecture: all
+Installed-Size: 688
+Filename: luci-i18n-ntpc-de_git-23.090.62029-650e6d2_all.ipk
+Size: 1502
+SHA256sum: 289a0664a00d83aed6bf55c94c9fde88ef01d952b13e7cfd2f847d468154b346
+Description:  Translation for luci-app-ntpc - Deutsch (German)
+
+Package: luci-i18n-ntpc-en
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-ntpc
+Section: luci
+Architecture: all
+Installed-Size: 355
+Filename: luci-i18n-ntpc-en_git-23.090.62029-650e6d2_all.ipk
+Size: 1159
+SHA256sum: 0bfb9bdea53c2971e5438b0c8d2df7ccb7b01bc481cc6e65f94c7dcec9578630
+Description:  Translation for luci-app-ntpc - English
+
+Package: luci-i18n-ntpc-pl
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-ntpc
+Section: luci
+Architecture: all
+Installed-Size: 776
+Filename: luci-i18n-ntpc-pl_git-23.090.62029-650e6d2_all.ipk
+Size: 1598
+SHA256sum: 3492776b94674e4204f098fed1b8c2e347ba8ec1636a2611d5608802f5dfe266
+Description:  Translation for luci-app-ntpc - Polski (Polish)
+
+Package: luci-i18n-ntpc-ru
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-ntpc
+Section: luci
+Architecture: all
+Installed-Size: 918
+Filename: luci-i18n-ntpc-ru_git-23.090.62029-650e6d2_all.ipk
+Size: 1759
+SHA256sum: be16f73432cbe5917f263e69476f044fb409cf24fd9695f2e0fdceff3fc29740
+Description:  Translation for luci-app-ntpc - Русский (Russian)
+
+Package: luci-i18n-ntpc-uk
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-ntpc
+Section: luci
+Architecture: all
+Installed-Size: 879
+Filename: luci-i18n-ntpc-uk_git-23.090.62029-650e6d2_all.ipk
+Size: 1733
+SHA256sum: b612074b3ca72d0b7ebefad17eabe443a7fed40168ac1ad0ad555b1ca3cf8ae6
+Description:  Translation for luci-app-ntpc - Українська (Ukrainian)
+
+Package: luci-i18n-openvpn-de
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-openvpn
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 5392
+Filename: luci-i18n-openvpn-de_git-23.090.62029-650e6d2_all.ipk
+Size: 6221
+SHA256sum: e1d93eefdd05eb5f3fea56cf006d2f3163aa9699ef2c3681dbae7f6bb4d6cb15
+Description:  Translation for luci-app-openvpn - Deutsch (German)
+
+Package: luci-i18n-openvpn-en
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-openvpn
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 359
+Filename: luci-i18n-openvpn-en_git-23.090.62029-650e6d2_all.ipk
+Size: 1177
+SHA256sum: c28f0619abfe2d13486bab1fa847a5d6a642d0f924e7b148f0ef95e05d997f44
+Description:  Translation for luci-app-openvpn - English
+
+Package: luci-i18n-openvpn-pl
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-openvpn
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 5716
+Filename: luci-i18n-openvpn-pl_git-23.090.62029-650e6d2_all.ipk
+Size: 6543
+SHA256sum: 97f1a6e47717a8cefd5aa6c7c6a2e9da58f1ce6e9dc9ef1aadf082cfbe7ade32
+Description:  Translation for luci-app-openvpn - Polski (Polish)
+
+Package: luci-i18n-openvpn-ru
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-openvpn
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 7264
+Filename: luci-i18n-openvpn-ru_git-23.090.62029-650e6d2_all.ipk
+Size: 8147
+SHA256sum: 30f7be347ae33b79d239998b4cf48ebe3507ac4a90a9e21aee3913a24a740c6c
+Description:  Translation for luci-app-openvpn - Русский (Russian)
+
+Package: luci-i18n-openvpn-uk
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-openvpn
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 6417
+Filename: luci-i18n-openvpn-uk_git-23.090.62029-650e6d2_all.ipk
+Size: 7279
+SHA256sum: 3bfa725eb60991f0e974acdf0caae19a56f448547fbd514ee56767c16024259b
+Description:  Translation for luci-app-openvpn - Українська (Ukrainian)
 
 Package: luci-i18n-opkg-de
 Version: git-23.090.62029-650e6d2
@@ -7310,15 +8291,130 @@ Size: 3315
 SHA256sum: d10354c56f0be35cc50dadf613b41f91e25897345d0ade243cf1475e978deca1
 Description:  Translation for luci-app-opkg - Українська (Ukrainian)
 
+Package: luci-i18n-p910nd-de
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-p910nd
+Section: luci
+Architecture: all
+Installed-Size: 724
+Filename: luci-i18n-p910nd-de_git-23.090.62029-650e6d2_all.ipk
+Size: 1540
+SHA256sum: eefa43615f8c14f5951417cc6d84f45a7b7a62ed791e916ab49329a2abc45eb1
+Description:  Translation for luci-app-p910nd - Deutsch (German)
+
+Package: luci-i18n-p910nd-en
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-p910nd
+Section: luci
+Architecture: all
+Installed-Size: 357
+Filename: luci-i18n-p910nd-en_git-23.090.62029-650e6d2_all.ipk
+Size: 1164
+SHA256sum: 4c962558b683ea5e38623de8cada696f8298392d9ecb02ab9a843d29495b62db
+Description:  Translation for luci-app-p910nd - English
+
+Package: luci-i18n-p910nd-pl
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-p910nd
+Section: luci
+Architecture: all
+Installed-Size: 732
+Filename: luci-i18n-p910nd-pl_git-23.090.62029-650e6d2_all.ipk
+Size: 1552
+SHA256sum: a76cdc17e67ab1d6f8a326f120c31047db8921a1404d07c128ca27e1e7872741
+Description:  Translation for luci-app-p910nd - Polski (Polish)
+
+Package: luci-i18n-p910nd-ru
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-p910nd
+Section: luci
+Architecture: all
+Installed-Size: 893
+Filename: luci-i18n-p910nd-ru_git-23.090.62029-650e6d2_all.ipk
+Size: 1730
+SHA256sum: 172056895d50bce9d2f6cb7929285dd5a711b24e3c2990ef4816c5ac4d3223bc
+Description:  Translation for luci-app-p910nd - Русский (Russian)
+
+Package: luci-i18n-p910nd-uk
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-p910nd
+Section: luci
+Architecture: all
+Installed-Size: 868
+Filename: luci-i18n-p910nd-uk_git-23.090.62029-650e6d2_all.ipk
+Size: 1720
+SHA256sum: ef874af76a8ea7be6fbe371597afc1df0b372dde891063126c6cb530ce15982a
+Description:  Translation for luci-app-p910nd - Українська (Ukrainian)
+
+Package: luci-i18n-qos-de
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-qos
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 912
+Filename: luci-i18n-qos-de_git-23.090.62029-650e6d2_all.ipk
+Size: 1753
+SHA256sum: 8940a53c798a9aeb215e9282bdd6c5d1a574aefff8857d2fe9fad0a4b1a7a8fd
+Description:  Translation for luci-app-qos - Deutsch (German)
+
+Package: luci-i18n-qos-en
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-qos
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 354
+Filename: luci-i18n-qos-en_git-23.090.62029-650e6d2_all.ipk
+Size: 1172
+SHA256sum: 6fb3a1694d1ce90dc1f16f7f9e2448aca70b5b963daa74a25b54dd0733ace1ff
+Description:  Translation for luci-app-qos - English
+
+Package: luci-i18n-qos-pl
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-qos
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 1042
+Filename: luci-i18n-qos-pl_git-23.090.62029-650e6d2_all.ipk
+Size: 1869
+SHA256sum: a907d5f745e996f6508f343f5e31c320fd604b0daacba9096f1b4811a2a6f239
+Description:  Translation for luci-app-qos - Polski (Polish)
+
+Package: luci-i18n-qos-ru
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-qos
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 1199
+Filename: luci-i18n-qos-ru_git-23.090.62029-650e6d2_all.ipk
+Size: 2058
+SHA256sum: 51b59eb6f1b82126566626a6dd385ef1f88e0f76fc77521489977c1fd2c15a23
+Description:  Translation for luci-app-qos - Русский (Russian)
+
+Package: luci-i18n-qos-uk
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-qos
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 1205
+Filename: luci-i18n-qos-uk_git-23.090.62029-650e6d2_all.ipk
+Size: 2074
+SHA256sum: 1072328f0ddb5ff30938edd395d7d50dd978430e78d17ffd4cbed0ae3cda4d76
+Description:  Translation for luci-app-qos - Українська (Ukrainian)
+
 Package: luci-i18n-sms-tool-pl
 Version: unknown
 Depends: libc, luci-app-sms-tool
 Section: luci
 Architecture: all
-Installed-Size: 3017
+Installed-Size: 3018
 Filename: luci-i18n-sms-tool-pl_unknown_all.ipk
-Size: 3787
-SHA256sum: 9c9938f264984e2b196f6040cd814522a6c600232f8591aeec92feb6e530d4b6
+Size: 3786
+SHA256sum: 2b24f3741f831a715bcec30df461e63a7eadc927e24cda34cf1f5c423c4361c8
 Description:  Translation for luci-app-sms-tool - Polski (Polish)
 
 Package: luci-i18n-sms-tool-ru
@@ -7326,10 +8422,10 @@ Version: unknown
 Depends: libc, luci-app-sms-tool
 Section: luci
 Architecture: all
-Installed-Size: 3303
+Installed-Size: 3301
 Filename: luci-i18n-sms-tool-ru_unknown_all.ipk
-Size: 4106
-SHA256sum: 6b0cdbef16a9957b27983f728097ffe726f365b660bcb08dcc79d2e3afc99ca3
+Size: 4113
+SHA256sum: 6a86b8e4e3b939d4cf4ee091b7cd4ed89a8c6a8d1bc1dc4efae3c7c7791e4155
 Description:  Translation for luci-app-sms-tool - Русский (Russian)
 
 Package: luci-i18n-timecontrol-pl
@@ -7339,9 +8435,124 @@ Section: luci
 Architecture: all
 Installed-Size: 683
 Filename: luci-i18n-timecontrol-pl_unknown_all.ipk
-Size: 1470
-SHA256sum: 149cf187a4b38619cbde06c8297fa5c72e575d4aba8878655d9bdf774e5e31a2
+Size: 1475
+SHA256sum: fc7a3d001750ed3ca6d039b465208713f943e751e87c847f42826dfcdadae309
 Description:  Translation for luci-app-timecontrol - Polski (Polish)
+
+Package: luci-i18n-uhttpd-de
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-uhttpd
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 2260
+Filename: luci-i18n-uhttpd-de_git-23.090.62029-650e6d2_all.ipk
+Size: 3141
+SHA256sum: 7e8ae71f1a445dcd242dcfa9ae6e926bc6c80e9bcfedc788ad0c576199c4f06a
+Description:  Translation for luci-app-uhttpd - Deutsch (German)
+
+Package: luci-i18n-uhttpd-en
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-uhttpd
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 357
+Filename: luci-i18n-uhttpd-en_git-23.090.62029-650e6d2_all.ipk
+Size: 1222
+SHA256sum: 6fa322ae482c5b9ec0b76f49cdebfb04c7f6f4f38f4d41b2e6f9f731b371ea5f
+Description:  Translation for luci-app-uhttpd - English
+
+Package: luci-i18n-uhttpd-pl
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-uhttpd
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 2522
+Filename: luci-i18n-uhttpd-pl_git-23.090.62029-650e6d2_all.ipk
+Size: 3368
+SHA256sum: e854a871b03c7619889be91246d6f32ccf15793c8817ee2d13ede8f2c53e4930
+Description:  Translation for luci-app-uhttpd - Polski (Polish)
+
+Package: luci-i18n-uhttpd-ru
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-uhttpd
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 2892
+Filename: luci-i18n-uhttpd-ru_git-23.090.62029-650e6d2_all.ipk
+Size: 3764
+SHA256sum: 20355d3adb04fdb97920dd26e2542eec39e75cc69b90ab00c3b4a77a8bcf885c
+Description:  Translation for luci-app-uhttpd - Русский (Russian)
+
+Package: luci-i18n-uhttpd-uk
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-uhttpd
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 2860
+Filename: luci-i18n-uhttpd-uk_git-23.090.62029-650e6d2_all.ipk
+Size: 3749
+SHA256sum: df6a0ea23fcd2aa25f0fb8cd029e125eb44017f428494fbcff746d092398f968
+Description:  Translation for luci-app-uhttpd - Українська (Ukrainian)
+
+Package: luci-i18n-unbound-de
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-unbound
+Section: luci
+Architecture: all
+Installed-Size: 4985
+Filename: luci-i18n-unbound-de_git-23.090.62029-650e6d2_all.ipk
+Size: 5779
+SHA256sum: 67f803a2c099f77b795dd49e54bf88b1e97bef2613fa10e0bd4d99754820ed76
+Description:  Translation for luci-app-unbound - Deutsch (German)
+
+Package: luci-i18n-unbound-en
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-unbound
+Section: luci
+Architecture: all
+Installed-Size: 358
+Filename: luci-i18n-unbound-en_git-23.090.62029-650e6d2_all.ipk
+Size: 1167
+SHA256sum: e7f36704f08b3812fa18a144fdda3515ae82e4700c3d93a597d4470d24d1cc3d
+Description:  Translation for luci-app-unbound - English
+
+Package: luci-i18n-unbound-pl
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-unbound
+Section: luci
+Architecture: all
+Installed-Size: 5017
+Filename: luci-i18n-unbound-pl_git-23.090.62029-650e6d2_all.ipk
+Size: 5808
+SHA256sum: 50991e9d5b276071e1d229e6a3b19ec4a0a6bc2a11c6c7c434d8e3af67eb7793
+Description:  Translation for luci-app-unbound - Polski (Polish)
+
+Package: luci-i18n-unbound-ru
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-unbound
+Section: luci
+Architecture: all
+Installed-Size: 3993
+Filename: luci-i18n-unbound-ru_git-23.090.62029-650e6d2_all.ipk
+Size: 4820
+SHA256sum: d21a7e16a074e76acd140471e62f6a447a3930ed15cce9b3f7ac6c1479a58858
+Description:  Translation for luci-app-unbound - Русский (Russian)
+
+Package: luci-i18n-unbound-uk
+Version: git-23.090.62029-650e6d2
+Depends: libc, luci-app-unbound
+Section: luci
+Architecture: all
+Installed-Size: 747
+Filename: luci-i18n-unbound-uk_git-23.090.62029-650e6d2_all.ipk
+Size: 1601
+SHA256sum: f1654ae048284ba7626202a6eb7b08a15502f661ec4762748f9cd36607bc1021
+Description:  Translation for luci-app-unbound - Українська (Ukrainian)
 
 Package: luci-i18n-watchcat-de
 Version: git-23.090.62029-650e6d2
@@ -7508,6 +8719,17 @@ Size: 2010
 SHA256sum: f9795a74b973f3fe1be9ff06cafe91428192d3017f81d9fbc0f4a1c3a3191916
 Description:  Translation for luci-app-wol - Українська (Ukrainian)
 
+Package: luci-lib-base
+Version: git-20.232.39649-1f6dc29
+Depends: libc, lua, luci-lib-nixio, luci-lib-ip, luci-lib-jsonc, liblucihttp-lua
+Section: luci
+Architecture: all
+Installed-Size: 6856
+Filename: luci-lib-base_git-20.232.39649-1f6dc29_all.ipk
+Size: 7764
+SHA256sum: 42cd505406b90d92df2f04a676c3111dd0ee441b200398ed168b756ef406017a
+Description:  basic libraries for luci
+
 Package: luci-lib-ip
 Version: git-20.250.76529-62505bd
 Depends: libc, liblua5.1.5, libnl-tiny1
@@ -7520,6 +8742,17 @@ Size: 11754
 SHA256sum: 284228b30e56b71491995826e7190ccbe86b870ae813c0d6fa47ebc0a8e08261
 Description:  Lua library for IP calculation and routing information
 
+Package: luci-lib-ipkg
+Version: git-18.318.71164-4bbe325
+Depends: libc, luci-base
+Section: luci
+Architecture: all
+Installed-Size: 1465
+Filename: luci-lib-ipkg_git-18.318.71164-4bbe325_all.ipk
+Size: 2319
+SHA256sum: 3ec30410b9a773922359a29ea486933e8bcd4b25abb3846bd06f2f6b21666a84
+Description:  Legacy opkg interface class
+
 Package: luci-lib-jsonc
 Version: git-22.097.61937-bc85ba5
 Depends: libc, liblua5.1.5, libjson-c5
@@ -7530,6 +8763,18 @@ Filename: luci-lib-jsonc_git-22.097.61937-bc85ba5_mips_24kc.ipk
 Size: 5218
 SHA256sum: 453d4c345353568734b60d26d5a54e4ad49b330950ee28075ba1c0812f52fbde
 Description:  Lua binding for JSON-C
+
+Package: luci-lib-nixio
+Version: git-20.234.06894-c4a4e43
+Depends: libc, libopenssl1.1, liblua5.1.5
+License: Apache-2.0
+Section: luci
+Architecture: mips_24kc
+Installed-Size: 28307
+Filename: luci-lib-nixio_git-20.234.06894-c4a4e43_mips_24kc.ipk
+Size: 28813
+SHA256sum: 23e37388f576784d4de4ce9bb0dd86057c61348e76c4e6c44d9fa888bc3344b3
+Description:  NIXIO POSIX library
 
 Package: luci-lib-px5g
 Version: git-18.283.25207-401382a
@@ -7542,6 +8787,66 @@ Filename: luci-lib-px5g_git-18.283.25207-401382a_mips_24kc.ipk
 Size: 30662
 SHA256sum: 398a003ae62e47bf8572e7d7a07318986bbaca81bff60ca7bee1ae0b6e7715cd
 Description:  RSA/X.509 Key Generator (required for LuCId SSL support)
+
+Package: luci-mod-admin-full
+Version: git-19.253.48496-3f93650
+Depends: libc, luci-base, luci-mod-status, luci-mod-system, luci-mod-network
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 104
+Filename: luci-mod-admin-full_git-19.253.48496-3f93650_all.ipk
+Size: 987
+SHA256sum: 6760f7d2fb5351c38c3438622511412eeb1efe234e8c68be4b8c7188083a6e14
+Description:  LuCI Administration - full-featured for full control
+
+Package: luci-mod-dashboard
+Version: git-21.020.38173-d3280e6
+Depends: libc, luci-base, libiwinfo20210430
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 6680
+Filename: luci-mod-dashboard_git-21.020.38173-d3280e6_all.ipk
+Size: 7596
+SHA256sum: 846597a2703b7a18c2af389ccf16296a58d46f07271823b207b9287f3872f44f
+Description:  LuCI Dashboard Pages
+
+Package: luci-mod-network
+Version: git-22.244.54918-77c916e
+Depends: libc, luci-base, libiwinfo-lua, rpcd-mod-iwinfo
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 64459
+Filename: luci-mod-network_git-22.244.54918-77c916e_all.ipk
+Size: 65473
+SHA256sum: c86def8f3d993166c7d614920eace68f8f9881cdfa2d67ae40edf7a084fcb636
+Description:  LuCI Network Administration
+
+Package: luci-mod-status
+Version: git-22.089.70019-d4f0b06
+Depends: libc, luci-base, libiwinfo20210430, libiwinfo-lua
+License: Apache-2.0
+Section: luci
+Architecture: mips_24kc
+Installed-Size: 28167
+Filename: luci-mod-status_git-22.089.70019-d4f0b06_mips_24kc.ipk
+Size: 29097
+SHA256sum: 1ed11d4cb33a9adcc39e00c0c0dd9a2dfe7d1f0ef3dd3756b49fa0529e81bc75
+Description:  LuCI Status Pages
+
+Package: luci-mod-system
+Version: git-23.013.73129-aa7938d
+Depends: libc, luci-base
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 17742
+Filename: luci-mod-system_git-23.013.73129-aa7938d_all.ipk
+Size: 18640
+SHA256sum: 6d5c75a6f8df65a074017499c58fe62e738d7388a1ffbdfebf96d0ac8a7fc57d
+Description:  LuCI Administration - Global System Settings
 
 Package: luci-proto-3g
 Version: git-22.046.84868-a7b0fe1
@@ -7616,10 +8921,10 @@ Version: unknown
 Depends: libc, umbim
 Section: luci
 Architecture: all
-Installed-Size: 1159
+Installed-Size: 1162
 Filename: luci-proto-mbim_unknown_all.ipk
-Size: 1991
-SHA256sum: 33b3f1bb31d85875fdbd5113e3b6d86526448853e13a7c4e0ec738552c4e8342
+Size: 2002
+SHA256sum: 02184061814b19c3a8ddd6f9113494f7f8dcc6cc8430c468e27c9c74afd85399
 Description:  Support for MBIM
 
 Package: luci-proto-modemmanager
@@ -7643,6 +8948,17 @@ Filename: luci-proto-ncm_git-22.204.40802-d865b29_all.ipk
 Size: 2355
 SHA256sum: 7c7960243d3e190407c47877fb29d8e6b2fa0218342d5e28f3b5b83a1d8fdc21
 Description:  Support for NCM
+
+Package: luci-proto-openconnect
+Version: git-21.148.49484-9eee69a
+Depends: libc, openconnect
+Section: luci
+Architecture: all
+Installed-Size: 2449
+Filename: luci-proto-openconnect_git-21.148.49484-9eee69a_all.ipk
+Size: 3303
+SHA256sum: f1aa277e7a0d0ea2bb11cb4c88927bd625c26894c100bce0a69ba02368371d24
+Description:  Support for OpenConnect VPN
 
 Package: luci-proto-openfortivpn
 Version: git-20.240.06846-642f738
@@ -7712,6 +9028,18 @@ Size: 1720
 SHA256sum: 3235eec193384a4e542aa3c6eac5c0d589f192a802d1a7054a11186b7883f182
 Description:  Support for SSTP
 
+Package: luci-proto-vpnc
+Version: git-21.148.49484-9eee69a
+Depends: libc, vpnc
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 1093
+Filename: luci-proto-vpnc_git-21.148.49484-9eee69a_all.ipk
+Size: 1956
+SHA256sum: 68343d309bff9e0ba833f448190cccf4819ebc714e1eeaee41bcf0a43e3a06e2
+Description:  Support for VPNC VPN
+
 Package: luci-proto-vxlan
 Version: git-21.148.49484-14511e5
 Depends: libc, vxlan
@@ -7734,6 +9062,17 @@ Size: 3377
 SHA256sum: bb6e4706fe4c628652e72ef35fccba80d494c2bbd4d5baa1fbdea3abd94843ab
 Description:  Support for WireGuard VPN
 
+Package: luci-ssl-openssl
+Version: git-17.031.53232-b6341bd
+Depends: libc, luci, libustream-openssl20201210, openssl-util
+Section: luci
+Architecture: all
+Installed-Size: 105
+Filename: luci-ssl-openssl_git-17.031.53232-b6341bd_all.ipk
+Size: 1064
+SHA256sum: d909edcfa2fcbbfdc5220a541a45bdf14e27a4f1268be6213e8e60878220874f
+Description:  LuCI with OpenSSL as the SSL backend (libustream-openssl). OpenSSL cmd tools (openssl-util) are used by uhttpd for SSL key generation instead of the default px5g. (If px5g is installed, uhttpd will prefer that.)
+
 Package: luci-theme-bootstrap
 Version: git-22.288.45155-afd0012
 Depends: libc
@@ -7746,6 +9085,18 @@ Size: 16590
 SHA256sum: d1f4af096bfede5a96b27b8b3df2122591fd193f8e63c64342d62fa307fc2f7c
 Description:  Bootstrap Theme (default)
 
+Package: luci
+Version: git-20.074.84698-ead5e81
+Depends: libc, uhttpd, uhttpd-mod-ubus, luci-mod-admin-full, luci-theme-bootstrap, luci-app-firewall, luci-app-opkg, luci-proto-ppp, libiwinfo-lua, luci-proto-ipv6, rpcd-mod-rrdns
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 105
+Filename: luci_git-20.074.84698-ead5e81_all.ipk
+Size: 1075
+SHA256sum: 8aaa4f8fc6ae4ce9271a5ed8eb2523f6db9cf0f075d2ec9a6f91d5413a3592a7
+Description:  Standard OpenWrt set including full admin with ppp support and the default Bootstrap theme
+
 Package: mc
 Version: 4.8.27-2
 Depends: libc, glib2, libncurses6, libmount1, libssh2-1
@@ -7753,10 +9104,10 @@ License: GPL-3.0-or-later
 Section: utils
 CPE-ID: cpe:/a:midnight_commander:midnight_commander
 Architecture: mips_24kc
-Installed-Size: 445449
+Installed-Size: 445426
 Filename: mc_4.8.27-2_mips_24kc.ipk
-Size: 445376
-SHA256sum: 60667dc832595a76f3bbad3daf78e4a4cb21ccedb7ea4efed2062a2dcdfa706a
+Size: 445389
+SHA256sum: 7440e456ce93c752296ef5a55a56f8d58aeed59026b0a36fdc4cd14d204bb3b3
 Description:  GNU Midnight Commander is a visual file manager.
  It's a feature rich full-screen text mode application that allows you to copy,
  move and delete files and whole directory trees, search for files and run commands in the subshell.
@@ -7854,6 +9205,17 @@ Description:  msmtp is an SMTP client. In the default mode, it transmits a mail 
  call msmtp instead of /usr/sbin/sendmail.
  This package is built with SSL support.
 
+Package: mt7601u-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 26422
+Filename: mt7601u-firmware_20211216-1_mips_24kc.ipk
+Size: 27145
+SHA256sum: 1947c9d4fe24d3d6cb15e2bf5c03347802afe7c7d13ca8435893b6bf28d621c2
+Description:  MediaTek MT7601U firmware
+
 Package: mtr
 Version: 0.94-1
 Depends: libc, libncurses6
@@ -7873,6 +9235,39 @@ Description:  mtr combines the functionality of the 'traceroute' and 'ping' prog
  it sends a sequence ICMP ECHO requests to each one to determine the
  quality of the link to each machine. As it does this, it prints
  running statistics about each machine.
+
+Package: mwifiex-pcie-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 514912
+Filename: mwifiex-pcie-firmware_20211216-1_mips_24kc.ipk
+Size: 515631
+SHA256sum: e68f7ec78bc304cb7f12cc506165ba6aa59735a7029b3cf994998c34e9ff39e0
+Description:  Marvell 8897 firmware
+
+Package: mwifiex-sdio-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 876729
+Filename: mwifiex-sdio-firmware_20211216-1_mips_24kc.ipk
+Size: 877039
+SHA256sum: 50f231cbef74a812dec113d74cafdcd1c1a03e2c3bb795998537478f9c387da2
+Description:  Marvell 8887/8997 firmware
+
+Package: mwl8k-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 192386
+Filename: mwl8k-firmware_20211216-1_mips_24kc.ipk
+Size: 193252
+SHA256sum: bc797aa701e984d5f536bb4997dda8d738755a16e2e576ac8579a6522c1b6992
+Description:  Marvell 8366/8687 firmware
 
 Package: netifd
 Version: 2021-10-30-8f82742c-1
@@ -8100,6 +9495,27 @@ Size: 1383
 SHA256sum: 7e3d3b4c88abd07f95b8acb36f3257d7a5d37f27a4da4cbafd4dc973d7cd7e16
 Description:  This package contains the hw watchdog script for the OM1P and OM2P device.
 
+Package: openconnect
+Version: 8.20-1
+Depends: libc, libxml2, kmod-tun, resolveip, vpnc-scripts, libopenssl1.1, p11-kit, libp11
+License: LGPL-2.1-or-later
+Section: net
+CPE-ID: cpe:/a:infradead:openconnect
+Architecture: mips_24kc
+Installed-Size: 157035
+Filename: openconnect_8.20-1_mips_24kc.ipk
+Size: 156283
+SHA256sum: 41ce9e4d0127c858e6ec43a0fa10baf57e5a5743018a25d90896f5bc79c16a17
+Description:  A VPN client compatible with several SSL VPN implementations (ocserv, Cisco AnyConnect, Juniper, Palo Alto)
+ 
+ OpenConnect is an SSL VPN client initially created to support Cisco's
+ AnyConnect SSL VPN. It has since been extended to support the Pulse Connect
+ Secure VPN (formerly known as Juniper Network Connect or Junos Pulse) and
+ the Palo Alto Networks GlobalProtect SSL VPN.
+ 
+ A corresponding OpenConnect VPN server implementation can be found in the
+ ocserv package.
+
 Package: openfortivpn
 Version: 1.15.0-1
 Depends: libc, ppp, libopenssl1.1
@@ -8137,10 +9553,10 @@ Depends: libc, openssl-util
 License: GPL-2.0
 Section: net
 Architecture: all
-Installed-Size: 27913
+Installed-Size: 27914
 Filename: openvpn-easy-rsa_3.0.8-3_all.ipk
-Size: 28780
-SHA256sum: 8b976242ce3a55e6619815aabf8af2e25d5c9a387f97044dbd880fe219acd4bf
+Size: 28771
+SHA256sum: 2d355ec67b40b6a9b83de4f87bdbd749e73b625e1996d336cc0c9b3738959740
 Description:  CLI utility to build and manage a PKI CA.
 
 Package: openvpn-openssl
@@ -8477,6 +9893,20 @@ Size: 2665
 SHA256sum: 96dee342466a19e13c3f2767dab14a338a37647dfec495307bbc00d0c0606605
 Description:  This package contains the channel bonding proto handler for netifd
 
+Package: qos-scripts
+Version: 1.3.1-31
+Depends: libc, tc, kmod-sched-core, kmod-sched-connmark, kmod-ifb, iptables, iptables-mod-ipopt, iptables-mod-conntrack-extra
+License: GPL-2.0
+Section: utils
+Architecture: all
+Installed-Size: 6392
+Filename: qos-scripts_1.3.1-31_all.ipk
+Size: 7326
+SHA256sum: 09beea40bab1e057d8340f7c8edfbd497082de643dfaaea541040bacaccc1508
+Description:  A set of scripts that abstract QoS configuration into a simple 
+ configuration file supporting stanzas that specify any number of QoS 
+ entries.
+
 Package: qrencode
 Version: 4.1.1-1
 Depends: libc, libqrencode
@@ -8491,6 +9921,17 @@ Description:  Qrencode is a C program for encoding data in a QR Code symbol,
  a kind of 2D symbology that can be scanned by handy terminals such
  as a mobile phone with CCD. The capacity of QR Code is up to 7000
  digits or 4000 characters, and is highly robust.
+
+Package: r8169-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 33093
+Filename: r8169-firmware_20211216-1_mips_24kc.ipk
+Size: 33901
+SHA256sum: 0b8cce2fcec24b72a1c02c171898aabd9bb234f912c44c7c23d4434cf161d62f
+Description:  RealTek RTL8169 firmware
 
 Package: ralink_bin
 Version: 1.0.0-1
@@ -8621,6 +10062,171 @@ Size: 23516
 SHA256sum: 652f6121cdd51cfad383ce005129fce0c9affcebf5ad514e3c2f05d231252eb4
 Description:  This package provides the UBUS RPC backend server to expose various
  functionality to frontend programs via JSON-RPC.
+
+Package: rs9113-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 84661
+Filename: rs9113-firmware_20211216-1_mips_24kc.ipk
+Size: 85256
+SHA256sum: 881b5863a751fe7c29b5f46278b82997e1aefd94eec403dbc2d8e5734850d7c2
+Description:  RedPine Signals rs9113 firmware
+
+Package: rt2800-pci-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 3970
+Filename: rt2800-pci-firmware_20211216-1_mips_24kc.ipk
+Size: 4710
+SHA256sum: a49f3d87dc14d9dfabe7137a34f0dde677af9669e283bea6a16fa555c719b946
+Description:  Ralink RT28xx/3xxx PCI/SoC firmware
+
+Package: rt2800-usb-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 2939
+Filename: rt2800-usb-firmware_20211216-1_mips_24kc.ipk
+Size: 3658
+SHA256sum: c996b2d2bfd6e20b3a04158c8cdb4cf28115a8f63914a518961a01219d94e307
+Description:  Ralink RT28xx/3xxx USB firmware
+
+Package: rt61-pci-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 6502
+Filename: rt61-pci-firmware_20211216-1_mips_24kc.ipk
+Size: 7232
+SHA256sum: ffb0deb4f83a0339995294c3bffc63ec0557729e8e12df432e9e0b66c3915580
+Description:  Ralink RT2561 firmware
+
+Package: rt73-usb-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 1320
+Filename: rt73-usb-firmware_20211216-1_mips_24kc.ipk
+Size: 2057
+SHA256sum: fea64ad654c8f44abd57f2d5c1213ebfb39f953fb7ffc4a2f8e98f661e4a4ead
+Description:  Ralink RT2573 firmware
+
+Package: rtl8188eu-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 8296
+Filename: rtl8188eu-firmware_20211216-1_mips_24kc.ipk
+Size: 9070
+SHA256sum: e1b67b1ac5216888036e2c3aded447be91e20dfb4566cba13c581e021eb6ceb6
+Description:  RealTek RTL8188EU firmware
+
+Package: rtl8192ce-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 20760
+Filename: rtl8192ce-firmware_20211216-1_mips_24kc.ipk
+Size: 21483
+SHA256sum: c39a6a045b6b6e7bb2e7b6344c4f87d9bd0d0d5a9bbf61e3240d1695c2bce035
+Description:  RealTek RTL8192CE firmware
+
+Package: rtl8192cu-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 18711
+Filename: rtl8192cu-firmware_20211216-1_mips_24kc.ipk
+Size: 19489
+SHA256sum: 56f19436c6fd5cc2e6f5ec24b6f3c8796d783c6a7491f85c1f0d4c2665954afc
+Description:  RealTek RTL8192CU firmware
+
+Package: rtl8192de-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 13530
+Filename: rtl8192de-firmware_20211216-1_mips_24kc.ipk
+Size: 14271
+SHA256sum: a77a6fd2f49c068877286e061757c538c54c896c7f3fb0e4cf034f3e3114919f
+Description:  RealTek RTL8192DE firmware
+
+Package: rtl8192eu-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 17873
+Filename: rtl8192eu-firmware_20211216-1_mips_24kc.ipk
+Size: 18619
+SHA256sum: 8f0513f29bdb0c2b245db1782e7c2752f46e2ad1df61bc9fe90435de7dab5479
+Description:  RealTek RTL8192EU firmware
+
+Package: rtl8192se-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 36780
+Filename: rtl8192se-firmware_20211216-1_mips_24kc.ipk
+Size: 37502
+SHA256sum: b1f4c80585f8740cc5f175ffc1947e4d71e505f4a4f7d38a7c7b00bdb012adee
+Description:  RealTek RTL8192SE firmware
+
+Package: rtl8192su-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 63234
+Filename: rtl8192su-firmware_20211216-1_mips_24kc.ipk
+Size: 64018
+SHA256sum: b8e4c30e861b18a55858b0b3bff5a94537b3db84a69e064bbfc9c36d64d36500
+Description:  RealTek RTL8192SU firmware
+
+Package: rtl8723au-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 27995
+Filename: rtl8723au-firmware_20211216-1_mips_24kc.ipk
+Size: 28730
+SHA256sum: 1adc201ae0fef9d3b01a80d23f3e2226ee3ff201e10691fda10af8b7f9283c4a
+Description:  RealTek RTL8723AU firmware
+
+Package: rtl8723bu-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 21425
+Filename: rtl8723bu-firmware_20211216-1_mips_24kc.ipk
+Size: 22158
+SHA256sum: 859b61363f6623121836c85f37773c95d13f419080750df26d913da5431a0978
+Description:  RealTek RTL8723BU firmware
+
+Package: rtl8821ae-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 23999
+Filename: rtl8821ae-firmware_20211216-1_mips_24kc.ipk
+Size: 24701
+SHA256sum: 7c3c2ad8b12f75174188f1f90fa8c6a94a86e928a01e88100728cf5a7ee38cd5
+Description:  RealTek RTL8821AE firmware
 
 Package: serdisplib
 Version: 2.02-1
@@ -8781,10 +10387,10 @@ Depends: libc, uclibcxx
 License: GPL-2.0-or-later
 Section: utils
 Architecture: mips_24kc
-Installed-Size: 174433
+Installed-Size: 174449
 Filename: smartmontools_7.2-1_mips_24kc.ipk
-Size: 175278
-SHA256sum: 188a3bbd5dbcebb2637b731c37c2e369c7169ff4bd9ff10e69562a99a12784a0
+Size: 175300
+SHA256sum: 601ec5e2fcbca046f41ae75f07cb8e9f829d9fc9c465aed57df5768a1c40a419
 Description:  smartmontools contains utility programs (smartctl) to
  control/monitor storage systems using the Self-Monitoring, Analysis
  and Reporting Technology System (S.M.A.R.T.) built into most modern
@@ -8842,16 +10448,29 @@ Size: 18900
 SHA256sum: 52c91240881b4cc20dce2126164c57283a86f3f91a13806da29e485e4ba77381
 Description:  A set of scripts that does simple SQM configuration.
 
+Package: ss
+Version: 5.11.0-3
+Depends: libc, libnl-tiny1, kmod-netlink-diag
+License: GPL-2.0
+Section: net
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Architecture: mips_24kc
+Installed-Size: 36108
+Filename: ss_5.11.0-3_mips_24kc.ipk
+Size: 36853
+SHA256sum: cb86efea928f0aee5c7e129f0af542964dabce02d0b25bbe1c251785dbca2228
+Description:  Socket statistics utility
+
 Package: sstp-client
 Version: 1.0.13-1
 Depends: libc, libevent2-7, libopenssl1.1, ppp, resolveip
 License: GPL-2.0-or-later
 Section: net
 Architecture: mips_24kc
-Installed-Size: 30806
+Installed-Size: 30807
 Filename: sstp-client_1.0.13-1_mips_24kc.ipk
-Size: 31747
-SHA256sum: a20412cc57f02f08017be9444257a1bf840b468a7a817becb777c1b3284a3249
+Size: 31748
+SHA256sum: bbbd2554f4f062841661c2d01b4b247d48ced8d617736e0eed029018134f7d17
 Description:  The advantage of SSTP compared to other vpn protocols like PPTP and L2TP is that it cannot be easily blocked by firewalls since the traffic is transmitted over HTTPS on port 443.
  This software has a similar commandline and configuration to the standard linux pptp-client software.
  
@@ -8861,6 +10480,20 @@ Description:  The advantage of SSTP compared to other vpn protocols like PPTP an
  - Asynchronous HDLC frame support
  - Integration with pon/poff
  
+
+Package: strace
+Version: 5.10-1
+Depends: libc
+License: LGPL-2.1-or-later
+Section: utils
+CPE-ID: cpe:/a:paul_kranenburg:strace
+Architecture: mips_24kc
+Installed-Size: 280535
+Filename: strace_5.10-1_mips_24kc.ipk
+Size: 279068
+SHA256sum: 1a4d518f4a9a469da2c5b80f561c898ed349544fe37c82afcb2fed255c9b1b1e
+Description:  A useful diagnostic, instructional, and debugging tool. Allows you to track what
+ system calls a program makes while it is running.
 
 Package: stress
 Version: 1.0.4-2
@@ -8909,10 +10542,10 @@ Version: 1.0-1
 Depends: libc
 Section: utils
 Architecture: mips_24kc
-Installed-Size: 7076
+Installed-Size: 7080
 Filename: sunwait_1.0-1_mips_24kc.ipk
-Size: 7880
-SHA256sum: 6686823331c889d8f78e66789351d8cd913ebdf85bfd4c020dd4bc6cf997d371
+Size: 7892
+SHA256sum: 8a869e39eeef19824faf881f22ae335b303679c828b9ae505f8ba5c7a12799b1
 Description:  Calculate sunrise and sunset, as well as civil, nautical, and astronomical twilights.
  Has features that make it useful for home automation tasks.
 
@@ -8946,11 +10579,39 @@ Version: 20210313
 Depends: libc
 Section: utils
 Architecture: all
-Installed-Size: 1711
+Installed-Size: 1713
 Filename: sysinfo_20210313_all.ipk
-Size: 2421
-SHA256sum: a1c5d7af3012e7d8cc355a297fab146bbc59527790a537e8a58d03d669c5fc29
+Size: 2424
+SHA256sum: 8548dd6a00216d66d350bbaca0256985e615b55fac7138064678533945614828
 Description:  eko.one.pl Services
+
+Package: tc-full
+Version: 5.11.0-3
+Depends: libc, kmod-sched-core, libxtables12, tc-mod-iptables, libbpf0
+Provides: tc
+Alternatives: 300:/sbin/tc:/usr/libexec/tc-full
+License: GPL-2.0
+Section: net
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Architecture: mips_24kc
+Installed-Size: 143561
+Filename: tc-full_5.11.0-3_mips_24kc.ipk
+Size: 144265
+SHA256sum: cbff99136cbab9dab67f7812c86e034e9f7b5df73891dcf45f96f77507704670
+Description:  Traffic control utility (full)
+
+Package: tc-mod-iptables
+Version: 5.11.0-3
+Depends: libc, libxtables12
+License: GPL-2.0
+Section: net
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Architecture: mips_24kc
+Installed-Size: 3345
+Filename: tc-mod-iptables_5.11.0-3_mips_24kc.ipk
+Size: 4114
+SHA256sum: 7987e2414080bd718000200a0659e5de1603ffe0be37c06da2b94418bfe4f1aa
+Description:  Traffic control module - iptables action
 
 Package: tcpdump
 Version: 4.9.3-4
@@ -8959,10 +10620,10 @@ License: BSD-3-Clause
 Section: net
 CPE-ID: cpe:/a:tcpdump:tcpdump
 Architecture: mips_24kc
-Installed-Size: 289544
+Installed-Size: 289547
 Filename: tcpdump_4.9.3-4_mips_24kc.ipk
-Size: 290072
-SHA256sum: 46b1f035f2907830464cb1ab7f40e812c9aa95cbdee99a5dcd97e97de28a3207
+Size: 290056
+SHA256sum: ded0dc4ab1b512c19214ef5a5888e8858b3650baebeb0915bc6eb3e1165d469f
 Description:  Network monitoring and data acquisition tool
 
 Package: terminfo
@@ -9112,10 +10773,10 @@ License: BSD-3-Clause
 Section: net
 CPE-ID: cpe:/a:nlnetlabs:unbound
 Architecture: mips_24kc
-Installed-Size: 21168
+Installed-Size: 21167
 Filename: unbound-anchor_1.17.1-1_mips_24kc.ipk
-Size: 21877
-SHA256sum: c95379646904a27d4602f1666fb164d9682d4c9b455f4fb4e94520507c67a4ff
+Size: 21860
+SHA256sum: 422605ac7bd13620e87e15b529491aea3e8cc0c62e1c990df0ac220f60e812b6
 Description:  This package contains the Unbound anchor utility.
 
 Package: unbound-checkconf
@@ -9125,10 +10786,10 @@ License: BSD-3-Clause
 Section: net
 CPE-ID: cpe:/a:nlnetlabs:unbound
 Architecture: mips_24kc
-Installed-Size: 48490
+Installed-Size: 48487
 Filename: unbound-checkconf_1.17.1-1_mips_24kc.ipk
-Size: 48770
-SHA256sum: edbef91cfd9cbd149b0ba39dd59e9ca94150f1da229bbbf6444421e6e1be8018
+Size: 48740
+SHA256sum: 4970bd1c5b8751715d8b10fe4c8ef43535fc3a6c59777d0c949dcc8a5554fd3e
 Description:  This package contains the Unbound DNS configuration checker utility.
 
 Package: unbound-control-setup
@@ -9151,10 +10812,10 @@ License: BSD-3-Clause
 Section: net
 CPE-ID: cpe:/a:nlnetlabs:unbound
 Architecture: mips_24kc
-Installed-Size: 50128
+Installed-Size: 50127
 Filename: unbound-control_1.17.1-1_mips_24kc.ipk
-Size: 50346
-SHA256sum: 91a71f9b19a784a815401dc9e17aba9c0b122448e362f3890752f52b43dc8e9b
+Size: 50342
+SHA256sum: 1a64ba20f202b43d302216c1b95ab3549307d779d91241776f1ddbdaedb2c1d5
 Description:  This package contains the Unbound control utility.
 
 Package: unbound-daemon
@@ -9164,10 +10825,10 @@ License: BSD-3-Clause
 Section: net
 CPE-ID: cpe:/a:nlnetlabs:unbound
 Architecture: mips_24kc
-Installed-Size: 133033
+Installed-Size: 133062
 Filename: unbound-daemon_1.17.1-1_mips_24kc.ipk
-Size: 132703
-SHA256sum: 459ca3a229cb907a842c8037faa89a0a277fc071ebfec6eaabdb4a87e1284a03
+Size: 132738
+SHA256sum: 4e770b6b36d5d7500981a30feb7ca8f458d32a8934f36bb0d420b9ae1066a629
 Description:  This package contains the Unbound daemon including 'libevent', 'libmnl', and
  'libpthread' to better handle large networks with heavy query loads. Options
  are available under libraries/network/libunbound to custom trim Unbound for
@@ -9180,10 +10841,10 @@ License: BSD-3-Clause
 Section: net
 CPE-ID: cpe:/a:nlnetlabs:unbound
 Architecture: mips_24kc
-Installed-Size: 41977
+Installed-Size: 41973
 Filename: unbound-host_1.17.1-1_mips_24kc.ipk
-Size: 42336
-SHA256sum: 3d944516d013f678612e9865d3964909dcdf33ee0b260a0cd88762da52e9aefe
+Size: 42334
+SHA256sum: bf61a03c5aae0eafada2134f14584a58f36e062c721d749ace7b880da5e64958
 Description:  This package contains the Unbound DNS lookup utility.
 
 Package: unixodbc
@@ -9320,6 +10981,22 @@ SHA256sum: 8024f659ce0598cb6cb12959e587c11918b38e0fe18c40fa6f78f4a30293e870
 Description:  This package contains the vpnc-script which is used by vpnc
  and OpenConnect to configure the tunnel interface.
 
+Package: vpnc
+Version: 2022-05-17-5c0ea6a3-1
+Depends: libc, libgpg-error, libgcrypt, kmod-tun, libopenssl1.1, vpnc-scripts, resolveip
+License: GPL-3.0-or-later
+Section: net
+Architecture: mips_24kc
+Installed-Size: 49883
+Filename: vpnc_2022-05-17-5c0ea6a3-1_mips_24kc.ipk
+Size: 50834
+SHA256sum: 14ae5c51e4747bbfaf2a559a045379ef3f877ca4795a36104198bb05dca0ba96
+Description:  A VPN client compatible with Cisco's EasyVPN equipment.
+ 
+ Supports IPSec (ESP) with Mode Configuration and Xauth.  Supports only
+ shared-secret IPSec authentication with Xauth, AES (256, 192, 128),
+ 3DES, 1DES, MD5, SHA1, DH1/2/5/14/15/16/17/18 and IP tunneling.
+
 Package: vxlan
 Version: 7
 Depends: libc, kmod-vxlan
@@ -9386,10 +11063,10 @@ License: GPL-3.0-or-later
 Section: net
 CPE-ID: cpe:/a:gnu:wget
 Architecture: mips_24kc
-Installed-Size: 183957
+Installed-Size: 183968
 Filename: wget-ssl_1.21.1-1_mips_24kc.ipk
-Size: 184451
-SHA256sum: f0632ca3f75c936942ba7aace63746c8defcb29cfb6733f3f3409ad33fb430ed
+Size: 184444
+SHA256sum: 6f4d20fc1791dd65480ef7f4c17c9115f33c62ca2495f437f15b8798ef090ac3
 Description:  Wget is a network utility to retrieve files from the Web using http
  and ftp, the two most widely used Internet protocols. It works
  non-interactively, so it will work in the background, after having
@@ -9414,6 +11091,17 @@ Description:  This client is intelligent and can automatically select the approp
  The internal database is often more accurate than IANA's published one, but
  please send me any information you have regarding domains and network resources
  which are not correctly handled by the program.
+
+Package: wil6210-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 254951
+Filename: wil6210-firmware_20211216-1_mips_24kc.ipk
+Size: 255773
+SHA256sum: 1395911aae3f6dfd0275e24ca69d517a87084d625f5afaf8b7a9f919dc7f52df
+Description:  wil6210 firmware
 
 Package: wireguard-tools
 Version: 1.0.20210223-2
@@ -9459,6 +11147,28 @@ SHA256sum: 3d55c2fd07af56cb9a79ffefb0e6b43cea99dc70a94fe0f3c884ac28b5199b60
 Description:  This package contains a collection of tools for configuring wireless
  adapters implementing the "Linux Wireless Extensions".
 
+Package: wl12xx-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 1175097
+Filename: wl12xx-firmware_20211216-1_mips_24kc.ipk
+Size: 1175091
+SHA256sum: 3eebb0f89bbf82d763c972e42b66fed5c9df51d6a804fcf633d23a6d598a51c6
+Description:  TI WL12xx firmware
+
+Package: wl18xx-firmware
+Version: 20211216-1
+Depends: libc
+Section: firmware
+Architecture: mips_24kc
+Installed-Size: 343335
+Filename: wl18xx-firmware_20211216-1_mips_24kc.ipk
+Size: 343937
+SHA256sum: 9ff5be33eac4d4db98bca22620a9f3bd31805767bbd0bf7aea2099725f4cc162
+Description:  TI WL18xx firmware
+
 Package: wpa-cli
 Version: 2020-06-08-5a8b3662-41
 Depends: libc
@@ -9471,6 +11181,96 @@ Filename: wpa-cli_2020-06-08-5a8b3662-41_mips_24kc.ipk
 Size: 28199
 SHA256sum: 80f88c10a9f8907a5ff328cc93683b4b2ecbf0e79cd7aac676aa23a0fbccbcbf
 Description:  WPA Supplicant command line control utility
+
+Package: wpa-supplicant-basic
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630
+Conflicts: wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini, wpad-openssl, wpad-wolfssl, wpa-supplicant, wpa-supplicant-mesh-openssl, wpa-supplicant-mesh-wolfssl
+Provides: wpa-supplicant
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 212824
+Filename: wpa-supplicant-basic_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 213355
+SHA256sum: 9691c37fd28f1ea5a1b90d3437b7305ef621a537ac4aeb48b7ec70f1c3086425
+Description:  WPA Supplicant (11r, 11w)
+
+Package: wpa-supplicant-mesh-openssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libopenssl1.1
+Conflicts: wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini, wpad-openssl, wpad-wolfssl, wpa-supplicant
+Provides: wpa-supplicant, wpa-supplicant-mesh
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 481423
+Filename: wpa-supplicant-mesh-openssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 480961
+SHA256sum: d1e50570fbf550854ec9d35cd85a0580c9ef5e30a720a36a5be7a2678b6a2fd0
+Description:  WPA Supplicant (OpenSSL, 11s, SAE)
+
+Package: wpa-supplicant-mesh-wolfssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libwolfssl5.5.3.7a924b25
+Conflicts: wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini, wpad-openssl, wpad-wolfssl, wpa-supplicant, wpa-supplicant-mesh-openssl
+Provides: wpa-supplicant, wpa-supplicant-mesh
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 477609
+Filename: wpa-supplicant-mesh-wolfssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 477288
+SHA256sum: 173ace1c73f16533bdf1c97acfea05909d52c8bc7195b372d921d89879716fd3
+Description:  WPA Supplicant (wolfSSL, 11s, SAE)
+
+Package: wpa-supplicant-mini
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630
+Conflicts: wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini, wpad-openssl, wpad-wolfssl, wpa-supplicant, wpa-supplicant-mesh-openssl, wpa-supplicant-mesh-wolfssl, wpa-supplicant-basic
+Provides: wpa-supplicant
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 202494
+Filename: wpa-supplicant-mini_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 202951
+SHA256sum: f2e92c0aba0462db4c0d6bbf23117e48a1ae8130333010a30f169ee31aeb2a91
+Description:  WPA Supplicant (minimal)
+
+Package: wpa-supplicant-openssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libopenssl1.1
+Conflicts: wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini, wpad-openssl, wpad-wolfssl, wpa-supplicant, wpa-supplicant-mesh-openssl, wpa-supplicant-mesh-wolfssl, wpa-supplicant-basic, wpa-supplicant-mini, wpa-supplicant-p2p
+Provides: wpa-supplicant
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 488670
+Filename: wpa-supplicant-openssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 488218
+SHA256sum: cd805b694d681a79139a7fe7f3e240f136fd97bb615d3990ffbabcd93e9e2023
+Description:  WPA Supplicant (OpenSSL full)
+
+Package: wpa-supplicant-p2p
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630
+Conflicts: wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini, wpad-openssl, wpad-wolfssl, wpa-supplicant, wpa-supplicant-mesh-openssl, wpa-supplicant-mesh-wolfssl, wpa-supplicant-basic, wpa-supplicant-mini
+Provides: wpa-supplicant
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 540937
+Filename: wpa-supplicant-p2p_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 540766
+SHA256sum: a4e60527891e7350046f2c8ff6c7714fcf53828efb6578f07f260619eaf4a89d
+Description:  WPA Supplicant (Wi-Fi P2P support)
 
 Package: wpa-supplicant-wolfssl
 Version: 2020-06-08-5a8b3662-41
@@ -9486,6 +11286,158 @@ Filename: wpa-supplicant-wolfssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
 Size: 483789
 SHA256sum: f5ed3eabf07baf8d5d5a080b41930277cd284d7864f56d8199c417c39bd3e5f8
 Description:  WPA Supplicant (wolfSSL full)
+
+Package: wpa-supplicant
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630
+Conflicts: wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini, wpad-openssl, wpad-wolfssl
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 378197
+Filename: wpa-supplicant_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 378311
+SHA256sum: 73fdd5920840a09de39eeb1c63dae4068fb77ed0b8050b5436a26d77b830c70a
+Description:  WPA Supplicant (built-in full)
+
+Package: wpad-basic-openssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libopenssl1.1
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini, hostapd-openssl, hostapd-wolfssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic
+Provides: hostapd, wpa-supplicant
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 376491
+Filename: wpad-basic-openssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 376575
+SHA256sum: bb2c6479938adedbc53da1f43a015f9456a66dd74d641d24723faf9c9f359b01
+Description:  This package contains a basic IEEE 802.1x/WPA Authenticator and Supplicant with WPA-PSK, SAE (WPA3-Personal), 802.11r and 802.11w support.
+
+Package: wpad-basic-wolfssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libwolfssl5.5.3.7a924b25
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini, hostapd-openssl, hostapd-wolfssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl
+Provides: hostapd, wpa-supplicant
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 374420
+Filename: wpad-basic-wolfssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 374693
+SHA256sum: 85b083fa1b72fcfda89651fcc5687130c0e88d2909378135607fc7bbcbde8806
+Description:  This package contains a basic IEEE 802.1x/WPA Authenticator and Supplicant with WPA-PSK, SAE (WPA3-Personal), 802.11r and 802.11w support.
+
+Package: wpad-basic
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini, hostapd-openssl, hostapd-wolfssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl
+Provides: hostapd, wpa-supplicant
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 358469
+Filename: wpad-basic_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 358903
+SHA256sum: 07e460acfe624fceceb95c1522aa74d90fd9a26b37a4b3724b3e42b08ef60bd5
+Description:  This package contains a basic IEEE 802.1x/WPA Authenticator and Supplicant with WPA-PSK, 802.11r and 802.11w support.
+
+Package: wpad-mesh-openssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libopenssl1.1
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini, hostapd-openssl, hostapd-wolfssl, wpad, wpad
+Provides: hostapd, wpa-supplicant, wpa-supplicant-mesh, wpad-mesh
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 596667
+Filename: wpad-mesh-openssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 596217
+SHA256sum: 736e88c718883b0da8b8a929bb1eb3a632bd2ba618b8495ec40e86221452e50f
+Description:  This package contains a minimal IEEE 802.1x/WPA Authenticator and Supplicant (with 802.11s mesh and SAE support).
+
+Package: wpad-mesh-wolfssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libwolfssl5.5.3.7a924b25
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini, hostapd-openssl, hostapd-wolfssl, wpad, wpad-mesh-openssl, wpad, wpad-mesh-openssl
+Provides: hostapd, wpa-supplicant, wpa-supplicant-mesh, wpad-mesh
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 593262
+Filename: wpad-mesh-wolfssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 593197
+SHA256sum: f0eea5e99d17d0342c211ad883aaec76bd7606093a106378266850ce530c6fe8
+Description:  This package contains a minimal IEEE 802.1x/WPA Authenticator and Supplicant (with 802.11s mesh and SAE support).
+
+Package: wpad-mini
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini, hostapd-openssl, hostapd-wolfssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl
+Provides: hostapd, wpa-supplicant
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 326590
+Filename: wpad-mini_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 327098
+SHA256sum: 247e017211d5df1378e705e1cb70cebefab3b363d548044b487bd3dca2e6cab2
+Description:  This package contains a minimal IEEE 802.1x/WPA Authenticator and Supplicant (WPA-PSK only).
+
+Package: wpad-openssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libopenssl1.1
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini, hostapd-openssl, hostapd-wolfssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini
+Provides: hostapd, wpa-supplicant
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 605394
+Filename: wpad-openssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 604316
+SHA256sum: 0b98eb40d73359180fc26d31ef185438fe3b514b07ab64c70247859ead8cdd92
+Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
+ Authenticator and Supplicant
+
+Package: wpad-wolfssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libwolfssl5.5.3.7a924b25
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini, hostapd-openssl, hostapd-wolfssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini, wpad-openssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini, wpad-openssl
+Provides: hostapd, wpa-supplicant
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 600945
+Filename: wpad-wolfssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 600736
+SHA256sum: 54e98f1ca6f8549c44de1fc8e062e6d15add1cdf7e29e1f47bc603543532c994
+Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
+ Authenticator and Supplicant
+
+Package: wpad
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini, hostapd-openssl, hostapd-wolfssl
+Provides: hostapd, wpa-supplicant
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 598404
+Filename: wpad_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 598191
+SHA256sum: 91c0f4209287fc4389b83b675d7368a57a1a6ed60e90aa0e2418c6004abe52b5
+Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
+ Authenticator and Supplicant
 
 Package: wwan
 Version: 2019-04-29-5
