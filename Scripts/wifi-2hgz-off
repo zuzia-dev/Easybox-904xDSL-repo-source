@@ -1,0 +1,13 @@
+#!/bin/bash
+uci set wireless.wl010.disabled='1'
+uci set wireless.default_wl010.disabled='1'
+#uci set wireless.wl010.disabled='1'
+#uci set wireless.default_wl010.disabled='1'
+uci commit wireless
+wifi up
+echo
+echo .......................................... 
+echo WiFi 2 GHz jest nieaktywne.
+echo .......................................... 
+exit 0
+

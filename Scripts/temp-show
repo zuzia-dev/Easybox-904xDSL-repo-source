@@ -1,0 +1,6 @@
+#!/bin/bash
+#cat /sys/devices/platform/cputemp@0/hwmon/hwmon0/temp1_input | sed -e 's/000$//' > plik.txt
+cat /sys/class/hwmon/hwmon0/temp1_input | sed -e 's/500$//' > plik.txt
+cat plik.txt | cut -c 1-2
+exit 0
+

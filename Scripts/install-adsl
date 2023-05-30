@@ -1,0 +1,19 @@
+#!/bin/bash
+opkg update
+opkg install dsl-vrx200-firmware-xdsl-a-patch dsl-vrx200-firmware-xdsl-b \
+kmod-ltq-vdsl-vr9 kmod-ltq-vdsl-vr9-mei ltq-vdsl-app ltq-vdsl-mei_test \
+ltq-vdsl-vr9-vectoring-fw-installer atm-esi kmod-atm kmod-ltq-atm-vr9 \
+kmod-ltq-ptm-vr9 linux-atm br2684ctl kmod-pppoa ppp-mod-pppoa
+/etc/lcd-adsl && cp -r /etc/config/network.adsl /etc/config/network restart &
+#rm /etc/config/network
+#sed -i 's|eth0.2|pppoe-wan|g' /etc/lcd4linux.conf
+echo
+echo .........................................................................
+echo Zrobione!
+echo Wszystkie moduły ADSL/VDSL zostały zainstalowane. Zrestartuj router!
+echo .........................................................................
+echo Done!
+echo All ADSL / VDSL modules have been installed. Restart the router!
+echo .........................................................................
+exit 0
+

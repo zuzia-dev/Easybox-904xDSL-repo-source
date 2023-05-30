@@ -1,0 +1,21 @@
+#!/bin/sh
+kdig -d @1.1.1.1 +tls-ca +tls-host=getdnsapi.net one.one.one.one
+echo -------------------------------------------
+echo Another test:
+echo -------------------------------------------
+echo
+nslookup openwrt.org localhost
+echo -------------------------------------------
+echo Another test: should return A record
+echo -------------------------------------------
+dig sigok.verteiltesysteme.net @127.0.0.1
+echo
+echo -------------------------------------------
+echo Another test: should return SERVFAIL
+echo -------------------------------------------
+dig sigfail.verteiltesysteme.net @127.0.0.1
+echo -------------------------------------------
+echo Another test:
+openssl s_client 1.1.1.1:853
+echo -------------------------------------------
+exit 0

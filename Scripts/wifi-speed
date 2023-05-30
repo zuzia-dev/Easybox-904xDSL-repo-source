@@ -1,0 +1,32 @@
+#!/bin/bash
+iwpriv 'wl000' set Enable=0;iwpriv 'wl000' set RadioOn=0;
+iwpriv 'wl010' set Enable=0;iwpriv 'wl010' set RadioOn=0;
+sleep 1
+iwpriv 'wl000' set HtBw=1
+iwpriv 'wl010' set HtBw=1
+sleep 1
+iwpriv 'wl000' set TxPower=20
+iwpriv 'wl010' set TxPower=20
+sleep 1
+iwpriv 'wl000' set Channel=108
+iwpriv 'wl000' set HtMcs=33
+sleep 1
+iwpriv 'wl000' set HtTxStream=3
+iwpriv 'wl010' set HtTxStream=3
+sleep 1
+iwpriv 'wl000' set AP2040Rescan=1
+iwpriv 'wl010' set AP2040Rescan=1
+sleep 2
+iwpriv 'wl000' set TxPower=100
+iwpriv 'wl010' set TxPower=100
+sleep 2
+iwpriv 'wl000' set Enable=1; iwpriv 'wl000' set RadioOn=1
+iwpriv 'wl010' set Enable=1; iwpriv 'wl010' set RadioOn=1
+echo
+echo ................................................
+echo WiFi 2.4 GHz i 5GHz - szerokość kanału 40 Mhz.
+echo ................................................
+echo WiFi 2.4 GHz and 5GHz - 40 Mhz bandwidth.
+echo ................................................
+exit 0
+

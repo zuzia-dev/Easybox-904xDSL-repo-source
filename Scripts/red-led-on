@@ -1,0 +1,4 @@
+#!/bin/sh
+#echo 0 > /sys/devices/platform/gpio-leds/leds/VGV952CJW33:red:power/brightness
+echo 1 > /sys/class/leds/VGV952CJW33\:red\:power/brightness
+exit 0

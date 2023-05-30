@@ -1,0 +1,7 @@
+#!/bin/bash
+#echo 1 > /sys/class/backlight/fb_ili9341_eb904/bl_power
+/etc/init.d/lcd4linux restart
+echo 1 > /sys/devices/platform/1f400000.fpi/1f400000.fpi:localbus@0/13000000.display/backlight/fb_ili9341_eb904/bl_power
+#echo '1' >>/sys/class/backlight/fb_ili9341_eb904/bl_power
+exit 0
+

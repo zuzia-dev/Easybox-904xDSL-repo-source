@@ -1,0 +1,15 @@
+#!/bin/bash
+uci set wireless.wl000.disabled='0'
+uci set wireless.default_wl000.disabled='0'
+uci set wireless.wl010.disabled='0'
+uci set wireless.default_wl010.disabled='0'
+uci commit wireless
+wifi up
+echo
+echo .......................................... 
+echo WiFi 2.4 GHz oraz 5 GHz jest aktywne.
+echo .......................................... 
+echo 2.4 GHz and 5GHz WiFi networks are enabled.
+echo .......................................... 
+exit 0
+

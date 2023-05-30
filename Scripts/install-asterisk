@@ -1,0 +1,72 @@
+#!/bin/bash
+opkg update
+opkg install \
+asterisk-app-authenticate \
+asterisk-app-chanisavail \
+asterisk-app-chanspy \
+asterisk-app-confbridge \
+asterisk-app-directed-pickup \
+asterisk-app-disa \
+asterisk-app-exec \
+asterisk-app-mixmonitor \
+asterisk-app-read \
+asterisk-app-readexten \
+asterisk-app-record \
+asterisk-app-sayunixtime \
+asterisk-app-senddtmf \
+asterisk-app-sms \
+asterisk-app-stack \
+asterisk-app-system \
+asterisk-app-waituntil \
+asterisk-app-while \
+asterisk-bridge-builtin-features \
+asterisk-bridge-simple \
+asterisk-cdr \
+asterisk-cdr-csv \
+asterisk-chan-dongle \
+asterisk-chan-lantiq \
+asterisk-chan-sip \
+asterisk-codec-a-mu \
+asterisk-codec-alaw \
+asterisk-codec-gsm \
+asterisk-codec-resample \
+asterisk-codec-ulaw \
+asterisk-curl \
+asterisk-format-gsm \
+asterisk-format-pcm \
+asterisk-format-sln \
+asterisk-format-wav \
+asterisk-format-wav-gsm \
+asterisk-func-base64 \
+asterisk-func-blacklist \
+asterisk-func-channel \
+asterisk-func-cut \
+asterisk-func-devstate \
+asterisk-func-extstate \
+asterisk-func-global \
+asterisk-func-shell \
+asterisk-func-uri \
+asterisk-func-volume \
+asterisk-pbx-spool \
+asterisk-res-adsi \
+asterisk-res-agi \
+asterisk-res-clioriginate \
+asterisk-res-http-websocket \
+asterisk-res-monitor \
+asterisk-res-resolver-unbound \
+asterisk-res-rtp-asterisk \
+asterisk-res-speech \
+asterisk-res-stun-monitor \
+--force-depends
+uci set asterisk.general.enabled=1
+uci commit asterisk
+/etc/init.d/asterisk start
+echo
+echo ............................. 
+echo Zrobione!
+echo Asterisk zainstalowany.
+echo ..............................
+echo Done!
+echo Asterisk installed.
+echo ..............................
+exit 0

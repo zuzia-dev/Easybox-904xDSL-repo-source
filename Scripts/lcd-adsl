@@ -1,0 +1,3 @@
+#!/bin/bash
+sed -i 's|eth0.2|pppoe-wan|g' /etc/lcd4linux.conf
+exit 0

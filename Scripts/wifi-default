@@ -1,0 +1,15 @@
+#!/bin/bash
+rm /etc/config/wireless
+wifi config
+/etc/init.d/uhttpd reload
+echo
+echo .........................................................................
+echo Zrobione!
+echo Domyslne wartosci WiFi zostaly przywrocone!
+echo .........................................................................
+echo
+echo .........................................................................
+echo Done!
+echo The default WiFi values have been restored!
+echo .........................................................................
+exit 0

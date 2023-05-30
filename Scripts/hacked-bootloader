@@ -1,0 +1,19 @@
+#!/bin/sh
+TARGET_HOST='www.smp.ugu.pl'
+
+count=$(ping -c 3 $TARGET_HOST | grep from* | wc -l)
+
+if [ $count -eq 0 ]; then
+    echo 
+    echo "Internet Offline. Aborting!" 
+    echo 
+    exit
+else
+  wget http://www.smp.ugu.pl/u-boot.lq
+  flash_eraseall /dev/mtd0
+  nandwrite -p /dev/mtd0 u-boot.lq
+  rm ./u-boot.lq
+  echo
+  echo "Hacked bootloader is installed!"
+  echo
+fi
