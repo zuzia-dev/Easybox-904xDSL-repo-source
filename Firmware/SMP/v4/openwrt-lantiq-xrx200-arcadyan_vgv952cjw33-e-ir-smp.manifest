@@ -192,6 +192,7 @@ kmod-lib-zlib-deflate - 5.4.256-1
 kmod-lib-zlib-inflate - 5.4.256-1
 kmod-lib-zstd - 5.4.256-1
 kmod-ltq-atm-vr9 - 5.4.256-3
+kmod-ltq-deu-vr9 - 5.4.256-1
 kmod-ltq-ifxos - 5.4.256+1.5.19-4
 kmod-ltq-ptm-vr9 - 5.4.256-3
 kmod-ltq-vdsl-vr9 - 5.4.256+4.17.18.6-4
