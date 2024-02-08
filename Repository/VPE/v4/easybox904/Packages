@@ -4223,6 +4223,19 @@ Description:  Full versions of standard GNU utilities. If an equivalent Busybox 
  available, you should consider compiling that instead as Busybox applets are
  usually smaller, at the expense of reduced functionality.
 
+Package: curl
+Version: 7.83.1-4.1
+Depends: libc, libcurl4
+License: MIT
+Section: net
+CPE-ID: cpe:/a:haxx:libcurl
+Architecture: mips_24kc
+Installed-Size: 63403
+Filename: curl_7.83.1-4.1_mips_24kc.ipk
+Size: 64160
+SHA256sum: be1b1da96c23ee8c30a4466828aa5715f622ced818accaffc8130cea4e647bb7
+Description:  A client-side URL transfer utility
+
 Package: dahdi-tools-libtonezone
 Version: 3.1.0-2
 Depends: libc, kmod-dahdi
@@ -4310,6 +4323,35 @@ Description:  The purpose of disktype is to detect the content format of a disk 
  The program is written in C and is designed to compile on any modern Unix flavour.
  It is self-contained and in general works without special libraries or headers.
  Some system-dependant features can be used to gather additional information.
+
+Package: dnscrypt-proxy-resolvers
+Version: 2019-08-20-07ac3825-3
+Depends: libc
+License: ISC
+Section: net
+Architecture: mips_24kc
+Installed-Size: 9160
+Filename: dnscrypt-proxy-resolvers_2019-08-20-07ac3825-3_mips_24kc.ipk
+Size: 9961
+SHA256sum: be3457633db48228349607da39b63b52465da75ee0303e8125c5d00c1f06653e
+Description:  Package with current list of dnscrypt-proxy resolvers.
+
+Package: dnscrypt-proxy
+Version: 2019-08-20-07ac3825-3
+Depends: libc, libsodium, dnscrypt-proxy-resolvers
+License: ISC
+Section: net
+Architecture: mips_24kc
+Installed-Size: 70727
+Filename: dnscrypt-proxy_2019-08-20-07ac3825-3_mips_24kc.ipk
+Size: 71639
+SHA256sum: 431d4afbc8f343d5b02dcc0104950acae2a2bb54285be59779cc87abcb6eaa17
+Description:  dnscrypt-proxy provides local service which can be used directly as your
+ local resolver or as a DNS forwarder, encrypting and authenticating requests
+ using the DNSCrypt protocol and passing them to an upstream server.
+ The DNSCrypt protocol uses high-speed high-security elliptic-curve cryptography
+ and is very similar to DNSCurve, but focuses on securing communications between
+ a client and its first-level resolver.
 
 Package: dnsmasq-full
 Version: 2.89-7
@@ -4564,6 +4606,19 @@ Size: 223927
 SHA256sum: 166140351b04bdc04a11f8cd901d25ad9dd2012fb57385bd5aa1b5ecbf4a9900
 Description:  GNU awk
 
+Package: getdns
+Version: 1.7.0-1
+Depends: libc, libopenssl1.1
+License: BSD-3-Clause
+Section: libs
+Architecture: mips_24kc
+Installed-Size: 161201
+Filename: getdns_1.7.0-1_mips_24kc.ipk
+Size: 160564
+SHA256sum: be27de1c2126dd3f07da07fd8f65f5259e8894d29d7208bb9f191a27a1c01be1
+Description:  This package contains the getdns library (libgetdns).
+ This package also contains the "getdns_query" command line wrapper for getdns exposing the features of this implementation (both in the official API and the additional API functions).
+
 Package: getrandom
 Version: 2020-10-25-9ef88681-2
 Depends: libc
@@ -4588,6 +4643,26 @@ Filename: glib2_2.66.4-1_mips_24kc.ipk
 Size: 928565
 SHA256sum: b0d5dba896d5c9793867e71e941cb458436c6bd1dbcb1fe5afb47debff07c05c
 Description:  The GLib library of C routines
+
+Package: gnutls-utils
+Version: 3.7.8-2
+Depends: libc, libgnutls
+License: LGPL-2.1-or-later
+Section: utils
+CPE-ID: cpe:/a:gnu:gnutls
+Architecture: mips_24kc
+Installed-Size: 123731
+Filename: gnutls-utils_3.7.8-2_mips_24kc.ipk
+Size: 120997
+SHA256sum: 7b03e36554cba3cd6864b209f2a164b5922a203f3d2f91eb53284f0afd6d0c49
+Description:  GnuTLS is a secure communications library implementing the SSL, TLS
+ and DTLS protocols and technologies around them. It provides a simple
+ C language application programming interface (API) to access the secure
+ communications protocols as well as APIs to parse and write X.509, PKCS12,
+ OpenPGP and other required structures. It is aimed to be portable and
+ efficient with focus on security and interoperability.
+ This package contains the GnuTLS gnutls-cli, gnutls-serv, psktool,
+ and srptool utilities.
 
 Package: gre
 Version: 12
@@ -4614,6 +4689,51 @@ Size: 46423
 SHA256sum: 13c1d0b4721b98116cdd089e444b37e186cc6693c76d8c4963e129b14bd985f7
 Description:  get/set SATA/IDE device parameters
 
+Package: hostapd-basic-openssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libopenssl1.1
+Conflicts: hostapd, hostapd-basic
+Provides: hostapd
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 248818
+Filename: hostapd-basic-openssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 249608
+SHA256sum: 3f6554f659071e6f38dd20249102c1ef293c2b7dd37fd38cc2fa6ac7f1e2ae3c
+Description:  This package contains a basic IEEE 802.1x/WPA Authenticator with WPA-PSK, 802.11r and 802.11w support.
+
+Package: hostapd-basic-wolfssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libwolfssl5.5.3.7a924b25
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl
+Provides: hostapd
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 247433
+Filename: hostapd-basic-wolfssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 248232
+SHA256sum: e814b967ddd1a9cfe13a2d9f76874976bbd917c35f59903b1cb141ac8b77e6fa
+Description:  This package contains a basic IEEE 802.1x/WPA Authenticator with WPA-PSK, 802.11r and 802.11w support.
+
+Package: hostapd-basic
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630
+Conflicts: hostapd
+Provides: hostapd
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 236028
+Filename: hostapd-basic_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 236925
+SHA256sum: 7317d5767aee8458a6a05f33e84656d532fe788b4c60d5d53b22a16de08089b1
+Description:  This package contains a basic IEEE 802.1x/WPA Authenticator with WPA-PSK, 802.11r and 802.11w support.
+
 Package: hostapd-common
 Version: 2020-06-08-5a8b3662-41
 Depends: libc
@@ -4626,6 +4746,37 @@ Filename: hostapd-common_2020-06-08-5a8b3662-41_mips_24kc.ipk
 Size: 12293
 SHA256sum: 83c5959b00e2ea6779b8fed28cc4e28316c77bc5a0db92ead1584ff0b620981e
 Description:  hostapd/wpa_supplicant common support files
+
+Package: hostapd-mini
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl
+Provides: hostapd
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 209778
+Filename: hostapd-mini_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 210694
+SHA256sum: a65fad3704bf073ef4d9dbeda51a8f85f2bb8ff79b31712fab84bcd2ff266621
+Description:  This package contains a minimal IEEE 802.1x/WPA Authenticator (WPA-PSK only).
+
+Package: hostapd-openssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libopenssl1.1
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini
+Provides: hostapd
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 354019
+Filename: hostapd-openssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 354407
+SHA256sum: 2b57524272cf19e8da026803834f4ad58acf9031c89b4f9d2bc4713d7467c567
+Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
+ Authenticator.
 
 Package: hostapd-utils
 Version: 2020-06-08-5a8b3662-41
@@ -4640,6 +4791,36 @@ Size: 16120
 SHA256sum: d378489f5333f1b2ae60d4d384166ec300a8669e67080d0a0101318d3741c10a
 Description:  This package contains a command line utility to control the
  IEEE 802.1x/WPA/EAP/RADIUS Authenticator.
+
+Package: hostapd-wolfssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libwolfssl5.5.3.7a924b25
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini, hostapd-openssl
+Provides: hostapd
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 350163
+Filename: hostapd-wolfssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 350767
+SHA256sum: 62453d64c8b4f01d4c608b8690884c40c07a65d5e31616304a3f2dbf90a2a1ab
+Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
+ Authenticator.
+
+Package: hostapd
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 365938
+Filename: hostapd_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 366748
+SHA256sum: 5f7aa38f00b9ea23ac9318029d58a5eb2d23e8229a9b057469ddf140b8112d7b
+Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
+ Authenticator.
 
 Package: htop
 Version: 3.3.0-1
@@ -5059,6 +5240,21 @@ SHA256sum: ea562cd154db167248ee2d8c81a4f524863522c76a6c0441caab62567cb95b09
 Description:  This package contains libcom_err, the common error description library
  bundled with e2fsprogs.
 
+Package: libcurl4
+Version: 7.83.1-4.1
+Depends: libc, libopenssl1.1, zlib, libzstd, libpthread, libopenldap, libidn2, libssh2-1, libnghttp2-14, ca-bundle
+Provides: libcurl
+License: MIT
+Section: libs
+ABIVersion: 4
+CPE-ID: cpe:/a:haxx:libcurl
+Architecture: mips_24kc
+Installed-Size: 230069
+Filename: libcurl4_7.83.1-4.1_mips_24kc.ipk
+Size: 229982
+SHA256sum: f634a08c1ff1ee3ced70fdbe88457c34fbe010bf784d9fa0961372e45b5a9468
+Description:  A client-side URL transfer library
+
 Package: libdb47
 Version: 4.7.25.4.NC-6
 Depends: libc
@@ -5398,6 +5594,24 @@ Size: 73127
 SHA256sum: 684c362ebf73574de561360d6c463c6a4dd7890df1d773330e9a04da8025d013
 Description:  Free Lossless Audio Codec library
 
+Package: libfuse1
+Version: 2.9.9-1
+Depends: libc, kmod-fuse, libpthread
+Provides: libfuse
+License: LGPL-2.1-only
+Section: libs
+ABIVersion: 1
+CPE-ID: cpe:/a:fuse_project:fuse
+Architecture: mips_24kc
+Installed-Size: 57994
+Filename: libfuse1_2.9.9-1_mips_24kc.ipk
+Size: 58785
+SHA256sum: 4ff156db26199ec70e38d903736200d57bd8e2fa2440b236e06a24a30840ef12
+Description:  FUSE (Filesystem in UserSpacE)
+ This package contains the FUSE shared libraries, needed by other programs.
+ - libfuse
+ - libulockmgr
+
 Package: libgcrypt
 Version: 1.8.7-2
 Depends: libc, libgpg-error
@@ -5462,6 +5676,38 @@ Size: 217096
 SHA256sum: cada9dd959423c865197d32eea7e62322c79381e896af33f289f5401476312fa
 Description:  GMP is a free library for arbitrary precision arithmetic, operating on
  signed integers, rational numbers, and floating point numbers.
+
+Package: libgnutls-dane
+Version: 3.7.8-2
+Depends: libc, libgnutls, libunbound
+License: LGPL-2.1-or-later
+Section: libs
+CPE-ID: cpe:/a:gnu:gnutls
+Architecture: mips_24kc
+Installed-Size: 16893
+Filename: libgnutls-dane_3.7.8-2_mips_24kc.ipk
+Size: 17715
+SHA256sum: 37bbb88cfb56c5ba4d6043f45d2dc1704c22f8b03b65566b9b04d9da0452d56b
+Description:  GNU TLS (libgnutls-dane library)
+
+Package: libgnutls
+Version: 3.7.8-2
+Depends: libc, libnettle8, libgmp10, kmod-cryptodev, libatomic1
+License: LGPL-2.1-or-later
+Section: libs
+CPE-ID: cpe:/a:gnu:gnutls
+Architecture: mips_24kc
+Installed-Size: 856720
+Filename: libgnutls_3.7.8-2_mips_24kc.ipk
+Size: 855879
+SHA256sum: a8306f7c3cd6e95ab24791b37003e5a3654cf10cd0706cff39795331f846af72
+Description:  GnuTLS is a secure communications library implementing the SSL, TLS
+ and DTLS protocols and technologies around them. It provides a simple
+ C language application programming interface (API) to access the secure
+ communications protocols as well as APIs to parse and write X.509, PKCS12,
+ OpenPGP and other required structures. It is aimed to be portable and
+ efficient with focus on security and interoperability.
+ This package contains the GnuTLS shared library, needed by other programs.
 
 Package: libgpg-error
 Version: 1.45-1
@@ -6570,6 +6816,21 @@ Description:  libpri is a C implementation of the Primary Rate ISDN specificatio
  May 12, 2001, it has been tested work with NI-2, Nortel DMS-100, and
  Lucent 5E Custom protocols on switches from Nortel and Lucent.
 
+Package: libpython3-3.9
+Version: 3.9.18-1
+Depends: libc, libpthread, zlib
+Provides: libpython3
+License: Python/2.0
+Section: lang
+ABIVersion: -3.9
+CPE-ID: cpe:/a:python:python
+Architecture: mips_24kc
+Installed-Size: 1055614
+Filename: libpython3-3.9_3.9.18-1_mips_24kc.ipk
+Size: 1051257
+SHA256sum: 55a44e1b842de9246c19fdfa219dae5c27a4619953b5d4a2e8619a14bfdd7bb0
+Description:  This package contains only core Python library.
+
 Package: libqmi
 Version: 1.30.8-1
 Depends: libc, glib2, libmbim, libqrtr-glib
@@ -6700,6 +6961,24 @@ Filename: libspandsp_0.0.6-4_mips_24kc.ipk
 Size: 274156
 SHA256sum: 5bc42fa461944247f3a6b1340a2ecb6580e9064bc79df8f5fad7b62d89f76338
 Description:  spandsp library
+
+Package: libsqlite3-0
+Version: 3400000-1
+Depends: libc, libpthread, zlib
+Provides: libsqlite3
+License: PUBLICDOMAIN
+Section: libs
+ABIVersion: -0
+CPE-ID: cpe:/a:sqlite:sqlite
+Architecture: mips_24kc
+Installed-Size: 501654
+Filename: libsqlite3-0_3400000-1_mips_24kc.ipk
+Size: 501628
+SHA256sum: 2d7de65768580c77bb01dc3b360ec26318e3f86e3ff84e3c6998a7850d6ee147
+Description:  SQLite is a small C library that implements a self-contained, embeddable,
+ zero-configuration SQL database engine.
+ This package contains the SQLite (v3.x) shared library, used by other
+ programs.
 
 Package: libsrtp2
 Version: 2.3.0-1
@@ -7513,6 +7792,17 @@ Size: 9312
 SHA256sum: e4edb13627f2d0d033b6b3410dbebccec2a0a2d7172762c5804e5b6cc1f3a0e7
 Description:  LuCI JS interface for the lite-watchdog scripts.
 
+Package: luci-app-modemband
+Version: 1.0.24-20240121
+Depends: libc, sms-tool, modemband
+Section: luci
+Architecture: all
+Installed-Size: 6720
+Filename: luci-app-modemband_1.0.24-20240121_all.ipk
+Size: 7683
+SHA256sum: 65f1de269e6c968cffc30c219caa1daf2cfe441a1901f8f3bddfbfa6bf3d1c0d
+Description:  LuCI JS interface for the modemband. The package allows set LTE/5G bands for selected 4G/5G modems.
+
 Package: luci-app-n2n
 Version: 3.0.0
 Depends: libc, n2n-v2
@@ -8227,6 +8517,17 @@ Filename: luci-i18n-lite-watchdog-pl_git-23.206.73284-77da658_all.ipk
 Size: 3178
 SHA256sum: 2c7c3a756b56b84d618845816d714cac457226e2cb8e5c3c9a81cf0c3ff8bd33
 Description:  Translation for luci-app-lite-watchdog - Polski (Polish)
+
+Package: luci-i18n-modemband-pl
+Version: git-23.259.64049-e7b667a
+Depends: libc, luci-app-modemband
+Section: luci
+Architecture: all
+Installed-Size: 2439
+Filename: luci-i18n-modemband-pl_git-23.259.64049-e7b667a_all.ipk
+Size: 3221
+SHA256sum: 52bcc9df1cd3ae84d18801a072c0802d5a7a607d56a27d03a4a981e607fa9a4d
+Description:  Translation for luci-app-modemband - Polski (Polish)
 
 Package: luci-i18n-nlbwmon-de
 Version: git-23.090.62029-650e6d2
@@ -9469,6 +9770,17 @@ Size: 18374
 SHA256sum: 103bebceb2b9c008828e954469962d5d02eeafe06def5117e9c3c245530dfdc8
 Description:  Utility for creating a Flash-Friendly File System (F2FS)
 
+Package: modemband
+Version: 20240130
+Depends: libc, sms-tool
+Section: net
+Architecture: all
+Installed-Size: 5773
+Filename: modemband_20240130_all.ipk
+Size: 6512
+SHA256sum: 63ae14d6f740c9c4385b87f34299e57da04d7681f1132bc8d845e6efd89463f6
+Description:  Setting LTE/5G bands for selected modems
+
 Package: modemmanager
 Version: 1.18.12-5
 Depends: libc, glib2, dbus, ppp, libmbim, libqmi
@@ -10229,6 +10541,335 @@ Size: 2665
 SHA256sum: 96dee342466a19e13c3f2767dab14a338a37647dfec495307bbc00d0c0606605
 Description:  This package contains the channel bonding proto handler for netifd
 
+Package: python3-asyncio
+Version: 3.9.18-1
+Depends: libc, python3-light
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mips_24kc
+Installed-Size: 144623
+Filename: python3-asyncio_3.9.18-1_mips_24kc.ipk
+Size: 145608
+SHA256sum: d52921f164105c5e6a8fe8cb18d274c8c1a723ae2fef750d047e1193aaa7b6bc
+Description:  Python 3.9 asyncio module
+
+Package: python3-base
+Version: 3.9.18-1
+Depends: libc, libpthread, zlib, libpython3-3.9
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mips_24kc
+Installed-Size: 137162
+Filename: python3-base_3.9.18-1_mips_24kc.ipk
+Size: 137560
+SHA256sum: 82a69113e16e205d7e0d854f7b184a4a3c7338065b713dfe7b7be41884b8e801
+Description:  This package contains only the interpreter and the bare minimum
+ for the interpreter to start.
+
+Package: python3-cgi
+Version: 3.9.18-1
+Depends: libc, python3-light, python3-email
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mips_24kc
+Installed-Size: 12079
+Filename: python3-cgi_3.9.18-1_mips_24kc.ipk
+Size: 12955
+SHA256sum: e60476da88ea1744c284ec30db7c021c8dae8327357f413047d942aff3723d75
+Description:  Python 3.9 cgi module
+
+Package: python3-cgitb
+Version: 3.9.18-1
+Depends: libc, python3-light, python3-cgi, python3-pydoc
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mips_24kc
+Installed-Size: 5518
+Filename: python3-cgitb_3.9.18-1_mips_24kc.ipk
+Size: 6368
+SHA256sum: f9129b38bc22616ae2066fc9399ff5f96e4d5873fe355e81fd47999644f9c239
+Description:  Python 3.9 cgitb module
+
+Package: python3-codecs
+Version: 3.9.18-1
+Depends: libc, python3-light
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mips_24kc
+Installed-Size: 836231
+Filename: python3-codecs_3.9.18-1_mips_24kc.ipk
+Size: 802308
+SHA256sum: 0197e92ba177ae32248b80d23086faeb11af0d500f143b0b40661ed1f8534838
+Description:  Python 3.9 codecs + unicode support
+
+Package: python3-ctypes
+Version: 3.9.18-1
+Depends: libc, python3-light
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mips_24kc
+Installed-Size: 70441
+Filename: python3-ctypes_3.9.18-1_mips_24kc.ipk
+Size: 71259
+SHA256sum: c88959ce6ce02cd70a53279ce289f3d4619ef1db8b57921705c722c2530258f0
+Description:  Python 3.9 ctypes module
+
+Package: python3-dbm
+Version: 3.9.18-1
+Depends: libc, python3-light, libdb47
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mips_24kc
+Installed-Size: 10923
+Filename: python3-dbm_3.9.18-1_mips_24kc.ipk
+Size: 11762
+SHA256sum: 59f327e22b016ea9eb3f030a7ef12335a20e43d22e22c0bc77c9a2f6d18d1ced
+Description:  Python 3.9 dbm module
+
+Package: python3-decimal
+Version: 3.9.18-1
+Depends: libc, python3-light
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mips_24kc
+Installed-Size: 82682
+Filename: python3-decimal_3.9.18-1_mips_24kc.ipk
+Size: 83055
+SHA256sum: c86c624431891ce613c32d3d053911701e8bfa35c428ba8e5e05ca449a452b2d
+Description:  Python 3.9 decimal module
+
+Package: python3-distutils
+Version: 3.9.18-1
+Depends: libc, python3-light, python3-email
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mips_24kc
+Installed-Size: 175890
+Filename: python3-distutils_3.9.18-1_mips_24kc.ipk
+Size: 176871
+SHA256sum: 633e7f1fcf4c56de3083f516f484a8501ab2b439ec224bb8a7191a1dd9f7d51d
+Description:  Python 3.9 distutils module
+
+Package: python3-email
+Version: 3.9.18-1
+Depends: libc, python3-light
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mips_24kc
+Installed-Size: 113075
+Filename: python3-email_3.9.18-1_mips_24kc.ipk
+Size: 114070
+SHA256sum: 6c24957fa281ca602437c6c7502b3d0aad6b261109cabc278b9e9b8dac32b337
+Description:  Python 3.9 email module
+
+Package: python3-gdbm
+Version: 3.9.18-1
+Depends: libc, python3-light, libgdbm
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mips_24kc
+Installed-Size: 6833
+Filename: python3-gdbm_3.9.18-1_mips_24kc.ipk
+Size: 7688
+SHA256sum: 5c5818f8b5f0aa8d1a99c93f7bdafce831186533e6af62641e8315e7d46b310b
+Description:  Python 3.9 gdbm module
+
+Package: python3-light
+Version: 3.9.18-1
+Depends: libc, python3-base, libffi, libbz2-1.0, libuuid1
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mips_24kc
+Installed-Size: 1869085
+Filename: python3-light_3.9.18-1_mips_24kc.ipk
+Size: 1868696
+SHA256sum: 1060d6aff5ebc64eaf9041058d5197dda9364aa3de08a5edac252c091fc62574
+Description:  This package is essentially the python3-base package plus
+ a few of the rarely used (and big) libraries stripped out
+ into separate packages.
+
+Package: python3-logging
+Version: 3.9.18-1
+Depends: libc, python3-light
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mips_24kc
+Installed-Size: 52297
+Filename: python3-logging_3.9.18-1_mips_24kc.ipk
+Size: 53258
+SHA256sum: 46b2ac58bcf9221e828aa607ae3e6db97ca412f5a007b75bf6a2b81123e4c091
+Description:  Python 3.9 logging module
+
+Package: python3-lzma
+Version: 3.9.18-1
+Depends: libc, python3-light, liblzma
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mips_24kc
+Installed-Size: 15584
+Filename: python3-lzma_3.9.18-1_mips_24kc.ipk
+Size: 16393
+SHA256sum: 8d8f32974265e4de57d7e15c9cb720e26e2913c9a6ce6abc481bc39406c5b8af
+Description:  Python 3.9 lzma module
+
+Package: python3-multiprocessing
+Version: 3.9.18-1
+Depends: libc, python3-light
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mips_24kc
+Installed-Size: 99365
+Filename: python3-multiprocessing_3.9.18-1_mips_24kc.ipk
+Size: 100356
+SHA256sum: 02fbfdf9134c9df4f72dd8decc0a5ad50b446742b8b735100acff653e9a8d5d2
+Description:  Python 3.9 multiprocessing
+
+Package: python3-ncurses
+Version: 3.9.18-1
+Depends: libc, python3-light, libncursesw6
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mips_24kc
+Installed-Size: 44891
+Filename: python3-ncurses_3.9.18-1_mips_24kc.ipk
+Size: 45258
+SHA256sum: f2a295a6aeb6eeb6adb5dc129122ddacc0f9597e1bb2bb7e197f0e19ea2bc1f2
+Description:  Python 3.9 ncurses module
+
+Package: python3-openssl
+Version: 3.9.18-1
+Depends: libc, python3-light, libopenssl1.1, ca-certs
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mips_24kc
+Installed-Size: 66898
+Filename: python3-openssl_3.9.18-1_mips_24kc.ipk
+Size: 65593
+SHA256sum: 39f082589088c754eb7dec5b78894a3606e51ffdc330ef91e39c71d68810e8b9
+Description:  Python 3.9 SSL module
+
+Package: python3-pkg-resources
+Version: 58.1.0-1
+Depends: libc, python3
+License: MIT
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mips_24kc
+Installed-Size: 146502
+Filename: python3-pkg-resources_58.1.0-1_mips_24kc.ipk
+Size: 147433
+SHA256sum: 0c4bbc596a2aed3c1a532065d2972cf7ef2a0852a47c39051180a53d21285307
+Description:  Python 3.9 pkg_resources module (part of setuptools)
+
+Package: python3-pydoc
+Version: 3.9.18-1
+Depends: libc, python3-light
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mips_24kc
+Installed-Size: 193576
+Filename: python3-pydoc_3.9.18-1_mips_24kc.ipk
+Size: 194550
+SHA256sum: 1a50c1ccf10bca1e199a57106504ba7e18448cdefae057575450ae3abc420cbe
+Description:  Python 3.9 pydoc module
+
+Package: python3-readline
+Version: 3.9.18-1
+Depends: libc, python3-light, libreadline8, libncursesw6
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mips_24kc
+Installed-Size: 9024
+Filename: python3-readline_3.9.18-1_mips_24kc.ipk
+Size: 9824
+SHA256sum: 686d3af39b0c1f2eb0d451d2836255394cefb6b1cd1c21dd012e480ea31ee349
+Description:  Python 3.9 readline module
+
+Package: python3-sqlite3
+Version: 3.9.18-1
+Depends: libc, python3-light, libsqlite3-0
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mips_24kc
+Installed-Size: 27046
+Filename: python3-sqlite3_3.9.18-1_mips_24kc.ipk
+Size: 27867
+SHA256sum: f24c7a4a9176f6259a475234f4e7429bf35ab082276cb3557085d6baa0ccb0f4
+Description:  Python 3.9 sqlite3 module
+
+Package: python3-unittest
+Version: 3.9.18-1
+Depends: libc, python3-light
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mips_24kc
+Installed-Size: 77151
+Filename: python3-unittest_3.9.18-1_mips_24kc.ipk
+Size: 78113
+SHA256sum: a034c5961b614c682c6c5ef91428495a97e92a7847f128fb6e2d00cea212195c
+Description:  Python 3.9 unittest module
+
+Package: python3-urllib
+Version: 3.9.18-1
+Depends: libc, python3-light, python3-email
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mips_24kc
+Installed-Size: 51184
+Filename: python3-urllib_3.9.18-1_mips_24kc.ipk
+Size: 52172
+SHA256sum: 850a35cecf99173a4653060e5a702ac43b25be9ea657facf7b93b9685c039794
+Description:  Python 3.9 URL library module
+
+Package: python3-xml
+Version: 3.9.18-1
+Depends: libc, python3-light, python3-urllib
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mips_24kc
+Installed-Size: 203484
+Filename: python3-xml_3.9.18-1_mips_24kc.ipk
+Size: 203523
+SHA256sum: 0ca4aa3979f4384e4fb8b1665de22e3b4a170a3653e3dc2a79209b4ff6294f4e
+Description:  Python 3.9 xml libs
+
+Package: python3
+Version: 3.9.18-1
+Depends: libc, python3-light, python3-asyncio, python3-cgi, python3-cgitb, python3-codecs, python3-ctypes, python3-dbm, python3-decimal, python3-distutils, python3-email, python3-gdbm, python3-logging, python3-lzma, python3-multiprocessing, python3-ncurses, python3-openssl, python3-pydoc, python3-readline, python3-sqlite3, python3-unittest, python3-urllib, python3-xml
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mips_24kc
+Installed-Size: 105
+Filename: python3_3.9.18-1_mips_24kc.ipk
+Size: 1102
+SHA256sum: d3fd5ec1ba16037b966d53e77c53240671c4f2c9d3b95e7e1fbd0f93f76d4c73
+Description:  This package contains the (almost) full Python install.
+ It's python3-light + all other packages.
+
 Package: qos-scripts
 Version: 1.3.1-31
 Depends: libc, tc, kmod-sched-core, kmod-sched-connmark, kmod-ifb, iptables, iptables-mod-ipopt, iptables-mod-conntrack-extra
@@ -10849,6 +11490,20 @@ Description:  The advantage of SSTP compared to other vpn protocols like PPTP an
  - Integration with pon/poff
  
 
+Package: strace
+Version: 5.10-1
+Depends: libc
+License: LGPL-2.1-or-later
+Section: utils
+CPE-ID: cpe:/a:paul_kranenburg:strace
+Architecture: mips_24kc
+Installed-Size: 280535
+Filename: strace_5.10-1_mips_24kc.ipk
+Size: 279068
+SHA256sum: 1a4d518f4a9a469da2c5b80f561c898ed349544fe37c82afcb2fed255c9b1b1e
+Description:  A useful diagnostic, instructional, and debugging tool. Allows you to track what
+ system calls a program makes while it is running.
+
 Package: stress
 Version: 1.0.4-2
 Depends: libc
@@ -10861,6 +11516,19 @@ Size: 8562
 SHA256sum: bceb31750248cfa6ce640cc0704c944480747e35daad3c64e6d84c27c35bfa6d
 Description:  stress is a simple tool that imposes certain types of compute \ stress on
  UNIX-like operating systems.
+
+Package: stubby
+Version: 0.4.0-3
+Depends: libc, libyaml, getdns, ca-certs
+License: BSD-3-Clause
+Section: net
+Architecture: mips_24kc
+Installed-Size: 18543
+Filename: stubby_0.4.0-3_mips_24kc.ipk
+Size: 19402
+SHA256sum: 49d8b1fbc8aca207ffe0d7af332a766efd4cf21cc7f5b642f391f466d423645e
+Description:  This package contains the Stubby daemon (which utilizes the getdns library).
+ See https://github.com/openwrt/packages/blob/master/net/stubby/files/README.md for more details.
 
 Package: sudo
 Version: 1.9.14p3-1
@@ -11547,6 +12215,96 @@ Size: 28201
 SHA256sum: 3fa936b4cbc5959f726f8fdcd61c2a8dc46350948e6aa22762215c2df95a62fe
 Description:  WPA Supplicant command line control utility
 
+Package: wpa-supplicant-basic
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630
+Conflicts: wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini, wpad-openssl, wpad-wolfssl, wpa-supplicant, wpa-supplicant-mesh-openssl, wpa-supplicant-mesh-wolfssl
+Provides: wpa-supplicant
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 212825
+Filename: wpa-supplicant-basic_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 213353
+SHA256sum: ba8a0dfa452ebe691f19c851dd8485a08eff2f6c080f4a818c73ac686e50db0d
+Description:  WPA Supplicant (11r, 11w)
+
+Package: wpa-supplicant-mesh-openssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libopenssl1.1
+Conflicts: wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini, wpad-openssl, wpad-wolfssl, wpa-supplicant
+Provides: wpa-supplicant, wpa-supplicant-mesh
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 481423
+Filename: wpa-supplicant-mesh-openssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 480979
+SHA256sum: 3a250c0cf705da14f02b096fdf181610908477921429ae4a4dbcfd3b509a5f08
+Description:  WPA Supplicant (OpenSSL, 11s, SAE)
+
+Package: wpa-supplicant-mesh-wolfssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libwolfssl5.5.3.7a924b25
+Conflicts: wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini, wpad-openssl, wpad-wolfssl, wpa-supplicant, wpa-supplicant-mesh-openssl
+Provides: wpa-supplicant, wpa-supplicant-mesh
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 477607
+Filename: wpa-supplicant-mesh-wolfssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 477293
+SHA256sum: 3aab5d7bd85fe2cdba7d328535f5653a85e9cf09d6b9bcbd6d051ac9cdf52ffa
+Description:  WPA Supplicant (wolfSSL, 11s, SAE)
+
+Package: wpa-supplicant-mini
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630
+Conflicts: wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini, wpad-openssl, wpad-wolfssl, wpa-supplicant, wpa-supplicant-mesh-openssl, wpa-supplicant-mesh-wolfssl, wpa-supplicant-basic
+Provides: wpa-supplicant
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 202495
+Filename: wpa-supplicant-mini_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 202953
+SHA256sum: c8f5c13e8cc091ad2284d7c955e0f8338468d7b495d90635f58da07c1bc3d185
+Description:  WPA Supplicant (minimal)
+
+Package: wpa-supplicant-openssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libopenssl1.1
+Conflicts: wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini, wpad-openssl, wpad-wolfssl, wpa-supplicant, wpa-supplicant-mesh-openssl, wpa-supplicant-mesh-wolfssl, wpa-supplicant-basic, wpa-supplicant-mini, wpa-supplicant-p2p
+Provides: wpa-supplicant
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 488669
+Filename: wpa-supplicant-openssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 488232
+SHA256sum: cf431ab079cb0e771e11b00b51d45378eb886183125e05022328e0295da8718b
+Description:  WPA Supplicant (OpenSSL full)
+
+Package: wpa-supplicant-p2p
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630
+Conflicts: wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini, wpad-openssl, wpad-wolfssl, wpa-supplicant, wpa-supplicant-mesh-openssl, wpa-supplicant-mesh-wolfssl, wpa-supplicant-basic, wpa-supplicant-mini
+Provides: wpa-supplicant
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 540938
+Filename: wpa-supplicant-p2p_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 540767
+SHA256sum: 138f4ca1670047c6f360300c808548753fcce46ee7a986b906276060e94ff22c
+Description:  WPA Supplicant (Wi-Fi P2P support)
+
 Package: wpa-supplicant-wolfssl
 Version: 2020-06-08-5a8b3662-41
 Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libwolfssl5.5.3.7a924b25
@@ -11561,6 +12319,158 @@ Filename: wpa-supplicant-wolfssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
 Size: 483848
 SHA256sum: 048061afa1676242ef8d2af4e4b5b6a2362577558b321f6168437e06d82dd7de
 Description:  WPA Supplicant (wolfSSL full)
+
+Package: wpa-supplicant
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630
+Conflicts: wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini, wpad-openssl, wpad-wolfssl
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 378195
+Filename: wpa-supplicant_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 378311
+SHA256sum: 6ab742a9bde4c55d1cdf24efc8a9f072ac4a4285a9615a77cfeac11fe4f01351
+Description:  WPA Supplicant (built-in full)
+
+Package: wpad-basic-openssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libopenssl1.1
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini, hostapd-openssl, hostapd-wolfssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic
+Provides: hostapd, wpa-supplicant
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 376494
+Filename: wpad-basic-openssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 376563
+SHA256sum: 8dcde0ead42ca3ab165a8653c5e5c8d664a4a6b6cad760b3b2f79984b2d5e9bc
+Description:  This package contains a basic IEEE 802.1x/WPA Authenticator and Supplicant with WPA-PSK, SAE (WPA3-Personal), 802.11r and 802.11w support.
+
+Package: wpad-basic-wolfssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libwolfssl5.5.3.7a924b25
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini, hostapd-openssl, hostapd-wolfssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl
+Provides: hostapd, wpa-supplicant
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 374420
+Filename: wpad-basic-wolfssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 374716
+SHA256sum: 0f6b6889c28692c2dcb99528c68c41e61f9989788bc2d97f86360032ac28cdb1
+Description:  This package contains a basic IEEE 802.1x/WPA Authenticator and Supplicant with WPA-PSK, SAE (WPA3-Personal), 802.11r and 802.11w support.
+
+Package: wpad-basic
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini, hostapd-openssl, hostapd-wolfssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl
+Provides: hostapd, wpa-supplicant
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 358476
+Filename: wpad-basic_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 358925
+SHA256sum: c786c1a0ac7982afd2bdff418c6ede9d85350561ba570d970495ff3ea7c6f3c2
+Description:  This package contains a basic IEEE 802.1x/WPA Authenticator and Supplicant with WPA-PSK, 802.11r and 802.11w support.
+
+Package: wpad-mesh-openssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libopenssl1.1
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini, hostapd-openssl, hostapd-wolfssl, wpad, wpad
+Provides: hostapd, wpa-supplicant, wpa-supplicant-mesh, wpad-mesh
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 596668
+Filename: wpad-mesh-openssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 596222
+SHA256sum: b9e84f56635106da381205136325a2683d1b27f99c6029a5366d4ab14d016436
+Description:  This package contains a minimal IEEE 802.1x/WPA Authenticator and Supplicant (with 802.11s mesh and SAE support).
+
+Package: wpad-mesh-wolfssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libwolfssl5.5.3.7a924b25
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini, hostapd-openssl, hostapd-wolfssl, wpad, wpad-mesh-openssl, wpad, wpad-mesh-openssl
+Provides: hostapd, wpa-supplicant, wpa-supplicant-mesh, wpad-mesh
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 593261
+Filename: wpad-mesh-wolfssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 593207
+SHA256sum: fdff105cdae71e4be6e677e9d37f55f1e15fe2b37cb9f053c3f8d78af0d127f5
+Description:  This package contains a minimal IEEE 802.1x/WPA Authenticator and Supplicant (with 802.11s mesh and SAE support).
+
+Package: wpad-mini
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini, hostapd-openssl, hostapd-wolfssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl
+Provides: hostapd, wpa-supplicant
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 326589
+Filename: wpad-mini_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 327102
+SHA256sum: c120646f48580e75ace724bc40d6ced3f1daeda0b630fac799ddbc86202527a1
+Description:  This package contains a minimal IEEE 802.1x/WPA Authenticator and Supplicant (WPA-PSK only).
+
+Package: wpad-openssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libopenssl1.1
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini, hostapd-openssl, hostapd-wolfssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini
+Provides: hostapd, wpa-supplicant
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 605393
+Filename: wpad-openssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 604304
+SHA256sum: 2957042b0b5a97b2923cfd20f1a157314ed3fbc4098a7ebb040bba481ed4ed73
+Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
+ Authenticator and Supplicant
+
+Package: wpad-wolfssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libwolfssl5.5.3.7a924b25
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini, hostapd-openssl, hostapd-wolfssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini, wpad-openssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini, wpad-openssl
+Provides: hostapd, wpa-supplicant
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 600945
+Filename: wpad-wolfssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 600738
+SHA256sum: bfb8d4f33346acc3dc4ab0f31165d1ad12cde5fd9bc24f3297d7f2ec5f5b42c9
+Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
+ Authenticator and Supplicant
+
+Package: wpad
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini, hostapd-openssl, hostapd-wolfssl
+Provides: hostapd, wpa-supplicant
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:w1.fi:hostapd
+Architecture: mips_24kc
+Installed-Size: 598404
+Filename: wpad_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 598200
+SHA256sum: 3fa20a2c80e732ee7cca2a8158256950699aee378b2c5a61ae179135bd8258ed
+Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
+ Authenticator and Supplicant
 
 Package: wwan
 Version: 2019-04-29-5

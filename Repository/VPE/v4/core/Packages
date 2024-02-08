@@ -16,10 +16,10 @@ Depends: libc, netifd, jsonfilter, usign, openwrt-keyring, ubi-utils, fstools, f
 License: GPL-2.0
 Section: base
 Architecture: mips_24kc
-Installed-Size: 48333
+Installed-Size: 48347
 Filename: base-files_1454-r16917-90f207fa2d_mips_24kc.ipk
-Size: 49389
-SHA256sum: 887ea9e9688080d1b83b2d130c56f96c7cd5ac4ac74fe9380a6fcf0e72d9cf40
+Size: 49408
+SHA256sum: 0ee32e9f4472123387f2327a03915217b05feb6f08030ba5f2bdbdc7d4953bd3
 Description:  This package contains a base filesystem and system scripts for OpenWrt.
 
 Package: block-mount
