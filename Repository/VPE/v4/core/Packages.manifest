@@ -23,15 +23,15 @@ License: GPL-2.0
 Section: base
 SourceDateEpoch: 1694881404
 Architecture: mips_24kc
-Installed-Size: 48347
+Installed-Size: 48087
 Filename: base-files_1454-r16917-90f207fa2d_mips_24kc.ipk
-Size: 49408
-SHA256sum: 0ee32e9f4472123387f2327a03915217b05feb6f08030ba5f2bdbdc7d4953bd3
+Size: 49151
+SHA256sum: 4f45eb5dc0a9ec976c460e062f19878629be3acbf245ceeba1253d4567903b01
 Description:  This package contains a base filesystem and system scripts for OpenWrt.
 
 Package: block-mount
 Version: 2021-01-04-c53b1882-1
-Depends: libc, ubox, libubox20210516, libuci20130104, libblobmsg-json20210516, libjson-c5
+Depends: libc, ubox, libubox20211104, libuci20130104, libblobmsg-json20211104, libjson-c5
 Source: package/system/fstools
 SourceName: block-mount
 License: GPL-2.0
@@ -41,13 +41,13 @@ Maintainer: John Crispin <john@phrozen.org>
 Architecture: mips_24kc
 Installed-Size: 27691
 Filename: block-mount_2021-01-04-c53b1882-1_mips_24kc.ipk
-Size: 28288
-SHA256sum: 6700cda253416fcb89efe3e811c204140f0a91d8349a3ce3c225e65be8cd014f
+Size: 28282
+SHA256sum: 212908fe106216fafc0b3f0454752d7aeecbc7c6ec186a080c7bfecd84f18ec7
 Description:  Block device mounting and checking
 
 Package: blockd
 Version: 2021-01-04-c53b1882-1
-Depends: libc, block-mount, fstools, libubus20210630, kmod-fs-autofs4, libblobmsg-json20210516, libjson-c5
+Depends: libc, block-mount, fstools, libubus20210630, kmod-fs-autofs4, libblobmsg-json20211104, libjson-c5
 Source: package/system/fstools
 SourceName: blockd
 License: GPL-2.0
@@ -55,10 +55,10 @@ Section: base
 SourceDateEpoch: 1609794455
 Maintainer: John Crispin <john@phrozen.org>
 Architecture: mips_24kc
-Installed-Size: 5809
+Installed-Size: 5811
 Filename: blockd_2021-01-04-c53b1882-1_mips_24kc.ipk
-Size: 6613
-SHA256sum: 09c0711c1ec37187bcb3289c55d47b1e16ec5c87b949f7a55be19f459ac1aaef
+Size: 6605
+SHA256sum: 8b3498e61d51dfc0369277747f895439d465f27c48a9d370cd88f184d9764c9e
 Description:  Block device automounting
 
 Package: comgt-directip
@@ -195,10 +195,10 @@ Section: base
 SourceDateEpoch: 1609794455
 Maintainer: John Crispin <john@phrozen.org>
 Architecture: mips_24kc
-Installed-Size: 17460
+Installed-Size: 17459
 Filename: fstools_2021-01-04-c53b1882-1_mips_24kc.ipk
-Size: 18094
-SHA256sum: 24081a19e111a09cd31badce902a80dad66e0db27d3979c6879aa4c2a2e9bfa0
+Size: 18090
+SHA256sum: ce9bd2148f325eef8a68966dd97d929b2ee9dd391ccc0456debf0ed73450cc64
 Description:  OpenWrt filesystem tools
 
 Package: fwtool
@@ -14363,17 +14363,17 @@ Description:  This package contains DSL related files for Intel/Lantiq DSL Chips
 
 Package: ltq-vdsl-app
 Version: 4.17.18.6-8
-Depends: libc, libpthread, librt, ltq-dsl-base, libubox20210516, libubus20210630
+Depends: libc, libpthread, librt, ltq-dsl-base, libubox20211104, libubus20210630
 Source: package/network/config/ltq-vdsl-app
 SourceName: ltq-vdsl-app
 License: BSD-2-Clause
 Section: net
 SourceDateEpoch: 1683919382
 Architecture: mips_24kc
-Installed-Size: 47930
+Installed-Size: 47929
 Filename: ltq-vdsl-app_4.17.18.6-8_mips_24kc.ipk
-Size: 48495
-SHA256sum: 0a0aa42367376caffd106ca291042acfa3d6618827ed50f3d8472fde005f6eea
+Size: 48510
+SHA256sum: 1860d06f387382b426b19176ed3a32e9c7a34ffe9f09ece8f99b1c0abb7121e4
 Description:  Userland tool needed to control Lantiq VDSL CPE
 
 Package: ltq-vdsl-mei-test
@@ -14411,7 +14411,7 @@ Description:  VDSL2 Vectoring Firmware installer
 
 Package: mtd
 Version: 26
-Depends: libc, libubox20210516
+Depends: libc, libubox20211104
 Source: package/system/mtd
 SourceName: mtd
 License: GPL-2.0+
@@ -14420,8 +14420,8 @@ SourceDateEpoch: 1598818715
 Architecture: mips_24kc
 Installed-Size: 9040
 Filename: mtd_26_mips_24kc.ipk
-Size: 9848
-SHA256sum: 8c16edd6667494662ef05def03ddd1341009aaa8a2c5aabc2450eaafc421b3fc
+Size: 9844
+SHA256sum: 4902fa1d066f9f3313290245f498301b6011966c742586e1243392467e6b5c53
 Description:  This package contains an utility useful to upgrade from other firmware or 
  older OpenWrt releases.
 
@@ -14458,7 +14458,7 @@ Description:  This package contains additional files for the
 
 Package: snapshot-tool
 Version: 2021-01-04-c53b1882-1
-Depends: libc, libubox20210516, fstools
+Depends: libc, libubox20211104, fstools
 Source: package/system/fstools
 SourceName: snapshot-tool
 License: GPL-2.0
@@ -14468,8 +14468,8 @@ Maintainer: John Crispin <john@phrozen.org>
 Architecture: mips_24kc
 Installed-Size: 3685
 Filename: snapshot-tool_2021-01-04-c53b1882-1_mips_24kc.ipk
-Size: 4437
-SHA256sum: 1fdc33ab79f21ec6e41aaf1f3972c6344c184678d9ad7983bed5c021644ebf89
+Size: 4436
+SHA256sum: efe0969c715d2940de114df7cf78cfbb3cb5c6aaa03cf71d374a3675b3fc2045
 Description:  rootfs snapshoting tool
 
 Package: ubi-utils
@@ -14506,7 +14506,7 @@ Description:  This package includes tools to read and modify U-Boot bootloader e
 
 Package: umbim
 Version: 2019-09-11-184b707d-1
-Depends: libc, libubox20210516, kmod-usb-net, kmod-usb-net-cdc-mbim, wwan
+Depends: libc, libubox20211104, kmod-usb-net, kmod-usb-net-cdc-mbim, wwan
 Source: package/network/utils/umbim
 SourceName: umbim
 License: GPL-2.0
@@ -14514,16 +14514,16 @@ Section: net
 SourceDateEpoch: 1623177844
 Maintainer: John Crispin <john@phrozen.org>
 Architecture: mips_24kc
-Installed-Size: 12725
+Installed-Size: 12727
 Filename: umbim_2019-09-11-184b707d-1_mips_24kc.ipk
-Size: 13585
-SHA256sum: 6f5d249c880b8806e6f5a1e3e5bed33b7b7dec7e9855bcdc47d97a750dde6a85
+Size: 13583
+SHA256sum: 79a69b5a6717bdd76e591bc2b21ced4a9aa4e2898e3135fc5314da141717e041
 Description:  umbim is a command line tool for controlling mobile broadband modems using
  the MBIM-protocol.
 
 Package: uqmi
 Version: 2022-03-12-44dd0957-4
-Depends: libc, libubox20210516, libblobmsg-json20210516, kmod-usb-net, kmod-usb-net-qmi-wwan, wwan
+Depends: libc, libubox20211104, libblobmsg-json20211104, kmod-usb-net, kmod-usb-net-qmi-wwan, wwan
 Source: package/network/utils/uqmi
 SourceName: uqmi
 License: GPL-2.0
@@ -14531,10 +14531,10 @@ Section: net
 SourceDateEpoch: 1683919382
 Maintainer: Matti Laakso <malaakso@elisanet.fi>
 Architecture: mips_24kc
-Installed-Size: 37517
+Installed-Size: 37516
 Filename: uqmi_2022-03-12-44dd0957-4_mips_24kc.ipk
-Size: 38409
-SHA256sum: a580d2024504c1233e687f99bc599c3f5aab8f296206e3c202b5d5376e8fa5a8
+Size: 38408
+SHA256sum: d0dcec0cb2b9241bccbba3b6a4526bef36eb5c4be3d79708ba3d2513d94bdb8b
 Description:  uqmi is a command line tool for controlling mobile broadband modems using
  the QMI-protocol.
 
