@@ -5561,15 +5561,15 @@ CPE-ID: cpe:/a:busybox:busybox
 Essential: yes
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: mips_24kc
-Installed-Size: 232591
+Installed-Size: 233587
 Filename: busybox_1.33.2-3_mips_24kc.ipk
-Size: 232835
-SHA256sum: dcdbebe66fa05001f4f7bc96e79be84b9c30f7784063a14f928bc07e2b0a4f19
+Size: 233834
+SHA256sum: 9f070f8bbeb1d79889ddfea90ea3ab8f86ea40139108732ebd0d9e0b8e7b1aab
 Description:  The Swiss Army Knife of embedded Linux.
  It slices, it dices, it makes Julian Fries.
 
 Package: ca-bundle
-Version: 20230311-1
+Version: 20240203-1
 Depends: libc
 Provides: ca-certs
 Source: package/system/ca-certificates
@@ -5577,14 +5577,14 @@ SourceName: ca-bundle
 Section: base
 SourceDateEpoch: 1687186209
 Architecture: all
-Installed-Size: 123482
-Filename: ca-bundle_20230311-1_all.ipk
-Size: 124287
-SHA256sum: ce48fece838d051fcea971d9d6e767186bac6330c3b3a7773b60d43a1a85000f
+Installed-Size: 127337
+Filename: ca-bundle_20240203-1_all.ipk
+Size: 128149
+SHA256sum: 2a00e65e78f19110ccf304180cd7c015d638c0f658041a14b780a7c42de6cf1f
 Description:  System CA certificates as a bundle
 
 Package: ca-certificates
-Version: 20230311-1
+Version: 20240203-1
 Depends: libc
 Provides: ca-certs
 Source: package/system/ca-certificates
@@ -5592,10 +5592,10 @@ SourceName: ca-certificates
 Section: base
 SourceDateEpoch: 1687186209
 Architecture: all
-Installed-Size: 133830
-Filename: ca-certificates_20230311-1_all.ipk
-Size: 134569
-SHA256sum: 8b5fbbfe782976b5a076efe1968001c0348e8da6c55c0374d8542fff96d16974
+Installed-Size: 138414
+Filename: ca-certificates_20240203-1_all.ipk
+Size: 139146
+SHA256sum: 292da75fae14504544df9d1c9ef4041e124c36095f0cca27a31271b9a04b055b
 Description:  System CA certificates
 
 Package: carl9170-firmware
@@ -6077,7 +6077,7 @@ Description:  dnscrypt-proxy provides local service which can be used directly a
  a client and its first-level resolver.
 
 Package: dnsmasq-full
-Version: 2.89-7
+Version: 2.90-7
 Depends: libc, libubus20210630, libnettle8, kmod-ipt-ipset, libnetfilter-conntrack3, nftables-json
 Provides: dnsmasq
 Source: package/network/services/dnsmasq
@@ -6089,10 +6089,10 @@ Require-User: dnsmasq=453:dnsmasq=453
 SourceDateEpoch: 1694882229
 CPE-ID: cpe:/a:thekelleys:dnsmasq
 Architecture: mips_24kc
-Installed-Size: 189998
-Filename: dnsmasq-full_2.89-7_mips_24kc.ipk
-Size: 190366
-SHA256sum: 9060b079d04b95ed30161a08ebd9876a5c7853e7e95cacc594511cf4c8ac451f
+Installed-Size: 193863
+Filename: dnsmasq-full_2.90-7_mips_24kc.ipk
+Size: 194227
+SHA256sum: 9930950b7a8d4dc1c525a9625d09c136603f7a7bef8766c5106dd4bfe9cf0495
 Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
  
  This is a fully configurable variant with DHCPv4, DHCPv6, DNSSEC, Authoritative DNS
@@ -6519,6 +6519,66 @@ Size: 46423
 SHA256sum: 13c1d0b4721b98116cdd089e444b37e186cc6693c76d8c4963e129b14bd985f7
 Description:  get/set SATA/IDE device parameters
 
+Package: hostapd-basic-openssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libopenssl1.1
+Conflicts: hostapd, hostapd-basic
+Provides: hostapd
+Source: package/network/services/hostapd
+SourceName: hostapd-basic-openssl
+License: BSD-3-Clause
+Section: net
+Require-User: network=101:network=101
+SourceDateEpoch: 1683919382
+CPE-ID: cpe:/a:w1.fi:hostapd
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 248817
+Filename: hostapd-basic-openssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 249611
+SHA256sum: 17089b9168e19ca91ecf210729e74f39086dec6c56a29414cda74ff641f25adc
+Description:  This package contains a basic IEEE 802.1x/WPA Authenticator with WPA-PSK, 802.11r and 802.11w support.
+
+Package: hostapd-basic-wolfssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libwolfssl5.5.3.7a924b25
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl
+Provides: hostapd
+Source: package/network/services/hostapd
+SourceName: hostapd-basic-wolfssl
+License: BSD-3-Clause
+Section: net
+Require-User: network=101:network=101
+SourceDateEpoch: 1683919382
+CPE-ID: cpe:/a:w1.fi:hostapd
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 247434
+Filename: hostapd-basic-wolfssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 248241
+SHA256sum: de94f0b26c3711927ee4a709093a87473865b1e2fa7515a42c8d5495f6eee669
+Description:  This package contains a basic IEEE 802.1x/WPA Authenticator with WPA-PSK, 802.11r and 802.11w support.
+
+Package: hostapd-basic
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630
+Conflicts: hostapd
+Provides: hostapd
+Source: package/network/services/hostapd
+SourceName: hostapd-basic
+License: BSD-3-Clause
+Section: net
+Require-User: network=101:network=101
+SourceDateEpoch: 1683919382
+CPE-ID: cpe:/a:w1.fi:hostapd
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 236029
+Filename: hostapd-basic_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 236926
+SHA256sum: 4bc2c73ea4472266d3e491b146689d99923aeb1a468643a6cdde24ee40b00ecc
+Description:  This package contains a basic IEEE 802.1x/WPA Authenticator with WPA-PSK, 802.11r and 802.11w support.
+
 Package: hostapd-common
 Version: 2020-06-08-5a8b3662-41
 Depends: libc
@@ -6535,6 +6595,47 @@ Filename: hostapd-common_2020-06-08-5a8b3662-41_mips_24kc.ipk
 Size: 12293
 SHA256sum: 83c5959b00e2ea6779b8fed28cc4e28316c77bc5a0db92ead1584ff0b620981e
 Description:  hostapd/wpa_supplicant common support files
+
+Package: hostapd-mini
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl
+Provides: hostapd
+Source: package/network/services/hostapd
+SourceName: hostapd-mini
+License: BSD-3-Clause
+Section: net
+Require-User: network=101:network=101
+SourceDateEpoch: 1683919382
+CPE-ID: cpe:/a:w1.fi:hostapd
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 209778
+Filename: hostapd-mini_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 210691
+SHA256sum: 4cb2b06e5648496241bdc7c7d2ec11d3834f35498b9fadc09c427b748cda48a6
+Description:  This package contains a minimal IEEE 802.1x/WPA Authenticator (WPA-PSK only).
+
+Package: hostapd-openssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libopenssl1.1
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini
+Provides: hostapd
+Source: package/network/services/hostapd
+SourceName: hostapd-openssl
+License: BSD-3-Clause
+Section: net
+Require-User: network=101:network=101
+SourceDateEpoch: 1683919382
+CPE-ID: cpe:/a:w1.fi:hostapd
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 354022
+Filename: hostapd-openssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 354424
+SHA256sum: bd56a81b0ae070acd7bd5050806d3438bf7523f5e94d261646f8c6b834241932
+Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
+ Authenticator.
 
 Package: hostapd-utils
 Version: 2020-06-08-5a8b3662-41
@@ -6553,6 +6654,46 @@ Size: 16120
 SHA256sum: d378489f5333f1b2ae60d4d384166ec300a8669e67080d0a0101318d3741c10a
 Description:  This package contains a command line utility to control the
  IEEE 802.1x/WPA/EAP/RADIUS Authenticator.
+
+Package: hostapd-wolfssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libwolfssl5.5.3.7a924b25
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini, hostapd-openssl
+Provides: hostapd
+Source: package/network/services/hostapd
+SourceName: hostapd-wolfssl
+License: BSD-3-Clause
+Section: net
+Require-User: network=101:network=101
+SourceDateEpoch: 1683919382
+CPE-ID: cpe:/a:w1.fi:hostapd
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 350163
+Filename: hostapd-wolfssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 350759
+SHA256sum: 493b7a0fc0586c7e32bbf6b66f97b6ec3701aba0f0b623b2fa9b3385b8fe91a8
+Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
+ Authenticator.
+
+Package: hostapd
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630
+Source: package/network/services/hostapd
+SourceName: hostapd
+License: BSD-3-Clause
+Section: net
+Require-User: network=101:network=101
+SourceDateEpoch: 1683919382
+CPE-ID: cpe:/a:w1.fi:hostapd
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 365938
+Filename: hostapd_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 366742
+SHA256sum: d07dc6b030ed5ab2447b2c3cfc12b2725ceced08b57faaa57e93054ab739ae65
+Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
+ Authenticator.
 
 Package: htop
 Version: 3.3.0-1
@@ -6628,19 +6769,20 @@ SHA256sum: 341e4f8460cc1359ad1a552845145b351fd3f16aa68690039a9e82f931f23477
 Description:  Routing control utility (full)
 
 Package: iperf3
-Version: 3.10.1-1
-Depends: libc
+Version: 3.16-1
+Depends: libc, libiperf3
 Source: feeds/packages/net/iperf3
 SourceName: iperf3
 License: BSD-3-Clause
 Section: net
 SourceDateEpoch: 1622707798
+CPE-ID: cpe:/a:es:iperf3
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: mips_24kc
-Installed-Size: 42555
-Filename: iperf3_3.10.1-1_mips_24kc.ipk
-Size: 43310
-SHA256sum: 736a02f278c31186087e875e4372418151887b6d5431cd9a4fab21efb2a1ab9e
+Installed-Size: 2138
+Filename: iperf3_3.16-1_mips_24kc.ipk
+Size: 2953
+SHA256sum: 2c9ccb83d654c939601c6ec8ee24b0ea1bd5fd6256890ce84e88b9350a7c295d
 Description:  Iperf is a modern alternative for measuring TCP and UDP bandwidth
  performance, allowing the tuning of various parameters and
  characteristics.
@@ -6699,7 +6841,7 @@ Description:  iptraf-ng is a console-based network statistics utility for Linux.
  station packet and byte counts.
 
 Package: irqbalance
-Version: 1.9.0-4
+Version: 1.9.3-2
 Depends: libc
 Source: feeds/packages/utils/irqbalance
 SourceName: irqbalance
@@ -6708,10 +6850,10 @@ Section: utils
 SourceDateEpoch: 1655055233
 Maintainer: Hannu Nyman <hannu.nyman@iki.fi>
 Architecture: mips_24kc
-Installed-Size: 39532
-Filename: irqbalance_1.9.0-4_mips_24kc.ipk
-Size: 40239
-SHA256sum: 87b90ad728bdadd65972bad0b061d90aa378e0d76dc3b908498cb4b5dcd9a591
+Installed-Size: 39919
+Filename: irqbalance_1.9.3-2_mips_24kc.ipk
+Size: 40627
+SHA256sum: 24afa2a0bb5212491b19c6065d3cf655ff2b9c276f3b9daa6d5eb6967a8a4aff
 Description:  The purpose of irqbalance is to distribute hardware interrupts across
  processors/cores on a multiprocessor/multicore system in order to
  increase performance.
@@ -7657,24 +7799,6 @@ SHA256sum: cada9dd959423c865197d32eea7e62322c79381e896af33f289f5401476312fa
 Description:  GMP is a free library for arbitrary precision arithmetic, operating on
  signed integers, rational numbers, and floating point numbers.
 
-Package: libgnutls-dane
-Version: 3.7.8-2
-Depends: libc, libgnutls, libunbound
-Source: feeds/packages/libs/gnutls
-SourceName: libgnutls-dane
-License: LGPL-2.1-or-later
-LicenseFiles: LICENSE
-Section: libs
-SourceDateEpoch: 1638914318
-CPE-ID: cpe:/a:gnu:gnutls
-Maintainer: Nikos Mavrogiannopoulos <nmav@gnutls.org>
-Architecture: mips_24kc
-Installed-Size: 16893
-Filename: libgnutls-dane_3.7.8-2_mips_24kc.ipk
-Size: 17715
-SHA256sum: 37bbb88cfb56c5ba4d6043f45d2dc1704c22f8b03b65566b9b04d9da0452d56b
-Description:  GNU TLS (libgnutls-dane library)
-
 Package: libgnutls
 Version: 3.7.8-2
 Depends: libc, libnettle8, libgmp10, kmod-cryptodev, libatomic1
@@ -7824,6 +7948,23 @@ Description:  Iksemel is an XML parser library mainly designed for Jabber applic
  It provides SAX, DOM, and special Jabber stream APIs. Library is coded
  in ANSI C except the network code (which is POSIX compatible), thus
  highly portable.
+
+Package: libiperf3
+Version: 3.16-1
+Depends: libc, libatomic1
+Source: feeds/packages/net/iperf3
+SourceName: libiperf3
+License: BSD-3-Clause
+Section: libs
+SourceDateEpoch: 1622707798
+CPE-ID: cpe:/a:es:iperf3
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 61354
+Filename: libiperf3_3.16-1_mips_24kc.ipk
+Size: 62184
+SHA256sum: fed1a5129aeb38c911b330ad59aebfb1bc33762ea0a44afe88c86d9305cb8991
+Description:  Libiperf is a library providing an API for iperf3 functionality.
 
 Package: libiwinfo-data
 Version: 2022-08-19-0dad3e66-1
@@ -7992,7 +8133,7 @@ SHA256sum: 5eaa4ff30fad298c1db806d3b67ca7d1fad4ee89dfbdad4a22ceb4d7475d08ba
 Description:  A generic dynamic object loading library
 
 Package: liblua5.1.5
-Version: 5.1.5-10
+Version: 5.1.5-11
 Depends: libc
 Provides: liblua
 Source: package/utils/lua
@@ -8005,17 +8146,17 @@ ABIVersion: 5.1.5
 CPE-ID: cpe:/a:lua:lua
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Architecture: mips_24kc
-Installed-Size: 63687
-Filename: liblua5.1.5_5.1.5-10_mips_24kc.ipk
-Size: 64190
-SHA256sum: 415fa1b3cc8b2c88c14ced1dc681ff710bb370d74b5b543285d3301d7422068d
+Installed-Size: 63686
+Filename: liblua5.1.5_5.1.5-11_mips_24kc.ipk
+Size: 64182
+SHA256sum: d01827b5bb8c0785fa09570e1925c5240871ae357175cb811e8efb84198f048e
 Description:  Lua is a powerful light-weight programming language designed for extending 
  applications. Lua is also frequently used as a general-purpose, stand-alone 
  language. Lua is free software.
  This package contains the Lua shared libraries, needed by other programs.
 
 Package: liblua5.3-5.3
-Version: 5.3.5-5
+Version: 5.3.5-6
 Depends: libc
 Provides: liblua5.3
 Source: package/utils/lua5.3
@@ -8026,12 +8167,15 @@ Section: libs
 SourceDateEpoch: 1695828086
 ABIVersion: -5.3
 CPE-ID: cpe:/a:lua:lua
+Maintainer: Jo-Philipp Wich <jo@mein.io>
 Architecture: mips_24kc
-Installed-Size: 82150
-Filename: liblua5.3-5.3_5.3.5-5_mips_24kc.ipk
-Size: 82448
-SHA256sum: ec138c2ae5ba4af671bab61b3029d86086e41dae04e552a1ac4b1cc99b8623ef
-Description:  
+Installed-Size: 82153
+Filename: liblua5.3-5.3_5.3.5-6_mips_24kc.ipk
+Size: 82585
+SHA256sum: 117b510ab16b34564e7fb6a695cf2a79120be5b853802d55d23d43e11ad81104
+Description:  Lua is a powerful, efficient, lightweight, embeddable scripting language. It
+ supports procedural programming, object-oriented programming, functional
+ programming, data-driven programming, and data description.
  This package contains the Lua shared libraries, needed by other programs.
 
 Package: liblucihttp-lua
@@ -9986,8 +10130,8 @@ Maintainer: Maxim Storchak <m.storchak@gmail.com>
 Architecture: mips_24kc
 Installed-Size: 61889
 Filename: lsof_4.94.0-1_mips_24kc.ipk
-Size: 62612
-SHA256sum: f11f10517453114bcfacfc494712386a3a2f7b17e06b5a2a7d5d26279563fab4
+Size: 62610
+SHA256sum: d412dc38dfa47e29783788c04de44dc46c59e87ddec0c786e767d0fc8bbe7d91
 Description:  LiSt Open Files - a diagnostic tool
 
 Package: lua-evdev
@@ -10042,7 +10186,7 @@ SHA256sum: 47b7bb60b2742456200833d3d70a4f58e8f93ce612e0ad92f1de50d3af828657
 Description:  An alarm library for Lua based on POSIX alarm.
 
 Package: lua
-Version: 5.1.5-10
+Version: 5.1.5-11
 Depends: libc, liblua5.1.5
 Source: package/utils/lua
 SourceName: lua
@@ -10054,16 +10198,16 @@ CPE-ID: cpe:/a:lua:lua
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Architecture: mips_24kc
 Installed-Size: 4666
-Filename: lua_5.1.5-10_mips_24kc.ipk
-Size: 5549
-SHA256sum: e59107234819d0670d7eb8461e6e86b8875078a30f3f546f7b64097f30ad3252
+Filename: lua_5.1.5-11_mips_24kc.ipk
+Size: 5550
+SHA256sum: 1bc1f07ace446e8e619ab87860d92729bce6cf3af009d618f83191373cd897af
 Description:  Lua is a powerful light-weight programming language designed for extending 
  applications. Lua is also frequently used as a general-purpose, stand-alone 
  language. Lua is free software.
  This package contains the Lua language interpreter.
 
 Package: luac
-Version: 5.1.5-10
+Version: 5.1.5-11
 Depends: libc, liblua5.1.5
 Source: package/utils/lua
 SourceName: luac
@@ -10075,9 +10219,9 @@ CPE-ID: cpe:/a:lua:lua
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Architecture: mips_24kc
 Installed-Size: 5300
-Filename: luac_5.1.5-10_mips_24kc.ipk
+Filename: luac_5.1.5-11_mips_24kc.ipk
 Size: 6202
-SHA256sum: 49b108a49cfec17fb3f2c6ac0e3dd785364c48d368df535d58dc46cf67e8f9e6
+SHA256sum: 62b456d76f95e209fbb22924be06d7c9f4f5b8f13d5543c33ec52be7dbd73289
 Description:  Lua is a powerful light-weight programming language designed for extending 
  applications. Lua is also frequently used as a general-purpose, stand-alone 
  language. Lua is free software.
@@ -12451,10 +12595,10 @@ Section: luci
 SourceDateEpoch: 1599426929
 Maintainer: OpenWrt LuCI community
 Architecture: mips_24kc
-Installed-Size: 10898
+Installed-Size: 10868
 Filename: luci-lib-ip_git-20.250.76529-62505bd_mips_24kc.ipk
-Size: 11754
-SHA256sum: 284228b30e56b71491995826e7190ccbe86b870ae813c0d6fa47ebc0a8e08261
+Size: 11728
+SHA256sum: d88ba3ba67f3a24b0669dd43e7b2065a22410fdf20287066fa9fbcca27c3da90
 Description:  Lua library for IP calculation and routing information
 
 Package: luci-lib-ipkg
@@ -12497,10 +12641,10 @@ Section: luci
 SourceDateEpoch: 1597974894
 Maintainer: OpenWrt LuCI community
 Architecture: mips_24kc
-Installed-Size: 28307
+Installed-Size: 28381
 Filename: luci-lib-nixio_git-20.234.06894-c4a4e43_mips_24kc.ipk
-Size: 28813
-SHA256sum: 23e37388f576784d4de4ce9bb0dd86057c61348e76c4e6c44d9fa888bc3344b3
+Size: 28883
+SHA256sum: 4006ca14ad1720a7150115fa0573976d6a7e02279043e3ee1415562fab428966
 Description:  NIXIO POSIX library
 
 Package: luci-lib-px5g
@@ -12577,10 +12721,10 @@ Section: luci
 SourceDateEpoch: 1648668419
 Maintainer: OpenWrt LuCI community
 Architecture: mips_24kc
-Installed-Size: 28167
+Installed-Size: 28179
 Filename: luci-mod-status_git-22.089.70019-d4f0b06_mips_24kc.ipk
-Size: 29097
-SHA256sum: 1ed11d4cb33a9adcc39e00c0c0dd9a2dfe7d1f0ef3dd3756b49fa0529e81bc75
+Size: 29108
+SHA256sum: 0cb166111d23af653102fb76fb0b0d9cb9dbe46f6f5378fb512635ab537af7fe
 Description:  LuCI Status Pages
 
 Package: luci-mod-system
@@ -12986,10 +13130,10 @@ Section: devel
 SourceDateEpoch: 1606286482
 Maintainer: Andre Heider <a.heider@gmail.com>
 Architecture: mips_24kc
-Installed-Size: 792360
+Installed-Size: 792361
 Filename: meson_0.56.0-1_mips_24kc.ipk
-Size: 793424
-SHA256sum: b3deb2e415c52e79ba6a0387ed9c5d93de6e272e04148a2ac7e936b35f7683b6
+Size: 793426
+SHA256sum: 9a0eaef6685a239ccd97ad3b78be5c7e5e6105fc2f008c4c047722d5b7e9527a
 Description:  Meson is an open source build system meant to be both extremely fast, and, even more importantly, as user friendly as possible.
 
 Package: mkf2fs
@@ -13998,10 +14142,10 @@ SourceDateEpoch: 1694170929
 CPE-ID: cpe:/a:python:python
 Maintainer: Jeffery To <jeffery.to@gmail.com>
 Architecture: mips_24kc
-Installed-Size: 144623
+Installed-Size: 144624
 Filename: python3-asyncio_3.9.18-1_mips_24kc.ipk
-Size: 145608
-SHA256sum: d52921f164105c5e6a8fe8cb18d274c8c1a723ae2fef750d047e1193aaa7b6bc
+Size: 145613
+SHA256sum: 1fb5e68d665eeb251cdab4ec76440f5728ad0186743c2d548ccb0daf9ed70067
 Description:  Python 3.9 asyncio module
 
 Package: python3-base
@@ -14163,8 +14307,8 @@ Maintainer: Jeffery To <jeffery.to@gmail.com>
 Architecture: mips_24kc
 Installed-Size: 113075
 Filename: python3-email_3.9.18-1_mips_24kc.ipk
-Size: 114070
-SHA256sum: 6c24957fa281ca602437c6c7502b3d0aad6b261109cabc278b9e9b8dac32b337
+Size: 114067
+SHA256sum: 78a8f168f69866920e25f0c3891fd086b208f067a92b45cfc668423585d888fc
 Description:  Python 3.9 email module
 
 Package: python3-gdbm
@@ -14197,10 +14341,10 @@ SourceDateEpoch: 1694170929
 CPE-ID: cpe:/a:python:python
 Maintainer: Jeffery To <jeffery.to@gmail.com>
 Architecture: mips_24kc
-Installed-Size: 1869085
+Installed-Size: 1869133
 Filename: python3-light_3.9.18-1_mips_24kc.ipk
-Size: 1868696
-SHA256sum: 1060d6aff5ebc64eaf9041058d5197dda9364aa3de08a5edac252c091fc62574
+Size: 1868708
+SHA256sum: 2d39b2c4f4e9fb91927c0d7009197cbafa9cfa47b7c05b86a11f25495c05cbb2
 Description:  This package is essentially the python3-base package plus
  a few of the rarely used (and big) libraries stripped out
  into separate packages.
@@ -14307,10 +14451,10 @@ SourceDateEpoch: 1694170929
 CPE-ID: cpe:/a:python:python
 Maintainer: Jeffery To <jeffery.to@gmail.com>
 Architecture: mips_24kc
-Installed-Size: 146502
+Installed-Size: 146507
 Filename: python3-pkg-resources_58.1.0-1_mips_24kc.ipk
-Size: 147433
-SHA256sum: 0c4bbc596a2aed3c1a532065d2972cf7ef2a0852a47c39051180a53d21285307
+Size: 147438
+SHA256sum: f40522463374a08fc1eece0f844e14aa26d6022738ab26c415ecd4f6e3616a16
 Description:  Python 3.9 pkg_resources module (part of setuptools)
 
 Package: python3-pydoc
@@ -14325,10 +14469,10 @@ SourceDateEpoch: 1694170929
 CPE-ID: cpe:/a:python:python
 Maintainer: Jeffery To <jeffery.to@gmail.com>
 Architecture: mips_24kc
-Installed-Size: 193576
+Installed-Size: 193577
 Filename: python3-pydoc_3.9.18-1_mips_24kc.ipk
-Size: 194550
-SHA256sum: 1a50c1ccf10bca1e199a57106504ba7e18448cdefae057575450ae3abc420cbe
+Size: 194553
+SHA256sum: 3add803f89a338e661b2cd62223f6c6c5dd3029c2b11b1798987d4d3b4504005
 Description:  Python 3.9 pydoc module
 
 Package: python3-readline
@@ -14379,10 +14523,10 @@ SourceDateEpoch: 1694170929
 CPE-ID: cpe:/a:python:python
 Maintainer: Jeffery To <jeffery.to@gmail.com>
 Architecture: mips_24kc
-Installed-Size: 77151
+Installed-Size: 77060
 Filename: python3-unittest_3.9.18-1_mips_24kc.ipk
-Size: 78113
-SHA256sum: a034c5961b614c682c6c5ef91428495a97e92a7847f128fb6e2d00cea212195c
+Size: 78024
+SHA256sum: ee3549eabd97456393ecbe600439263871c7e78a09b78e9649189dd5b6aec829
 Description:  Python 3.9 unittest module
 
 Package: python3-urllib
@@ -15390,10 +15534,10 @@ SourceName: sysinfo
 Section: utils
 SourceDateEpoch: 1688129947
 Architecture: all
-Installed-Size: 1877
+Installed-Size: 1920
 Filename: sysinfo_20210313_all.ipk
-Size: 2587
-SHA256sum: bfc22b3f5ce42a3572f4385c62c898e6912fa4e3ee819f7e6e322158af42e9ef
+Size: 2625
+SHA256sum: 4c8e9626eb97a9d5c792bf7c0aecd52ee9e719d6047dc52ee8ffab2083693547
 Description:  eko.one.pl Services
 
 Package: tc-full
@@ -15464,6 +15608,50 @@ Filename: terminfo_6.2-3_mips_24kc.ipk
 Size: 7952
 SHA256sum: f15e521c40a2291d75deee52e293155ba70c73a2032bf4ba051d92601d594886
 Description:  Terminal Info Database (ncurses)
+
+Package: tor-hs
+Version: 0.0.1-3
+Depends: libc, tor, rpcd
+Source: feeds/packages/net/tor-hs
+SourceName: tor-hs
+License: GPL-3.0-or-later
+Section: net
+SourceDateEpoch: 1611321058
+Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
+Architecture: mips_24kc
+Installed-Size: 2250
+Filename: tor-hs_0.0.1-3_mips_24kc.ipk
+Size: 3122
+SHA256sum: 09b962e3b3a3d0819bb3827ff6b59e9a35ea56307ee277a2dd96f0625ded6114
+Description:  Tor Hidden Service configurator
+
+Package: tor
+Version: 0.4.8.7-1
+Depends: libc, libevent2-7, libopenssl1.1, libpthread, librt, zlib, libcap
+Conflicts: tor-basic
+Provides: tor-basic
+Source: feeds/packages/net/tor
+SourceName: tor
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Section: net
+Require-User: tor=52:tor=52
+SourceDateEpoch: 1665005488
+CPE-ID: cpe:/a:torproject:tor
+Maintainer: Hauke Mehrtens <hauke@hauke-m.de> Peter Wagner <tripolar@gmx.at>
+Architecture: mips_24kc
+Installed-Size: 1341522
+Filename: tor_0.4.8.7-1_mips_24kc.ipk
+Size: 1337272
+SHA256sum: 97b581205f7aa4406c54cefffad5ddcc4aafc8c10694308e6139a3365d1e4dbc
+Description:  Tor is a toolset for a wide range of organizations and people that want to
+ improve their safety and security on the Internet. Using Tor can help you
+ anonymize web browsing and publishing, instant messaging, IRC, SSH, and
+ more. Tor also provides a platform on which software developers can build
+ new applications with built-in anonymity, safety, and privacy features.
+ 
+ This package contains the full tor daemon.
+ 
 
 Package: ttyd
 Version: 1.6.3-3
@@ -16223,6 +16411,126 @@ Size: 28201
 SHA256sum: 3fa936b4cbc5959f726f8fdcd61c2a8dc46350948e6aa22762215c2df95a62fe
 Description:  WPA Supplicant command line control utility
 
+Package: wpa-supplicant-basic
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630
+Conflicts: wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini, wpad-openssl, wpad-wolfssl, wpa-supplicant, wpa-supplicant-mesh-openssl, wpa-supplicant-mesh-wolfssl
+Provides: wpa-supplicant
+Source: package/network/services/hostapd
+SourceName: wpa-supplicant-basic
+License: BSD-3-Clause
+Section: net
+Require-User: network=101:network=101
+SourceDateEpoch: 1683919382
+CPE-ID: cpe:/a:w1.fi:hostapd
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 212826
+Filename: wpa-supplicant-basic_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 213371
+SHA256sum: 8eb2e91ad99db035ea07337fdd269392403bd80466b9772c7646cea1b8760982
+Description:  WPA Supplicant (11r, 11w)
+
+Package: wpa-supplicant-mesh-openssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libopenssl1.1
+Conflicts: wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini, wpad-openssl, wpad-wolfssl, wpa-supplicant
+Provides: wpa-supplicant, wpa-supplicant-mesh
+Source: package/network/services/hostapd
+SourceName: wpa-supplicant-mesh-openssl
+License: BSD-3-Clause
+Section: net
+Require-User: network=101:network=101
+SourceDateEpoch: 1683919382
+CPE-ID: cpe:/a:w1.fi:hostapd
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 481426
+Filename: wpa-supplicant-mesh-openssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 480969
+SHA256sum: b63d970cf0e9de5a7e25bfe49135c5ec522b60673b2fdbcdaf42e47e6a030261
+Description:  WPA Supplicant (OpenSSL, 11s, SAE)
+
+Package: wpa-supplicant-mesh-wolfssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libwolfssl5.5.3.7a924b25
+Conflicts: wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini, wpad-openssl, wpad-wolfssl, wpa-supplicant, wpa-supplicant-mesh-openssl
+Provides: wpa-supplicant, wpa-supplicant-mesh
+Source: package/network/services/hostapd
+SourceName: wpa-supplicant-mesh-wolfssl
+License: BSD-3-Clause
+Section: net
+Require-User: network=101:network=101
+SourceDateEpoch: 1683919382
+CPE-ID: cpe:/a:w1.fi:hostapd
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 477608
+Filename: wpa-supplicant-mesh-wolfssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 477303
+SHA256sum: 3d6e4c3ef3494f47a3c0132275b3ff7b352e421676732600b641be29fc46a803
+Description:  WPA Supplicant (wolfSSL, 11s, SAE)
+
+Package: wpa-supplicant-mini
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630
+Conflicts: wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini, wpad-openssl, wpad-wolfssl, wpa-supplicant, wpa-supplicant-mesh-openssl, wpa-supplicant-mesh-wolfssl, wpa-supplicant-basic
+Provides: wpa-supplicant
+Source: package/network/services/hostapd
+SourceName: wpa-supplicant-mini
+License: BSD-3-Clause
+Section: net
+Require-User: network=101:network=101
+SourceDateEpoch: 1683919382
+CPE-ID: cpe:/a:w1.fi:hostapd
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 202491
+Filename: wpa-supplicant-mini_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 202956
+SHA256sum: 88181fc926e6ead0094ee18f819a207da243a380fcc732c0a945a48edcab1e2f
+Description:  WPA Supplicant (minimal)
+
+Package: wpa-supplicant-openssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libopenssl1.1
+Conflicts: wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini, wpad-openssl, wpad-wolfssl, wpa-supplicant, wpa-supplicant-mesh-openssl, wpa-supplicant-mesh-wolfssl, wpa-supplicant-basic, wpa-supplicant-mini, wpa-supplicant-p2p
+Provides: wpa-supplicant
+Source: package/network/services/hostapd
+SourceName: wpa-supplicant-openssl
+License: BSD-3-Clause
+Section: net
+Require-User: network=101:network=101
+SourceDateEpoch: 1683919382
+CPE-ID: cpe:/a:w1.fi:hostapd
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 488670
+Filename: wpa-supplicant-openssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 488209
+SHA256sum: d5053e4dbbb60e74d964c33706084ea8bfd5f4e1ae9204c34726e5d2d1a1066a
+Description:  WPA Supplicant (OpenSSL full)
+
+Package: wpa-supplicant-p2p
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630
+Conflicts: wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini, wpad-openssl, wpad-wolfssl, wpa-supplicant, wpa-supplicant-mesh-openssl, wpa-supplicant-mesh-wolfssl, wpa-supplicant-basic, wpa-supplicant-mini
+Provides: wpa-supplicant
+Source: package/network/services/hostapd
+SourceName: wpa-supplicant-p2p
+License: BSD-3-Clause
+Section: net
+Require-User: network=101:network=101
+SourceDateEpoch: 1683919382
+CPE-ID: cpe:/a:w1.fi:hostapd
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 540940
+Filename: wpa-supplicant-p2p_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 540767
+SHA256sum: cf4bb91fa42207ba84235f1af8108c99e716075ef8f439e354dbf5a2ad9fd6ea
+Description:  WPA Supplicant (Wi-Fi P2P support)
+
 Package: wpa-supplicant-wolfssl
 Version: 2020-06-08-5a8b3662-41
 Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libwolfssl5.5.3.7a924b25
@@ -16242,6 +16550,208 @@ Filename: wpa-supplicant-wolfssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
 Size: 483840
 SHA256sum: 8c2c780f24baa4d0e5f2981164a1f04901b0f269d282464ec8e21a3249f9eef5
 Description:  WPA Supplicant (wolfSSL full)
+
+Package: wpa-supplicant
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630
+Conflicts: wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini, wpad-openssl, wpad-wolfssl
+Source: package/network/services/hostapd
+SourceName: wpa-supplicant
+License: BSD-3-Clause
+Section: net
+Require-User: network=101:network=101
+SourceDateEpoch: 1683919382
+CPE-ID: cpe:/a:w1.fi:hostapd
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 378198
+Filename: wpa-supplicant_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 378314
+SHA256sum: 7b7dbed352576b589e3c73c9f818b391d4d83f5284e41d77857d867444a10930
+Description:  WPA Supplicant (built-in full)
+
+Package: wpad-basic-openssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libopenssl1.1
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini, hostapd-openssl, hostapd-wolfssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic
+Provides: hostapd, wpa-supplicant
+Source: package/network/services/hostapd
+SourceName: wpad-basic-openssl
+License: BSD-3-Clause
+Section: net
+Require-User: network=101:network=101
+SourceDateEpoch: 1683919382
+CPE-ID: cpe:/a:w1.fi:hostapd
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 376495
+Filename: wpad-basic-openssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 376549
+SHA256sum: e9d89cf3c4e07117544deffc3f2d61a8625964a2f31df2fd6779092a24c55884
+Description:  This package contains a basic IEEE 802.1x/WPA Authenticator and Supplicant with WPA-PSK, SAE (WPA3-Personal), 802.11r and 802.11w support.
+
+Package: wpad-basic-wolfssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libwolfssl5.5.3.7a924b25
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini, hostapd-openssl, hostapd-wolfssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl
+Provides: hostapd, wpa-supplicant
+Source: package/network/services/hostapd
+SourceName: wpad-basic-wolfssl
+License: BSD-3-Clause
+Section: net
+Require-User: network=101:network=101
+SourceDateEpoch: 1683919382
+CPE-ID: cpe:/a:w1.fi:hostapd
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 374420
+Filename: wpad-basic-wolfssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 374695
+SHA256sum: ac5e50de99e302d37143c7a09a25752c5595b81f2401f24ec7cb5fa464106d2f
+Description:  This package contains a basic IEEE 802.1x/WPA Authenticator and Supplicant with WPA-PSK, SAE (WPA3-Personal), 802.11r and 802.11w support.
+
+Package: wpad-basic
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini, hostapd-openssl, hostapd-wolfssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl
+Provides: hostapd, wpa-supplicant
+Source: package/network/services/hostapd
+SourceName: wpad-basic
+License: BSD-3-Clause
+Section: net
+Require-User: network=101:network=101
+SourceDateEpoch: 1683919382
+CPE-ID: cpe:/a:w1.fi:hostapd
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 358478
+Filename: wpad-basic_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 358938
+SHA256sum: dbda2bfefe2e0e92ab93cf28b493bdd73386050a7bf1a9f9efb41fd0556af982
+Description:  This package contains a basic IEEE 802.1x/WPA Authenticator and Supplicant with WPA-PSK, 802.11r and 802.11w support.
+
+Package: wpad-mesh-openssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libopenssl1.1
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini, hostapd-openssl, hostapd-wolfssl, wpad, wpad
+Provides: hostapd, wpa-supplicant, wpa-supplicant-mesh, wpad-mesh
+Source: package/network/services/hostapd
+SourceName: wpad-mesh-openssl
+License: BSD-3-Clause
+Section: net
+Require-User: network=101:network=101
+SourceDateEpoch: 1683919382
+CPE-ID: cpe:/a:w1.fi:hostapd
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 596669
+Filename: wpad-mesh-openssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 596225
+SHA256sum: f97d608f3440e84503f15861c804d9fcf59c692e9c04d4cd0940d88505480dfc
+Description:  This package contains a minimal IEEE 802.1x/WPA Authenticator and Supplicant (with 802.11s mesh and SAE support).
+
+Package: wpad-mesh-wolfssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libwolfssl5.5.3.7a924b25
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini, hostapd-openssl, hostapd-wolfssl, wpad, wpad-mesh-openssl, wpad, wpad-mesh-openssl
+Provides: hostapd, wpa-supplicant, wpa-supplicant-mesh, wpad-mesh
+Source: package/network/services/hostapd
+SourceName: wpad-mesh-wolfssl
+License: BSD-3-Clause
+Section: net
+Require-User: network=101:network=101
+SourceDateEpoch: 1683919382
+CPE-ID: cpe:/a:w1.fi:hostapd
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 593260
+Filename: wpad-mesh-wolfssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 593232
+SHA256sum: b12affeb1bdd2413d85e550b452e05be71691d73366ec1bb15054323cdefe4cc
+Description:  This package contains a minimal IEEE 802.1x/WPA Authenticator and Supplicant (with 802.11s mesh and SAE support).
+
+Package: wpad-mini
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini, hostapd-openssl, hostapd-wolfssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl
+Provides: hostapd, wpa-supplicant
+Source: package/network/services/hostapd
+SourceName: wpad-mini
+License: BSD-3-Clause
+Section: net
+Require-User: network=101:network=101
+SourceDateEpoch: 1683919382
+CPE-ID: cpe:/a:w1.fi:hostapd
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 326589
+Filename: wpad-mini_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 327090
+SHA256sum: 494b31a5a59c02253b0aa3c79f65b822febd610e71db10feeb0cb8ebc82a16af
+Description:  This package contains a minimal IEEE 802.1x/WPA Authenticator and Supplicant (WPA-PSK only).
+
+Package: wpad-openssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libopenssl1.1
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini, hostapd-openssl, hostapd-wolfssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini
+Provides: hostapd, wpa-supplicant
+Source: package/network/services/hostapd
+SourceName: wpad-openssl
+License: BSD-3-Clause
+Section: net
+Require-User: network=101:network=101
+SourceDateEpoch: 1683919382
+CPE-ID: cpe:/a:w1.fi:hostapd
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 605393
+Filename: wpad-openssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 604311
+SHA256sum: cb21abe53fc940b67037a6108a20e771788a8939d35007ef8bd9ea5186638b16
+Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
+ Authenticator and Supplicant
+
+Package: wpad-wolfssl
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630, libwolfssl5.5.3.7a924b25
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini, hostapd-openssl, hostapd-wolfssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini, wpad-openssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad-basic-wolfssl, wpad-mini, wpad-openssl
+Provides: hostapd, wpa-supplicant
+Source: package/network/services/hostapd
+SourceName: wpad-wolfssl
+License: BSD-3-Clause
+Section: net
+Require-User: network=101:network=101
+SourceDateEpoch: 1683919382
+CPE-ID: cpe:/a:w1.fi:hostapd
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 600944
+Filename: wpad-wolfssl_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 600747
+SHA256sum: b70b6d00ce8968a0c5a84afb809d08e6639e83f4c4e13349e302cf5ae3c437af
+Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
+ Authenticator and Supplicant
+
+Package: wpad
+Version: 2020-06-08-5a8b3662-41
+Depends: libc, libnl-tiny1, hostapd-common, libubus20210630
+Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini, hostapd-openssl, hostapd-wolfssl
+Provides: hostapd, wpa-supplicant
+Source: package/network/services/hostapd
+SourceName: wpad
+License: BSD-3-Clause
+Section: net
+Require-User: network=101:network=101
+SourceDateEpoch: 1683919382
+CPE-ID: cpe:/a:w1.fi:hostapd
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 598407
+Filename: wpad_2020-06-08-5a8b3662-41_mips_24kc.ipk
+Size: 598209
+SHA256sum: 0f791b24871d7a0abaa8ee81a8fa974c91c762829b38ef4e56f9bd01c3efbe83
+Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
+ Authenticator and Supplicant
 
 Package: wwan
 Version: 2019-04-29-5
