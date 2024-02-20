@@ -2,7 +2,8 @@
 [![Openwrt](https://img.shields.io/badge/os-OpenWrt-<COLOR>.svg)](https://github.com/zuzia-dev/openwrt/) [![GitHub release (latest by date)](https://img.shields.io/github/v/release/zuzia-dev/Easybox-904xDSL-repo-source?color=orange)](https://github.com/zuzia-dev/Easybox-904xDSL-repo-source/releases/latest) [![GitHub Downloads](https://img.shields.io/github/downloads/zuzia-dev/Easybox-904xDSL-repo-source/total)](https://github.com/zuzia-dev/Easybox-904xDSL-repo-source/releases/latest) [![GitHub issues](https://img.shields.io/github/issues/zuzia-dev/Easybox-904xDSL-repo-source?color=green)](https://GitHub.com/zuzia-dev/Easybox-904xDSL-repo-source/issues) ![GitHub latest commit](https://img.shields.io/github/last-commit/zuzia-dev/Easybox-904xDSL-repo-source?color=00BFFF) [![GitHub forks](https://img.shields.io/github/forks/zuzia-dev/Easybox-904xDSL-repo-source?style=flat&color=e6b800)](https://GitHub.com/zuzia-dev/Easybox-904xDSL-repo-source/forks) [![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://github.com/zuzia-dev/Easybox-904xDSL-repo-source#license) 
 
 #### OpenWrt 21.02 with kernel 5.4.x. for Easybox 904 xDSL (VGV952CJW33-E-IR)
-<img src="https://raw.githubusercontent.com/zuzia-dev/Easybox-904xDSL-repo-source/79584a2a9e10879312ad694ad44f48ac8a28c6d2/Firmware/Luci-terminal-sysinfo%20v3.jpg" width="512" />
+
+<img src="https://github.com/zuzia-dev/Easybox-904xDSL-repo-source/blob/main/Firmware/Luci-terminal-sysinfo%20v4.jpg?raw=true" width="512" />
 
 ##### [->Images are available in different versions - depending on the type of WAN connection]( https://github.com/zuzia-dev/Easybox-904xDSL-repo-source/releases/tag/v3.OpenWrt)
 - SMP - available CPU with two cores
