@@ -10,12 +10,14 @@
 - VPE - FXS port support for VoIP-GSM
 
 - ######  Features included 
-Online package repository via Github, LCD and touch keys, printers (p910nd), support for various file systems to enable most drives: ext2/3/4, FAT, F2FS, NTFS, USB storage automounting, Wake-on-LAN (WOL), Point to Point Tunneling Protocol (PPTP), drivers and configuriation for 3G-LTE modems and USB tethering, support for pseudo bridges (relayd), LuCI with HTTPS SSL support and internationalization (en, de, pl), CPU utilization info & Internet detector, script Sysinfo and CPU temperature applet for LuCI (by Cezary Jackiewicz), Terminal integration in LuCI (luci-app-ttyd) and many more.
+Online package repository via Github, LCD and touch keys, printers (p910nd), support for various file systems to enable most drives: ext2/3/4, FAT, F2FS, NTFS, USB storage automounting, Wake-on-LAN (WOL), Point to Point Tunneling Protocol (PPTP), drivers and configuriation for 3G-LTE modems and USB tethering, support for pseudo bridges (relayd), LuCI with HTTPS SSL support and internationalization (en, de, pl), CPU utilization info & Internet detector, script Sysinfo and CPU temperature applet for LuCI (by Cezary Jackiewicz), Terminal integration in LuCI (luci-app-ttyd), packages from 4IceG's Github repository and many more.
 
 - ###### Software
-Adblock, DDNS (scripts-noip), 3GInfo, Disk Man, Disk Info, Dnsmasq (full), Htop, IP-full, Midnight Commander (mc has mouse support), Nlbwmon, Odhcpd, OpenSSL (and ca-bundle, ca-certificates), OpenVPN, Parted, Picocom, Smartmontools, SMS-Tool, Sudo, Whois, Wireguard, Tc-full, Tcpdump, Timecontrol and many more.
+Adblock, DDNS (scripts-noip), 3GInfo, Disk Man, Disk Info, Dnsmasq (full), Htop, IP-full, Iperf3, Irqbalance, Midnight Commander (mc has mouse support), Nlbwmon, Odhcpd, OpenSSL (and ca-bundle, ca-certificates), OpenVPN, Parted, Picocom, Smartmontools, RP-PPPoE, SMS-Tool, Sudo, Whois, Wireguard, Tc-full, Tcpdump, Timecontrol, Zerotier and many more.
 
 List of useful commands: http://192.168.1.1/cgi-bin/luci/admin/system/commands
+
+<img src="Firmware/Luci-custom-commands.jpg" width="512" />
 
 #### Perform the following procedures to upgrade the firmware
 `Notice: It's recommended to update the bootloader before uploading OpenWrt. Instructions for updating:` [Link](https://openwrt.org/toh/astoria/arcadyan_astoria_easybox_904xdsl_r01#installing_hacked_bootloader)
@@ -28,13 +30,13 @@ Open a terminal console on your PC and run ssh root@192.168.1.1 and respond to a
 For SMP version:
 ```
 cd /tmp
-wget https://github.com/zuzia-dev/Easybox-904xDSL-repo-source/releases/download/v3.OpenWrt/openwrt-lantiq-xrx200-arcadyan_vgv952cjw33-e-ir-smp-squashfs-sysupgrade.bin
+wget https://github.com/zuzia-dev/Easybox-904xDSL-repo-source/releases/download/v4.OpenWrt/openwrt-lantiq-xrx200-arcadyan_vgv952cjw33-e-ir-smp-squashfs-sysupgrade.bin
 sysupgrade -n -F openwrt-lantiq-xrx200-arcadyan_vgv952cjw33-e-ir-smp-squashfs-sysupgrade.bin
 ```
 For VPE version:
 ```
 cd /tmp
-wget https://github.com/zuzia-dev/Easybox-904xDSL-repo-source/releases/download/v3.OpenWrt/openwrt-lantiq-xrx200-arcadyan_vgv952cjw33-e-ir-vpe-squashfs-sysupgrade.bin
+wget https://github.com/zuzia-dev/Easybox-904xDSL-repo-source/releases/download/v4.OpenWrt/openwrt-lantiq-xrx200-arcadyan_vgv952cjw33-e-ir-vpe-squashfs-sysupgrade.bin
 sysupgrade -n -F openwrt-lantiq-xrx200-arcadyan_vgv952cjw33-e-ir-vpe-squashfs-sysupgrade.bin
 ```
 > WARNING: do not turn off the router until the upgrade finishes!
@@ -57,6 +59,5 @@ This option allows you to access to terminal from LuCI web interface: http://192
 
 ### License
 OpenWrt is licensed under GPL-2.0
-- The sources are here: https://github.com/OpenWrt-Repository/openwrt
-- Compressed (zipped) folders: https://github.com/zuzia-dev/Easybox-904xDSL-repo-source/tree/main/Source
+- The OpenWrt source code: https://github.com/OpenWrt-Repository/openwrt
 > It based on https://github.com/Plonkbong/openwrt/tree/xrx200-21.02.2
