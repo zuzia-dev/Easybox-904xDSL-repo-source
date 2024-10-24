@@ -3,9 +3,9 @@
 
 #### OpenWrt 21.02 with kernel 5.4.x. for Easybox 904 xDSL (VGV952CJW33-E-IR)
 
-<img src="https://github.com/zuzia-dev/Easybox-904xDSL-repo-source/blob/main/Firmware/Luci-terminal-sysinfo%20v4.jpg?raw=true" width="512" />
+<img src="https://github.com/zuzia-dev/Easybox-904xDSL-repo-source/blob/main/Firmware/Luci-terminal-sysinfo%20v5.jpg?raw=true" width="512" />
 
-##### [->Images are available in different versions:]( https://github.com/zuzia-dev/Easybox-904xDSL-repo-source/releases/tag/v4.OpenWrt)
+##### [->Images are available in different versions:]( https://github.com/zuzia-dev/Easybox-904xDSL-repo-source/releases/tag/v5.OpenWrt)
 - SMP - available CPU with two cores
 - VPE - FXS port support for VoIP-GSM
 
@@ -30,13 +30,13 @@ Open a terminal console on your PC and run ssh root@192.168.1.1 and respond to a
 For SMP version:
 ```
 cd /tmp
-wget https://github.com/zuzia-dev/Easybox-904xDSL-repo-source/releases/download/v4.OpenWrt/openwrt-lantiq-xrx200-arcadyan_vgv952cjw33-e-ir-smp-squashfs-sysupgrade.bin
+wget https://github.com/zuzia-dev/Easybox-904xDSL-repo-source/releases/download/v5.OpenWrt/openwrt-lantiq-xrx200-arcadyan_vgv952cjw33-e-ir-smp-squashfs-sysupgrade.bin
 sysupgrade -n -F openwrt-lantiq-xrx200-arcadyan_vgv952cjw33-e-ir-smp-squashfs-sysupgrade.bin
 ```
 For VPE version:
 ```
 cd /tmp
-wget https://github.com/zuzia-dev/Easybox-904xDSL-repo-source/releases/download/v4.OpenWrt/openwrt-lantiq-xrx200-arcadyan_vgv952cjw33-e-ir-vpe-squashfs-sysupgrade.bin
+wget https://github.com/zuzia-dev/Easybox-904xDSL-repo-source/releases/download/v5.OpenWrt/openwrt-lantiq-xrx200-arcadyan_vgv952cjw33-e-ir-vpe-squashfs-sysupgrade.bin
 sysupgrade -n -F openwrt-lantiq-xrx200-arcadyan_vgv952cjw33-e-ir-vpe-squashfs-sysupgrade.bin
 ```
 > WARNING: do not turn off the router until the upgrade finishes!
